@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gettangi.com</title>
+
+    <link rel="icon" type="x-icon" sizes="any"   href="images/logotab icon.jpeg">
+    
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+      
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/navbars/navbar-1/assets/css/navbar-1.css">
+
+      <!--CDN social Link----------------------------------------------------------------->
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Your Investment Options</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h2 style="color: #5737c4;">Choose an Option</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!--button type="button" class="btn btn-primary">Save changes</button-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--pre page modal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalprepage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header" id="prepagemodalheader" style="font-family: 'Times New Roman', Times, serif; background-color: #150d17; color: white; border-bottom: 2px solid #150d17 !important;">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+              <!-- Left Side Link -->
+              <div class="col-auto">
+                  <a href="#">
+                    <img src="images/logo final bg none.png"  class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px">
+                  </a>
+              </div>
+              <!-- Center Links (Auto Centered) -->
+              <div class="col d-flex justify-content-center gap-3">
+                  <a href="#" class="btnfirstsection">Join Our PreSale Now</a>
+                  <a href="#" class="btnfirstsection">Join Our Exclusive Investor Club</a>
+                  <a href="#" class="btnfirstsection" data-bs-dismiss="modal" id="modalCloseFooter">Go To Website</a>
+                  <a href="#" class="btnfirstsection"  onclick="openImage()">Connect With Existing Investors</a>
+              </div>
+              <!-- Close Button -->
+              <!--div class="col-auto">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </di-->
+          </div>
+          </div>
+        <!--h1 class="modal-title fs-5" id="exampleModalLabel">Pre page</h1>
+        <!-button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="modalCloseBtn"></button-->
+        <!--a href="#" class="btnfirstsection">Join Our PreSale Now</a> &nbsp; &nbsp; &nbsp;&nbsp;
+        <!--br class="firstsectiontwobtnword">
+        <b style="font-size: 20px;">OR</b>
+        <br class="firstsectiontwobtnword"->
+        <a href="#" class="btnfirstsection">Join Our Exclusive Investor Club</a> &nbsp; &nbsp; &nbsp;&nbsp;
+        <button type="button" class="btnfirstsection" data-bs-dismiss="modal" id="modalCloseFooter">Home Page</button-->
+      </div>
+      <div class="modal-body" id="prepagemodalbg" style="font-family: 'Times New Roman', Times, serif; background-color: #150d17; color: white;">
+           <!-- Overlay -->
+           <!--div class="prepage-overlay" id="prepage-overlay" onclick="prepageClosePopup()"></div-->
+
+           <!-- Popup Box -->
+           <!--div class="prepage-popup" id="prepage-popup">
+               <!--button class="prepage-close-btn" onclick="prepageClosePopup()">X</button->
+               <img src="images/Tangi Token Investment Mind Map pre page.png"  alt="Popup Image" id="prepage-popup-image" width="100%" height="100%" onclick="prepageShowFullscreen()">
+           </div-->
+       
+           <!-- Full-Screen Image ->
+           <div class="prepage-fullscreen" id="prepage-fullscreen" onclick="prepageCloseFullscreen()">
+               <img src="images/Tangi Token Investment Mind Map pre page.png" alt="Full Image" id="prepage-fullscreen-img">
+           </div-->
+
+        <div class="container">
+          <br>
+          <div style="text-align: left;">
+            <h3 style="color: #5737c4; font-size: 45px;">Our PrePage: The Elevator Pitch</h3>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-12">
+              <p>At Tangi, we provide banking and payment processing solutions to industries overlooked by major banks and credit card networks. In this instance, we have developed a much-needed payment solution for the legal cannabis industry, with token payments at its core.</p>
+
+            </div>
+            <!--div class="col-6" style="text-align: center;">
+              <video style="border-radius: 10px;"  src="brains video first section.mp4" width="50%"  controls poster="images/brian-cown-thub nail first video .png"></video>
+            </div-->
+          </div>
+          
+         <br>
+          <div style="text-align: center;">              
+              <p style="color: #5737c4; font-size: 27px;">The Reason You Should Invest Or The Reason You Can’t Afford Not To</p>
+              <br>
+              <p>Unless you’re deeply involved in the cannabis retail market, you will not know that finding a banking partner is the single biggest roadblock preventing payment providers from truly entering this space.
+                Without a banking partner, nothing works—no compliance, no legitimacy, no long-term success. That’s why every payment provider before us has either failed or operated illegally.
+                We’ve done what no one else could. We secured the one thing every other provider has been chasing: a banking partnership. And because of it, our token is now positioned to gain mass adoption from 60 million potential users.
+              </p>
+             
+              
+              <p>What does that mean for you? If you’re looking for a reason to invest, you’ve just found it. If you’re looking for a reason not to, there isn’t one—because no other payment provider in this industry has what we have.
+                This is where our true value lies. It’s the foundation that makes everything you’re about to read possible. The only question is: Will you secure your position in the Token Presale and be part of the exclusive group supplying the massive demand that’s about to unfold?</p>
+          </div>
+          <br>
+
+          <!--div class="row">
+            <div class="col">
+              <h3 style="color: #5737c4;">If you read nothing else, read this!!</h3>
+              <br>
+              <p>
+                Unless you’re deeply involved in the cannabis retail industry, you probably don’t realize that banking is the single biggest roadblock for payment providers in this sector. It’s the final hurdle—the missing piece—that has kept payment providers from truly breaking into this space.
+                Without a bank, nothing else matters. No compliance, no legitimacy, no sustainable business.</p>
+                <p>That’s why every payment provider before us has either failed or operated illegally.
+                  We’ve done what no one else could. We secured the banking partnership the entire industry has been chasing. This isn’t just a win—it’s the foundation that makes everything you’re about to read possible. And with it, we’re positioned to take over.</p>
+            </div>
+            <div class="col-1">
+              <hr class="vertical-hrpre_page3">
+            </div>
+            <div class="col">
+              <h3 style="color: #5737c4;">The Reason You Should Invest—Or The Reason You Can’t Afford Not To</h3>
+              <br>
+              <p>If you’re looking for a reason to invest, you’ve just read it. If you’re looking for a reason not to, you won’t find one—because no other payment provider in the cannabis industry has what we have.
+                This isn’t speculation, hype, or a gamble. This is the single most important factor determining success in this space.</p>
+                <p>Every failed payment provider before us lacked a compliant banking solution. Every future competitor will face the same roadblock.
+                  We’ve already crossed that hurdle. That’s why we’re positioned to dominate. The only question left is—are you going to be part of it?</p>
+            </div>
+          </div-->
+
+          
+          <div style="text-align: center; color: #5737c4;">
+            <p style="font-size: 45px;">Investor Token Highlights </p>
+
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li> A real-world utility token backed by compliance and actual demand, not hype or speculation.   </li>
+                <li>Solving a $33B industry problem by providing the first compliant payment solution for cannabis retailers. </li>
+                <li>8,000 retailers urgently need the services powered by our token.  </li>
+                <li>60 million potential end users for investors to sell on to. </li>
+                <div class="prepageExtraContent">
+                 <li>First-mover advantage in a $33B untapped retail market.                </li>
+                 <li>Retail rollout imminent, bringing our services directly to stores.                </li>
+                 <li>Fully compliant and regulatory-approved, setting us apart from failed competitors.</li>
+                 <li>Exclusive banking partnership secured, ensuring long-term stability.</li>
+                </div>
+              </ul>
+              <button id="prepageShowMoreBtn">Show More</button>
+
+
+            </div>
+            <div class="col-1">
+              <hr class="vertical-hrpre_page3">
+            </div>
+            <div class="col">
+              <ul>
+                <li>Limited token supply, controlled by presale investors when listed, ensuring strong demand.    </li>
+                <li>2,500 early investors already secured their position in Round 1.                </li>
+                <li>Proven leadership with experience in successful projects alongside industry giants like Peter Thiel, Charles Hoskinson, and Elon Musk.                </li>
+                <li>Clear exit strategy with multiple pathways to maximise ROI.                </li>
+                <li>Public Listing Scheduled Post Round 2</li>
+                <div class="prepageExtraContent">
+                  <li>Strategically positioned for mass adoption with a seamless entry into the market.                  </li>
+                  <li>Backed by four years of meticulous planning and execution. </li>
+                  <li>Early-stage risk absorbed by Round 1 investors, making Round 2 a prime opportunity.</li>
+                </div>
+              </ul>
+              <!--button id="prepageShowMoreBtn2" >Show More</button-->
+              <br>
+            </div>
+          </div>
+       <br>
+          <div class="row">
+            <div class="col-6">
+              <div style="text-align: left;">
+                <h3 style="color: #5737c4; font-size: 45px;">The Problem </h3>
+              </div>
+              <br>
+             
+              <p>Despite the legal cannabis industry being a $33 billion cash cow, major banks and card networks like Visa and MasterCard refuse to service it. Without a banking partner, payment providers cannot deposit funds processed from cannabis sales, leaving 8,000 retailers and 60 million consumers limited to cash-only payments.</p>
+            </div>
+            <!--div class="col-1">
+              <hr class="vertical-hrpre_page">
+            </div-->
+            <div class="col-6" style="text-align: center;">
+              <video style="border-radius: 10px;"  src="brains video first section.mp4" width="100%"  controls poster="images/brian-cown-thub nail first video .png"></video>
+
+              <!--p>Without a banking partner, payment providers cannot deposit funds processed from cannabis sales. As a result, retailers are stuck relying mainly on cash transactions or, worse, illegal and non-compliant payment providers who exploit the retailers' desperate need for an alternative to cash payments.</p-->
+            
+            </div>
+          </div>
+          <br>
+          <div style="text-align: center;">
+
+            <h3 style="color: #5737c4; font-size: 45px;">Our Solution To The Problem</h3>
+          </div>
+          <br>
+          <p>The first provider to successfully navigate this problem gains an enormous first-mover advantage. It would instantly make you the preferred payments provider for 8,000 retailers across a $33B retail marketplace. <b> And that is exactly what we have done. </b></p>
+          <div style="display: flex; justify-content: center;">
+            <div style=" width: 930px;">
+              <br>
+              <p style="font-size: 25px;"><b>We  have secured a banking relationship with a forward-thinking bank that shares our vision of providing  compliant banking and payment services to the cannabis industry. </b></p>
+              <br>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-5">
+              <h3 style="color: #5737c4;">Token Adoption</h3>
+              <br>
+              <p>This gives us the perfect foundation from which to launch our token services.  By anchoring the token to our bank integrated system, we’ve ensured the token enters the market on the shoulders of a system built to withstand regulatory scrutiny. This approach makes the token resilient and primed for success as it’s introduced to 60 million potential end users with a strong, compliant foundation to stand on.</p>
+              <p>Not only are we the first to solve the banking and compliance problem, but everyone in the chain is incentivised to adopt the token, driving value for our investors.</p>
+
+            </div>
+            <div class="col-1">
+              <hr class="vertical-hrpre_page">
+            </div>
+            <div class="col-6">
+              <h3 style="color: #5737c4;">Adoption Drivers</h3>
+              <br>
+              <ul>
+                <li>	<b>Consumers:</b> Receive exclusive discounts, elite benefits, and a custom-built rewards program when paying with the token, enhancing their shopping experience.</li>
+                <li> <b>	Retailers:</b> Benefit from the lowest transaction fees across all payment methods on our terminals, saving tens of thousands of dollars annually, while ensuring compliance and resolving the cash-only payments problem. They also gain a more loyal and engaged customer base through the token's rewards program.</li>
+                <li>	<b>Our Company:</b> Gains the highest profit margins from token transactions, driving revenue growth, and enabling complete control over the ecosystem. This allows us to scale quickly, free from banking system limitations.</li>
+              </ul>
+
+            </div>
+          </div>
+          <br>
+          <div style="text-align: center;">
+
+            <h3 style="color: #5737c4; font-size: 45px;">Your Investment, Your Opportunity</h3>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <h3 style="color: #5737c4;">Public Listing</h3>
+              <br>
+              <p>When the token lists, it will be on the way to having a built-in user base of 8000 retailers and 60 million end users, all of whom have a valuable use for the token. That’s the real value—and that’s where the money is. When you invest in Tangi, you’re investing in a token with a clear path to growth, driven by utility and compliance. </p>
+              <p>As a Round 2 investor, you're stepping into a unique and strategically timed phase of Tangi’s growth. Unlike early investors who backed the concept, you’re investing at a moment when everything is coming to life—our market entry, our token rollout, and our public listing are all converging to create a robust investment opportunity.</p>
+
+            </div>
+            <div class="col-1">
+              <hr class="vertical-hrpre_page2">
+            </div>
+            <div class="col">
+              <h3 style="color: #5737c4;">Potential ROI</h3>
+              <br>
+              <p>There is a maximum supply of 250m tokens. The circulating supply will be limited to the 50 million tokens held by you and your fellow investors from the presale. The demand will be driven by a $33 billion market in transaction volume. Run the numbers yourself. </p>
+              <p>Whether you take 1%, 2%, or 100% of that $33B market and apply 50 million tokens to that number, the math will speak for itself. The more market share we capture, the greater the token value. When we list the token, you can choose to sell to the next wave of investors looking to jump on our bandwagon, or you can hold and wait to sell directly to end users of our utility token.</p>
+            </div>
+          </div>
+          <br>
+
+          <br>
+      
+          <!--div style="text-align: center; color: #5737c4;">
+            <p style="font-size: 45px;">Why Invest </p>
+
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li>	Our tokens solve a real-world problem </li>
+                <li>	8,000 retailers needing our services</li>
+                <li>	60 million end users of the token </li>
+                <li>	First-mover advantage in an existing $33B untapped retail market </li>
+                <li>	Services poised for rollout</li>
+                <li>	2,500 early investors already on board</li>
+                <li>	An enviable & committed team</li>
+                <li>	A clear Exit Strategy — Maximizing ROI</li>
+                <li>	Built on real-world utility, not hype and speculation</li>
+              </ul>
+            </div>
+            <div class="col-1">
+              <hr class="vertical-hrpre_page3">
+            </div>
+            <div class="col">
+              <ul>
+                <li>	Limited Token Supply Controlled by Investors</li>
+                <li>	Compliance & Regulatory boxes ticked</li>
+                <li>	Banking partner secured</li>
+                <li>	Positioned for mass adoption</li>
+                <li>	4 years of meticulous planning</li>
+                <li>	Proven track record of past successes</li>
+                <li>	Risk already absorbed by Round 1 investors</li>
+                <li>	Public Listing Scheduled for 2025</li>
+                <li>	Multiple Exit Options</li>
+              </ul>
+            </div>
+          </div-->
+
+          <div style="text-align: center;">
+            <p>Below you will find a number of options to choose from. Thank you for considering our project.</p>
+
+          </div>
+
+         
+
+          <br>
+     
+          <div class="container">
+            <div class="row w-100 align-items-center">
+                <!-- Left Side Link -->
+                <div class="col-auto">
+                    <a href="#">
+                      <img src="images/logo final bg none.png"  id="myImage" class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px">
+                    </a>
+                </div>
+                <!-- Center Links (Auto Centered) -->
+                <div class="col d-flex justify-content-center gap-3">
+                    <a href="#" class="btnfirstsection">Join Our PreSale Now</a>
+                    <a href="#" class="btnfirstsection">Join Our Exclusive Investor Club</a>
+                    <a href="#" class="btnfirstsection" data-bs-dismiss="modal" id="modalCloseFooter">Go To Website</a>
+                    <a href="#" class="btnfirstsection" onclick="openImage()">Connect With Existing Investors</a>
+                </div>
+                <!-- Close Button -->
+                <!--div class="col-auto">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </di-->
+            </div>
+            </div>
+
+        </div>
+      </div>
+      <!--div class="modal-footer">
+
+     
+        <!-button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modalCloseFooter">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div-->
+    </div>
+  </div>
+</div>
+    
+    <header>
+        <nav class="navbar navbar-expand-xxl navbarcolorstyle bsb-navbar bsb-navbar-hover bsb-navbar-caret fixed-top" id="navbar">
+            <div class="container"  id="navcontainer">
+                <a class="navbar-brand" href="">
+                    <!--b>8tech Payment</b-->
+                    <img src="images/logo final bg none.png"  class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px">
+                    <!--img src="images/logo final bg none.png" class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px"-->
+                </a>
+                <div id="contact_bt_css" class="bytokenbtnnav2">
+                  <a class="nav-link" id="bytokenbtnnav" href="https://member.gettangi.com/" target="_blank">Buy Token</a>
+              </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill="#5737c4" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+
+                    </svg> 
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" id="offcanvasNavbarDropdown">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="navbarcolorstyle">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="textstyle" aria-current="page" href="index.html">Home</a>
+                            </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" id="textstyle" aria-current="page" href="#movenavtoproble">The Problem</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" id="textstyle" aria-current="page" href="#movenavtosolution">Our Solution</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" id="textstyle" aria-current="page" href="#movenavtoecoytem"> Investor Value</a>
+                       </li>
+                            <!--li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Key info</a>
+                              <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/The Cannabis Industry Opportunity.html">The Cannabis Industry Opportunity</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Security and Stability Through Compliance.html">Compliance For Security and Stability</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Rewards and Incentives for Token Users.html">Rewards and Incentives for Token Users</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/How the Token Works.html">How the Token Works</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Expanding Beyond Cannabis.html">Expanding Beyond Cannabis</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Everything You Need to Know.html">Everything You Need to Know</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Our Journey to Compliance.html">Our Journey to Compliance</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Gratitude to Our Earliest Investors.html">Gratitude to Our Earliest Investors</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/The Evolution of Our Vision.html">The Evolution of Our Vision</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Commitment to Long-Term Investors.html">Commitment to Long-Term Investors</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Social Media Tab.html">Social Media</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Roadmap.html">Roadmap</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="tabs 1/Key Milestones.html">Key Milestones</a></li>
+                              </ul>
+                          </li-->
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Investors Hub </a>
+                            <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/The Problem.html">The Problem </a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/The Root of the Problem.html">The Root of the Problem </a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/The Solution Feb.html">Our Solution </a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/How Our Solution Works.html">How Our Solution Works </a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Investor Highlight Reel.html">Investor Highlight Reel</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Ideal Timing for Round 2.html">Ideal Timing for Round 2</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Investment to Listing.html">Public Listing</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Our Market Entry Strategy.html"> Market Entry Strategy</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Credibility of Our Project.html">Credibility of Our Project </a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Market Potential.html">Market Potential</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Tangi Tokenomics.html">Tangi Tokenomics</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/Legal Landscape.html">Legal Landscape</a></li>
+                                <!--li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/token functionality.html">Token Functionality</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/incentives & rewards.html">Incentives & Rewards</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi token/problem&solution.html">Insight & Impact</a></li-->
+                            </ul>
+                        </li>
+                        <!--li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tangi Payment</a>
+                          <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="offcanvasNavbarDropdown" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi payment/benefits.html">Benefits for Retailers & Consumers</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi payment/how it works.html">How It Works</a></li>
+                              <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi payment/Legit vs. Illicit.html">Legit vs. Illicit</a></li>
+                          </ul>
+                      </li-->
+                            <!--li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Token Info</a>
+                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/market opportunity.html">Market Opportunity</a></li>
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/token details & goals.html">Token Details & Goals</a></li>
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/roadmap.html"> RoadMap</a></li>
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/updates.html"> Updates</a></li>
+
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/Adaptive Risk Control.html"> Risk Management</a></li>
+                                </ul>
+                            </li-->
+                            <li class="nav-item">
+                              <a class="nav-link active" id="textstyle" aria-current="page" href="#movenavtobottomline"> Why Invest</a>
+                           </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project info</a>
+                              <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Overview.html">Overview</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our_Story.html">Our Story</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/A Special Thank You to Our Round 1 Investors.html">Round 1 Members, Thank You!</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Investor Priortised.html">Investor Priortised</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/So_far so good.html">Our Past, Present & Future</a></li>
+                                <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Non Copliant Illegal Competitors.html">Non Copliant  Competitors</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Mitigating_Risk_Factors.html">Mitigating Risk Factors</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Risk Warning for Investors.html">Risk Warning for Investors</a></li>
+                                  
+                                  <!--li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Short Version.html">The Short Version</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Understanding the problem.html">Understanding the problem</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Legal Solution.html"> Our Legal Solution</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Crucial Role of the token.html"> The Crucial Role of the token</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Illegal competitors.html"> Illegal competitors</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The legal landscape.html"> The legal landscape</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our leverage.html"> Our leverage</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/So far so good.html"> So far so good </a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Expected Growth.html"> Expected Growth</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Market Testing Complete.html"> Market Testing Complete</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Market Opportunity.html"> Market Opportunity</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Team.html"> Our Team</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Comparable Projects.html"> Comparable Projects</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Solution.html"> The Solution</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Problem.html"> The Problem</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Story.HTML"> Our Story</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Risk Management.html"> Risk Factor</a></li>
+                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Competitive Advantages.html">Our Competitive Advantages</a></li-->
+
+
+
+                              </ul>
+                          </li>
+                            <!--li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="about us/core team.html">Core Team</a></li>
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="about us/advisors.html">Advisor</a></li>
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="about us/parteners.html">Partners</a></li>
+                                </ul>
+                            </li-->
+                            <!--li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Payment</a>
+                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="#">The Problem</a></li>
+                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="#">Our Solution</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" id="dropdownitemcolor" href="#">Incentives</a>
+                                        <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor">
+                                            <li><a class="dropdown-item" id="dropdownitemcolor" href="#">Retailer Benefits</a></li>
+                                            <li><a class="dropdown-item" id="dropdownitemcolor" href="#">Consumer Benefits</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li-->
+                            <li class="nav-item">
+                              <a class="nav-link active" id="textstyle" aria-current="page"  href="about us/advisors.html">Our Team</a>
+                          </li>
+                          <!--home page link-->
+
+
+
+
+
+
+                           <!--home page link-->
+                        </ul>
+                       
+                        <!--div id="contact_bt_css" class="bytokenbtnnav">
+                          <a class="nav-link" id="bytokenbtnnav" href="https://member.gettangi.com/" target="_blank">Buy Token</a>
+                      </div-->
+                        <div id="contact_bt_css">
+                            <a onclick="navigateAndOpenModal(event)" class="nav-link" id="confetti-btn"  href="#movesectioncontactustoclub">Buy Token</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="overlay" id="overlay"></div>
+    <div class="preloader">
+      <h3 style="color: yellow;">Warning</h3>
+      <p>Do not invest in this project if you are not prepared to lose all your money, this is high risk investing.</p>
+    </div>
+    
+
+    <main>
+
+        <div class="hero_firstsection">
+            <div class="content_firstsection">
+                <h1>Pre-sale: Round 2 Live</h1>
+                <p class="content_firstsection1">
+                  <b class="firstsectionsecondline">Investing your way into the future</b>
+
+                <br>
+                <br>
+                Welcome to the Tangi’s dedicated investor portal. This website is designed exclusively for investors considering joining Round 2 of our Token Presale. All the information provided in this website aims to help you with understanding the value and potential of investing in our project..
+                 <br>
+                 <br>
+                 At Tangi, we provide banking and payment processing solutions to industries that have been overlooked by traditional financial institutions, and we’ve specifically developed a solution for the cannabis industry—a sector that faces massive challenges in accessing banking and payment services. <br>
+                 
+                  
+                </p>
+                
+                <div class="content_firstsection2">
+         
+           
+                </div>
+           
+                <a href="#movesectioncontactustoclub" class="btnfirstsection">Join Our PreSale Now</a> 
+                <br class="firstsectiontwobtnword">
+                <b style="font-size: 20px;">OR</b>
+                <br class="firstsectiontwobtnword">
+                <a href="#movesectioncontactustoclub" class="btnfirstsection">Join Our Exclusive Investor Club</a>
+            </div>
+           
+           
+        </div>
+
+        
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="second_section">
+    <p style="color: #5737c4;">Why Tangi Token is a Smart Investment</p>
+  </div>
+  <p>This website provides all the essential information you need to decide whether to invest in Tangi's token before it lists publicly. We’ve included comprehensive details to give you a clear understanding of the problem, our solution and the token’s potential, leaving no questions unanswered. By joining, you’ll be part of an exclusive community of 2,500 investors who have been with us since Round 1.
+
+    Feel free to connect with them via our Telegram link for firsthand insights.</p>
+</div>
+<div class="container">
+</div>
+<div class="container">
+  <div class="row" id="thirdsectionrow">
+    <div class="col-6" id="thirdsectiontextcol">
+      <p><b>Why Round 2 Investors Are Perfectly Positioned for Success</b></p>
+      <p>Round 2 investors are stepping in at a pivotal moment—right as we roll out our services to retail stores and prepare for public listing immediately after Round 2. This dual approach creates two clear exit strategies for investors and ensures strong demand for the token.</p>
+      <p style="font-size: 18px;"><b>Exit Strategy 1: Sell to Incoming Investors Post-Listing</b></p>
+      <p>As we execute Round 2, our compliant banking-backed payment solution will be rolled out to cannabis retailers, bringing Tangi into the spotlight. Retailers will be promoting our brand and payment services, and consumers will begin hearing about Tangi Rewards. By the time we list publicly, the market will already see our services in action, making Tangi Token an extremely attractive opportunity for incoming investors looking for a token with real-world adoption potential.</p>
+      
+      <!--p>As an investor, your primary concern is how this project will bring value to you. With the token at the core of our payment system, every step we take is designed to drive its value. By investing in the token, you gain access to a potentially lucrative market with 60 million potential end users to sell to when the token publicly lists and a $33 billion market in transaction volume. Here’s how we make that happen:</p-->
+      <!--p>As an investor, your primary concern is how this project will bring value to you. When the token publicly lists, you will have 
+        access to a market of up to 60 million potential end users. Every step we’ve taken has been strategically designed to drive massive adoption of the token, directly increasing its value. With only 50 million tokens in circulation, all held by you and your fellow investors, the demand will be driven by a $33 billion market in transaction volume.</p>
+     <p>Run the numbers yourself. Whether you take 1%, 2%, or 100% of that $33B market and apply 50 million tokens to that number, the math will speak for itself. The more market share we capture, the greater the token value.  </p-->
+     <!--p>This website provides all the essential information you need to decide whether to invest in the Tangi token before it lists publicly. We’ve included comprehensive details to give you a clear understanding of the problem, our solution and the token’s potential, leaving no questions unanswered. By joining, you’ll be part of an exclusive community of 2,500 investors who have been with us since Round 1.</p-->
+     <!--p>Feel free to connect with them via our Telegram link for firsthand insights. Additionally, </p-->
+       <!--div id="card-investor-gain-1" class="">
+      <div class="hidden-content-investor-gain" id="hiddenContent-investor-gain-1">
+        <p>It’s all there for you to explore.</p>
+        <p>We’ve created the first fully compliant payment solution for the cannabis industry, with a rewarding token payment option at its core. Our solution integrates both traditional bank-supported payment methods (such as PIN debit, credit cards, and tap-to-pay) alongside the more cost-saving and rewarding token payment option—both operating seamlessly from a single terminal.</p>
+        <p>Each payment method serves a crucial role in our business model. The familiarity and convenience of traditional payment methods make it easy for customers to engage with our solution, capturing them with a payment option they've been asking for. Once onboard, customers are then introduced to the token payment option, offering them valuable rewards, cost-saving benefits, and an exclusive loyalty program—making the transition to token payments a no-brainer for consumers already using our services.</p>
+    
+      
+      </div>
+      <span id="toggleText">It’s all there for you to explore....</span><a class="modern-link toggleButton"  onclick="toggleText()" id="toggleBtn-investor-gain-1">Show More</a> 
+      </div-->
+      
+    </div>
+    <div class="col-6" id="image-containerthirdsection">
+      <video style="border-radius: 10px;"  src="brains video first section.mp4" width="100%"  controls poster="images/brian-cown-thub nail first video .png"></video>
+      <!--img src="images/third section image.png" width="100%" height="100%" alt=""-->
+    </div>
+  </div>
+</div>
+  <div class="container">
+    
+    <p>For Round 2 investors, this means choice. You can take advantage of the mass marketing campaign surrounding the listing and sell your tokens to these incoming investors, cashing out with strong returns in the short term.</p>
+    <p style="font-size: 18px;"><b>Exit Strategy 2: Hold for Mass Adoption & Automated Demand</b></p>
+    <p>If you choose to hold, you position yourself for the mass adoption wave coming from end users.</p>
+    <ul>
+      <p><b>1. We Build a Massive End-User Base</b>	 – While rolling out our services, we onboard thousands of consumers through convenient and familiar card payment services. Once onboarded, we switch them to token payments on our closed-loop payment system, ensuring they become regular users of the token.</p>
+      <p><b>2.	Seamless Transition to the Public Exchange</b> – Once we’ve established token adoption, we shut down the closed-loop system and automatically direct all token purchases to the public exchange.</p>
+      <p><b>3.	Automated, Recurring Token Purchases</b> – Consumers won’t need to change their habits. Their wallets will auto-renew their tokens seamlessly—just as they always have—except now their purchases will be made on the open market. This creates continuous and predictable buying pressure on the exchange, ensuring demand remains high.</p>
+      <p><b>4.	New Users Are Constantly Added</b>—As Tangi expands, new retailers and consumers enter the ecosystem, further increasing adoption and keeping the cycle going. This creates greater demand, but the supply does not increase, meaning the token value will likely continue increasing.</p>
+      
+    </ul>
+    <p>This is a self-sustaining ecosystem where token demand is driven by real-world use, not speculation. Investors holding until mass adoption will see consistent, repeat purchases fueling long-term token growth.</p>
+    <p><b>A First-of-Its-Kind, Fully Compliant Payment Solution</b></p>
+    <p>Unlike speculative crypto projects, Tangi is built on a strong regulatory foundation, backed by a banking partnership that allows us to deliver compliant, seamless payments to an underserved $33B industry.</p>
+   <p>The opportunity for Round 2 investors is clear:</p>
+    <ul>
+      <li><b>	Sell at listing to incoming investors hungry for a proven token</b></li>
+      <li><b>	Hold and capitalize on mass adoption & automated token demand</b></li>
+    </ul>
+    <p>Tangi is the first real utility token with a built-in consumer base—a rare opportunity where investors control the supply while mass-market demand kicks in.</p>
+  </div>
+<br>
+<br>
+
+<div class="fivthsectionbg" id="movesectioncontactustoclub">
+  <div class="container" id="fivesection">
+      <b class="fivesectionheading">Your Investment Options</b>
+      <p class="fivesectioncontent">Two Tailored Investment Opportunities:</p>
+      <p>We understand that every investor has unique goals and strategies. That’s why we’ve structured our presale with two distinct opportunities, ensuring that everyone can secure a meaningful position in Tangi Token’s promising future.</p>
+     </div>
+     <br>
+     <div class="container">
+      <div class="row" id="option_sectionrow">
+          <div class="col-4" id="option_sectioncol">
+              <!--img src="images/five section image 1.png" width="70" height="60" alt=""-->  <br>
+              <b style="font-size: 18px; color: #cc2eb2;">Option 1: General Presale</b>
+              <br>
+              <p>Designed for investors seeking a straightforward path to growth, The General PreSale offers a total of 10 million tokens</p>
+              
+              <ul>
+                <li><b>Exclusivity Pricing</b>: For the fastest movers, the first 5 million tokens are priced at a dicounted price of just $0.80c per token. Once  those first 5 million tokens are snapped up, the remaing 5 million tokens can be purchased at $1.00 per token.</li>
+                <li><b>Minimum Purchase</b>: 1,250 tokens, ensuring accessibility for all investors.</li>
+              </ul>
+              <p>Whether you’re looking to test the waters or establish a solid stake, this option provides a compelling entry point into a growing ecosystem.</p>
+              <a href="#" class="btnfirstsection">Join PreSale Now</a>
+            </div>
+          <div class="col-1 text-center" id="option_sectioncol2">
+            <hr class="vertical-hr">
+            <!--a href="#" class="btnfirstsection">Join Elite Membership</a-->
+          </div>
+          
+          <!--div class="col">
+              <img src="images/five section image 2.png" width="50" height="50" alt=""> 
+              <br>
+              <b style="font-size: 18px; color: #cc2eb2;">Go-To Payment</b>
+              <br>
+            
+              <p>Our token will be the preferred payment method in a growing market.</p>
+          </div>
+          <div class="col">
+              <img src="images/five section image 3.png" width="60" height="60" alt="">
+              <br>
+              <b style="font-size: 18px; color: #cc2eb2;"> Mass Adoption </b>
+              <br>
+              <p>Millions of consumers with real needs will adopt our token.</p>
+          </div-->
+          <div class="col-7" id="option_sectioncol">
+              <!--img src="images/five section image 4.png" width="60" height="60" alt=""-->
+              <br>
+              <b style="font-size: 24px; color: #cc2eb2;"><b>Option 2:</b> Elite Profit Sharing Membership </b>
+              <br>
+              <p>Designed for those seeking to secure larger stakes, the Elite Investor Membership provides unparalleled benefits :</p>
+              <ul>
+                <!--li><b>Entry Requirement</b>: Purchase of 50,000+ ($30k)</li-->
+                <li><b>Exclusive Benefits:</b>
+                  <br>
+                  <br>
+                <ul>
+                    <li>Exclusive discounted token price of <b>$0.60</b> per token—40% below the general presale price.</li>
+                    <li>Elite Members gain access to a <b>profit-sharing program</b>, offering a share of the company's net revenues for five years.</li>
+                    <li>This program is expected to generate approximately <b>$75,000-$100,000 OTE</b> per position secured, in annual <b>residual income</b>.</li>
+                </ul>
+              </li>
+              <br>
+                <li><b>Strategic Advantage</b>: Elite members not only secure tokens at the best possible price but also gain additional returns through their active participation in the project’s profit sharing program.</li>
+                <li><b>Entry Requirement:</b> <b> As little as</b> 50,000+ Tokens ($30k) <b>secures this enviable position for you.</b></li>
+              </ul>
+              <a href="#" class="btnfirstsection">Join Elite Membership</a>
+          </div>
+
+        </div>
+        <br>
+        <p class="fivesectioncontent">Where Do You Fit In?</p>
+        <p>Whether you choose the <b>General Presale</b> or the <b>Elite Membership</b>, both options position you at the forefront of Tangi’s growth story. Early investors are uniquely placed to benefit from our compliance-driven market strategy, limited token supply, and growing ecosystem of incentivized end users.</p>
+   
+     </div>
+</div>
+
+
+
+      <div class="container" id="movenavtoproble">
+        <div class="second_section">
+          <p style="color: #5737c4;">The Problem: A $33B Opportunity for Investors</p>
+      </div>
+      </div>
+
+        <div class="container" style="margin-top: 10px;">
+            <!--p class="headingthirdsection"><b style="color: #5737c4;">Revolutionizing Payments</b> for Underserved Industries</p-->
+            <p>For investors, the problem of the cannabis industry’s inability to secure compliant payment solutions presents a major opportunity. With a $33 billion industry largely limited to cash-only transactions, the demand for a reliable, legal, and transparent payment service is immense. This is where the investor in Tangi token stands to benefit. As the market's only token payment solution operating from a compliant provider, we are positioned to capitalize on this $33 billion market gap. While other providers have failed to deliver, Tangi's token provides a solution that meets the needs of both retailers and consumers, ensuring massive adoption. As we fill this gap, the value of the token grows, directly benefiting investors who got in early and positioned themselves for long-term success. Here’s how we make that happen.</p>
+            <p>Despite the legal cannabis industry being a <b>$33 billion</b> cash cow, <b>major banks and card networks like Visa and MasterCard </b>refuse to service the industry, limiting retailers to accepting cash only payments. This has left <b>8,000 retailers and 60 million</b> consumers—in a <b>cash-only system</b>. </p>
+            <!--div>
+            <img src="images/third img logo.png" width="50" height="50" alt="">
+            </div-->
+            <!--p style=" font-size: 20px; color: #5737c4; font-weight: bold; font-family: 'Times New Roman', Times, serif;">Cannabis Payment Revolution</p--> 
+          </div>
+          
+          <br>
+          
+          
+          <div class="container">
+            <div class="row" id="thirdsectionrow">
+              <div class="col-6" id="thirdsectiontextcol">
+                <p>A typical dispensary handles up to $250,000 per week in cash, making it a target for armed robbery and needing armoured trucks to transport large volumes of money. Cash-only transactions also limit customer spending, complicate accounting, and hinder access to loans and other financial support.</p>
+              <p>Meanwhile, 60 million consumers are forced to carry cash and are excluded from loyalty programs, which are standard in every other retail industry, as there is no way of tracking their spending habits.</p>
+              <p>The inability to secure a banking partner is the single biggest reason why payment service providers cannot deliver legitimate payment solutions in this space, and it has created an environment where illegal, non-compliant providers exploit retailers with unreliable services and exorbitant fees. </p>
+              <div id="card-investor-gain-2" class=""> 
+              <div class="hidden-content-investor-gain" id="hiddenContent-investor-gain-2">
+               
+        <p> Without a banking partner, there’s no way for payment providers to deposit funds processed from cannabis sales. As a result, retailers are stuck relying mainly on cash transactions or worse, illegal and non-compliant payment providers who exploit the retailers desperate need for an alternative to cash payments.  </p>
+              
+                  
+                    <p>Most of those non-compliant providers have come and gone, and those managing to go undetected are operating under the radar. It’s only a matter of time before they face the same fate. The industry is in desperate need of a compliant, reliable, and sustainable solution, and every other provider has failed to deliver it. 
+                    </p>
+                    <div>
+                        <!--img src="images/second card tril image.png" width="50" height="50" alt=""-->
+                    </div>
+          <!--p style=" font-size: 20px; color: #5737c4; font-weight: bold; font-family: 'Times New Roman', Times, serif;">Tangi Token: The Core of Our Payment Ecosystem</p-->
+
+                   
+                    <p>As one of our struggling competitors aptly put it, 'It's like trying to run a marathon in cement shoes,' says Sarah Johnson, CEO of CannaPay Solutions, a third-party payment provider. 'We have the technology and the demand, but without banking partners, we're stuck in a financial no-man's-land.” 
+                    </p>
+                    <p>This is the reality the cannabis industry has been facing—until now.</p>
+                    </div>
+                     <span id="toggleText2">Without a banking partner, there’s no way...</span><a class="modern-link toggleButton2"  onclick="toggleText2()" id="toggleBtn-investor-gain-2">Show More</a>
+                    </div>
+                    </div>
+                <div class="col-6" id="image-containerthirdsection">
+                  <video style="border-radius: 10px;"  src="zach video home page.mp4" width="100%"  controls poster="images/zach-thumb nail video.png"></video>
+                </div>
+            </div>
+        </div>
+        <br id="movenavtosolution">
+        <br>
+        <br>
+
+        <div class="container" id="fourthsection">
+            <b class="fourthsectionheading">The Solution: Positioning Investors for Profit </b>
+            <p class="fourthsectioncontent">          </p>
+            <div>
+              <!--img src="images/second card rtil image 2.png" width="50" height="50" alt=""-->
+              
+            </div>
+          
+            <div class="row" id="thirdsectionrow">
+              <div class="col-6" id="thirdsectiontextcol">
+                <br>
+                  <p>While securing a banking partner has proven to be an insurmountable problem for every aspiring payment provider hoping to capitalise on the legal cannabis industry, it's the very reason this opportunity exists for us. The first provider to navigate this successfully gains an enormous first-mover advantage. Securing a partnership with a bank willing to service the cannabis industry would be akin to finding the Holy Grail. It would instantly make any startup the only legal choice for retailers across the nation. </p>
+                  <p>I guess it doesn’t take a rocket scientist to see where we’re going with this—but it’s huge news and the key reason why our project is such an attractive investment opportunity.</p>
+                  <p> While every other provider has struggled to secure a banking partner, we've successfully done what others couldn't.</p>
+                  <div id="card-investor-gain-3" class="">   
+                  <div class="hidden-content-investor-gain" id="hiddenContent-investor-gain-3">
+                      We have secured a banking relationship with a forward-thinking bank that shares our vision of providing compliant banking and payment services to the cannabis industry. With this partnership, we can now offer the compliant payment services like credit/debit cards, and bank integrated payment options which have been missing from the cannabis sector for 30 years.</p>
+                  <p>With <b>a bank-backed compliant system in place</b>, we are positioned as the <b>first and only provider</b> to offer both traditional payment options and token payments to the cannabis industry.</p>
+                <p>For the industry, this is a game-changer. Retailers and consumers alike now have a compliant, trustworthy solution at their fingertips, no longer needing to rely on risky workarounds or cash-only systems. This is exactly the kind of service the cannabis industry has been crying out for, for decades. With 8,000 retailers and 60 million consumers, the demand is already there, and we’ve positioned ourselves perfectly to serve it.</p>
+               Securing a banking relationship in the cannabis industry is a feat that the world and its mother once deemed unattainable, and the industry widely recognizes that this breakthrough positions us to dominate the market. While we acknowledge the magnitude of this accomplishment, we’re even more excited about what it means for the token. This banking relationship doesn’t just open the door to the market—it provides the perfect foundation for the token to launch its services seamlessly from a compliant platform.</p> 
+           
+              </div>
+            <span id="toggleText3"> We have secured a banking relationship with a forward-thinking bank that shares our...</span><a class="modern-link toggleButton3"  onclick="toggleText3()" id="toggleBtn-investor-gain-3">Show More</a>
+            </div>
+             </div>
+             <div class="col-6" id="image-containerthirdsection">
+              <video style="border-radius: 10px;"  src="store video .mp4" width="100%"  class="thesolution_sectionvideo"  controls poster="images/IN-STORE2 thum nail 2 .png"></video>
+            </div>
+           </div>
+
+      </div>
+
+
+   
+<br>
+<br>
+       
+<br>
+
+         <div class="container" id="fourthsection">
+           <b class="fourthsectionheading">Maximising Investor Value</b> <br> <br>
+           <p>As an investor, the key to your potential returns lies in the widespread adoption of the Tangi token. Our strategy is designed to capture consumers from the start by offering them reliable, compliant payment solutions they’ve been waiting for. Once they begin using traditional payment methods, the natural progression is for them to adopt the token, driven by its rewards and cost-saving benefits. This ensures a growing demand for the token, directly increasing its value and benefitting you as an investor. Here’s how we make this happen…</p>
+           <p>Retailers and consumers alike will be relieved to finally have access to reliable and compliant digital payment solutions. But what’s even more exciting is that, alongside these traditional options, they will discover the token as a more rewarding and cost-effective alternative—operating seamlessly from the same terminal, with the token serving as the cornerstone of our solution. </p>
+          <div class="row" id="thirdsectionrow">
+            <div class="col-6" id="thirdsectiontextcol">
+             
+                <p>Consumers have been crying out for a reliable, compliant payment option for years. They’ve been waiting for the chance to move away from cash-only transactions and exploitative, non-compliant solutions. Now that we are offering exactly what they’ve been waiting for, they’ll voluntarily gravitate towards our payment services without any need for heavy marketing. </p>
+                <p>This acts as a powerful tool for capturing consumers—exactly what we needed to drive token adoption. It was a strategic decision to create a solution that not only served a pressing in the cannabis industry but also acted as a customer acquisition tool for our token. By deliberately allowing traditional payments to capture the consumer, we create a compliant pathway for the token’s seamless adoption. </p>
+                <div id="card-investor-gain-4" class="">  
+                <div class="hidden-content-investor-gain" id="hiddenContent-investor-gain-4">
+                <p>Our strategy is simple yet powerful with <b>all roads leading to the token.</b> We start by capturing customers through those traditional payment options, and once onboarded, seamlessly funnel those users toward our token payment option.</p>
+                <p>This approach ensures compliance while highlighting the token as the most rewarding option for consumers and the most cost-effective solution for retailers.</p>
+                <p> Our technology gives us the ability to communicate directly with each consumer through their cell phone and the Tangi Token App. Once customers are onboard, we use these communication tools to introduce the token as the more rewarding, cost-effective payment method, driving adoption.</p>
+                <p>Our entire payment strategy is designed to funnel users toward the token, maximizing adoption and ensuring its success. This deliberate and interconnected approach creates a winning formula for retailers, consumers, and investors alike, setting Tangi apart as the core driver of value and growth.</p>
+                </div>
+                <span id="toggleText4"> Our strategy is simple yet powerful with <b>all roads leading to the token.</b> We start by...</span><a class="modern-link toggleButton4"  onclick="toggleText4()" id="toggleBtn-investor-gain-4">Show More</a>
+               </div>
+              
+            </div>
+            <div class="col-6" id="image-containerthirdsection">
+              <video style="border-radius: 10px;"   width="100%" controls poster="images/RON-THUMB nail video 2.png">
+                <source src="ron video.mp4" type="video/mp4">
+                
+            </video>
+            </div>
+          </div>
+          
+          <br id="movenavtoecoytem">
+          <br>
+                 
+          <br>
+            <b class="fourthsectionheading">Token Ecosystem: Fuelling Investor Profits</b>
+            <br>
+            <br>
+            <p>For investors, the value of the Tangi token is directly linked to the strength of the ecosystem we’ve built and the seamless, natural adoption of the token by all parties involved. Retailers, consumers, and Tangi the company all benefit from token usage, ensuring its value continues to increase. As an investor, you’re positioned to gain from this growing network where every participant is incentivized to adopt the token. The demand will already be there by the time the token lists publicly, and as an investor, you’ll be able to capitalize on the real-world use driving the token’s price. Here's how we make that happen.</p>
+            <div class="row" id="thirdsectionrow">
+              <div class="col-6" id="thirdsectiontextcol">
+                <ul>
+                  <li><b>Consumers:</b> Receive exclusive discounts, elite benefits, and a custom-built rewards program when paying with the token, enhancing their shopping experience.</li>
+                  <li><b>Retailers:</b> Benefit from the lowest transaction fees across all payment methods on our terminals, saving tens of thousands of dollars annually, while ensuring compliance. They also gain a more loyal and engaged customer base through the token's rewards program.</li>
+                  <li><b>Our Company:</b> Gains the highest profit margins from token transactions, driving revenue growth, and enabling complete control over the ecosystem. This allows us to scale quickly, free from banking system limitations.</li>
+                </ul>
+                <p><b>Everyone in the chain—consumers, retailers</b>, and <b>Tangi the company</b>—is incentivized to adopt, promote, and use <b>token payments</b>.</p>
+                <div id="card-investor-gain-5" class=""> 
+                <div class="hidden-content-investor-gain" id="hiddenContent-investor-gain-5">
+                  The <b>consumer’s financial rewards</b> and <b>loyalty benefits</b> make the token the most attractive payment method. Retailers benefit from <b>lower transaction fees</b> and a <b>more engaged customer base</b>. And <b>the company</b> profits from the increasing <b>profit margins</b> as the token becomes the preferred choice.</p>
+              <p><b>The token is the core</b>, and everyone in the chain is working to increase its value. <b>It’s all about the token</b>, and every step we’ve taken—from building the compliant infrastructure to securing the banking relationship—has been designed to position the token as the driving force of our business.</p>
+              <p>When the token lists publicly, the <b>demand will already be there</b>, and the <b>price</b> will be driven by the <b>real-world utility</b> it offers, not just speculation. You’re not betting on a hype cycle—you’re investing in a <b>proven solution</b> with <b>real use</b> and <b>growing adoption.</b></p>
+              <p>The most significant factor here is that <b>these users will be your market</b>—existing customers who have a real, proven need for the token. Not only will they adopt it willingly, but they’ll be incentivized to use it. <b>This creates a built-in user base for investors</b>, meaning that when the token lists, there will already be demand from real-world consumers ready to buy and use the token. </p>
+              </div>
+              <span id="toggleText5">  The <b>consumer’s financial rewards</b> and <b>loyalty benefits</b> make  the token the most...</span><a class="modern-link toggleButton5"  onclick="toggleText5()" id="toggleBtn-investor-gain-5">Show More</a>
+              </div>
+              </div>
+              <div class="col-6" id="image-containerthirdsection">
+                <video style="border-radius: 10px;"   width="100%" controls poster="images/STAN-LAR-THUMB nail video 3.png">
+                  <source src="Stan_Amazon 3 video.mp4" type="video/mp4">
+                  
+              </video>
+              </div>
+            </div>
+
+<br id="movenavtobottomline">
+<br>
+<br>
+
+       
+            <b class="fourthsectionheading" >The Bottom Line: Why Invest Now</b>
+            <p><b>The real value of this project is in the token itself</b>. We’ve cleared the regulatory hurdles, built a compliant payment infrastructure,  </p>
+         <br>
+            <div class="row" id="thirdsectionrow">
+          <div class="col" id="thirdsectiontextcol">
+      
+  <p>secured a crucial banking relationship and created a system that makes the token the most appealing option for both retailers and consumers, opening the door for mass token adoption.</p>
+            <p>The 50 million presale tokens will represent the entire supply available when the token lists publicly. You and your fellow investors will control this exclusive supply, which will directly meet the demand from up to 60 million potential end users in a $33B market, all eager to buy the token.</p>
+            <p>The token is the backbone of our business, driving revenue streams, increasing its value, and providing real-world utility for consumers and retailers alike. </p>
+            <p>By investing today, you’re positioning yourself in a project that has already overcome the toughest hurdles, with a clear path to success and massive growth potential.</p>
+            
+          </div>
+          <div class="col-6" id="image-containerthirdsection">
+            <video style="border-radius: 10px;"   width="100%" controls poster="images/brian-cown-thub nail first video .png">
+              <source src="bottom line video home page.mp4" type="video/mp4">
+              
+          </video>
+          </div>
+         </div>
+          <br>
+
+        </div>
+
+
+
+        <div class="container" id="sixsectionstrike2">
+          <b class="sevensectionhead" style="color: #3a0ca3; font-size: 35px;">The Word On The Street</b>
+          <br>
+          <br>
+          <br>
+      
+      </div>
+
+<div class="container" id="cardWrappercontainer">
+  <div class="bg-gray-100 p-1 flex items-center justify-center" id="cardWrappermaindiv">
+    <div id="cardWrapper" class="relative w-full flex items-center">
+      <button id="leftBtn" class="nav-btn"><img src="images/errow btn 8 section.png" width="50" style="z-index: 999;" alt=""></button>
+      <!-- Left Button -->
+      
+      <div id="cardContainer">
+          <!-- 8 Cards -->
+          <div class="card_8">
+            <video width="300" height="400" controls poster="images/5 card home page thum nail card 6.jpg">
+              <source src="5 card video 8 home page.mp4" type="video/mp4">
+              
+          </video>
+          </div>
+          <div class="card_8" id="fourt_card2"></div>
+          <div class="card_8" id="fourt_card3"></div>
+          <div class="card_8">
+            <video width="300" height="400" controls poster="images/5 card home page thum nail card 4.jpg">
+              <source src="5 card video 4 home page.mp4" type="video/mp4">
+              
+          </video>
+          </div>
+          <div class="card_8">
+            <video width="300" height="400" controls poster="images/5 card home page thum nail card 8.jpg">
+              <source src="5 card video 7 home page.mp4" type="video/mp4">
+              
+          </video>
+          </div>
+          <div class="card_8">
+            <video width="300" height="400" controls poster="images/5 card home page thum nail card 7.jpg">
+              <source src="5 card video 6 home page.mp4" type="video/mp4">
+              
+          </video>
+          </div>
+          <div class="card_8">
+            <video width="300" height="400" controls poster="images/5 card home page thum nail card 5.jpg">
+              <source src="5 card video 5 home page.mp4" type="video/mp4">
+              
+          </video>
+          </div>
+          <div class="card_8">
+            <video width="300" height="400" controls poster="images/MICHAL-THUB2 nail 2  potrait.png">
+              <source src="michal and zach video.mp4"  type="video/mp4">
+              
+          </video>
+          </div>
+      </div>
+      
+      <!-- Right Button -->
+      <button id="rightBtn" class="nav-btn"><img src="images/errow btn 8 section.png" style="transform: rotate(180deg);" width="50" alt=""></button>
+  </div>
+</div>
+
+</div>
+<br>
+<br>
+
+        <!--div class="section10body" id="movesectiontenth">
+            <div id="section10CardsWrapper3">
+              <div id="section10CardsContainer3">
+                <div class="section10Card" id="fourt_card4">
+                  <!--div class="section10img">
+                    <img src="images/real word.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div->
+                  <video width="300" height="400" controls poster="images/5 card home page thum nail card 6.jpg">
+                    <source src="5 card video 8 home page.mp4" type="video/mp4">
+                    
+                </video>
+                  <!--div>
+                    <h3 class="section10Heading">Integrated Ecosystem</h3>
+                  </div>
+                  <p class="section10psecondcard4">
+                    The Tangi token forms the backbone of a fully integrated payment ecosystem.
+                     </p->
+                  
+                </div>
+                <div class="section10Card"  id="fourt_card2">
+                  <!--div class="section10img">
+                    <img src="images/5 card image card 2.jpg" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div-->
+                  <!--video width="300" height="400" controls poster="thumbnail.jpg">
+                    <source src="card 2 video.mp4" type="video/mp4">
+                    
+                </video-->
+                  <!--div>
+                    <h3 class="section10Heading">Trusted Card Payments</h3>
+                    <p class="section10p">
+                      We capture customers through trusted card payment services, leveraging familiarity and convenience.
+                    </p>
+                  </div->
+                </div>
+
+                <div class="section10Card"  id="fourt_card3">
+                  <!--div class="section10img">
+                    <img src="images/limted supply.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div-->
+                  <!--video width="300" height="400" controls poster="thumbnail.jpg">
+                    <source src="card 3 video.mp4" type="video/mp4">
+                    
+                </video-->
+                  <!--div>
+                    <h3 class="section10Heading">Lower Fees & Rewards</h3>
+                  </div>
+                  <p class="section10psecond">
+                    The Tangi token offers lower fees, rewards, and exclusive incentives to users
+                  </p>
+                  <p>
+                    
+                  </p->
+                </div>
+
+                <div class="section10Card" id="fourt_card4">
+                  <!--div class="section10img">
+                    <img src="images/real word.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div->
+                  <video width="300" height="400" controls poster="images/5 card home page thum nail card 4.jpg">
+                    <source src="5 card video 4 home page.mp4" type="video/mp4">
+                    
+                </video>
+                  <!--div>
+                    <h3 class="section10Heading">Integrated Ecosystem</h3>
+                  </div>
+                  <p class="section10psecondcard4">
+                    The Tangi token forms the backbone of a fully integrated payment ecosystem.
+                     </p->
+                  
+                </div>
+
+                <div class="section10Card" id="fourt_card4">
+                  <!--div class="section10img">
+                    <img src="images/real word.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div->
+                  <video width="300" height="400" controls poster="images/5 card home page thum nail card 8.jpg">
+                    <source src="5 card video 7 home page.mp4" type="video/mp4">
+                    
+                </video>
+                  <!--div>
+                    <h3 class="section10Heading">Integrated Ecosystem</h3>
+                  </div>
+                  <p class="section10psecondcard4">
+                    The Tangi token forms the backbone of a fully integrated payment ecosystem.
+                     </p->
+                  
+                </div>
+
+
+                <div class="section10Card" id="fourt_card4">
+                  <!--div class="section10img">
+                    <img src="images/real word.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div->
+                  <video width="300" height="400" controls poster="images/5 card home page thum nail card 7.jpg">
+                    <source src="5 card video 6 home page.mp4" type="video/mp4">
+                    
+                </video>
+                  <!--div>
+                    <h3 class="section10Heading">Integrated Ecosystem</h3>
+                  </div>
+                  <p class="section10psecondcard4">
+                    The Tangi token forms the backbone of a fully integrated payment ecosystem.
+                     </p->
+                  
+                </div>
+                <div class="section10Card" id="fourt_card4">
+                  <!--div class="section10img">
+                    <img src="images/real word.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div->
+                  <video width="300" height="400" controls poster="images/5 card home page thum nail card 5.jpg">
+                    <source src="5 card video 5 home page.mp4" type="video/mp4">
+                    
+                </video>
+                  <!--div>
+                    <h3 class="section10Heading">Integrated Ecosystem</h3>
+                  </div>
+                  <p class="section10psecondcard4">
+                    The Tangi token forms the backbone of a fully integrated payment ecosystem.
+                     </p->
+                  
+                </div>
+
+
+
+
+
+                <div class="section10Card" id="fourt_card1">
+                  <!--div class="section10img">
+                    <img src="images/compliance.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div->
+                  <video width="300" height="400" controls poster="images/MICHAL-THUB2 nail 2  potrait.png">
+                    <source src="michal and zach video.mp4"  type="video/mp4">
+                    
+                </video>
+                  <!--div>
+                    <h3 class="section10Heading">Tangi Token</h3>
+                    <p class="section10p">
+                      The token is at the core of our solution, making payments rewarding for retailers and consumers.
+                    </p>
+                  </div->
+          
+                </div>
+                <!--div class="section10Card">
+          
+                  <div class="section10img">
+                    <img src="images/public listing.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div>
+                
+                  <div>
+                    <h3 class="section10Heading">The Public Listing: Your Exit Strategy, Built-In</h3>
+                  </div>
+                  <p class="section10psecond">
+                    When Tangi Token lists publicly, you’re holding an opportunity
+                     </p>
+                  <p>
+                    <ul class="section10pbult">
+                      <li><b>Built-In Buyers:</b> The 60 million consumers using Tangi Token are ready-made buyers for your holdings.</li>
+                   <li> <b>New Investors:</b> The success of our rollout will attract a flood of new investors looking to capitalize on the token’s momentum.        </li>
+                   <li> <b>Perfect Timing:</b> Early investors stand to reap the rewards as token value surges post-listing, driven by real-world utility and market adoption.</li>
+                    </ul>
+                    
+                  </p>
+                </div->
+                <!--div class="section10Card">
+          
+                  
+                  <div class="section10img">
+                    <img src="images/roadmap.png" style="filter: invert(1);" width="120" height="120" alt="">
+                  </div>
+                
+                  <div>
+                    <h3 class="section10Heading">A Well-Laid Roadmap to Financial Growth</h3>
+                  </div>
+                  <p class="section10psecond">
+                    With the heavy lifting already done, Tangi is primed for execution
+                     </p>
+                  <p>
+                    <ul class="section10pbult">
+                      <li><b>Compliant Rollout:</b> Retailer and consumer onboarding begins immediately with our bank-integrated payment system.</li>
+                   <li> <b>Token Adoption:</b> Consumer incentives ensure seamless migration to token payments, driving demand  </li>
+                   <li> <b>Market Expansion:</b> As the cannabis market grows to $67 billion, so does the potential for Tangi—and your investment.</li>
+                   <a href="token information/roadmap.html" class="modern-link section10">Roadmap to Financial Growth</a>
+                    </ul>
+                  </p>
+                </div-->
+                <!--div class="section10Card">
+                  <h1 class="section10Heading" id="section10lastcard" style="color: white;">
+                  Tangi offers investors compliance, scalability, and a direct pathway to market leadership in a <i style="background-color: green; border-radius: 5px;">$33 billion</i> (and growing) industry
+                <br> <br><br>  <a href="https://oldmem.gettangi.com/register"  target="_blank" class="modern-link section10">Join the Presale</a>
+                </h1>
+          
+              </di->
+              </div>
+            </div>
+           </div-->
+
+     
+
+        <!--div class="container" id="sixsectionstrike">
+            <b class="sixsectionhead">Seamless, secure, and limitless            </b>
+            <p class="sixsectioncontent">
+                Gettangi Payment lets your customers pay their way, every time.
+            </p>
+        </div-->
+
+
+
+        
+        <!--div class="container" id="sixsectioncardheading">
+            <div class="row" id="thirdsectionrow">
+                <div class="col-6" id="thirdsectiontextcol">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="headingthirdsection"> <b>Early Investment <b style="color: #5737c4;">Opportunity</b></b></p>
+                    <p style="font-size: 18px;">Investing in the token now means getting in before it lists publicly, with real-world adoption already underway. We expect to capture huge adoption in the $33 billion cannabis market, with the limited token supply ensuring that demand for the token will rise as the market expands.</p>
+                   
+                </div>
+                <div class="col-6" id="image-containerthirdsection">
+                    <img src="images/six card gif.gif" width="100%" height="100%" alt="">
+                </div>
+            </div>
+        </div-->
+
+        
+
+
+
+
+        <!--div class="container" style="margin-top: 100px;" id="sevensectionstrike">
+          <b class="headingsevensection">Check out our latest <b style="color: #5737c4;">content</b></b> <br>
+          Find out what's going on in the world of payments.
+      </div>
+    
+      <div class="container" style="margin-top: 10px;">
+          <div class="row" id="thirdsectionrow">
+              <div class="col-4" id="thirdsectiontextcol">
+                 <p class="ninesectionhead">The Investment Opportunity You Can't Afford to Miss</p>
+                 <p class="ninesectiontext">There’s no guesswork here—this is a solid opportunity for investors. Our proven model, combined with a compliant payment platform and a token that’s ready to scale, means this is the kind of investment that ticks every box. It’s time to invest and get ready for the public listing—before everyone else realizes what’s about to happen.</p>
+              </div>
+              <div class="col-8" id="image-containerthirdsection">
+                  <img src="images/third section image.png" width="100%" height="90%" alt="">
+              </div>
+          </div>
+      </div-->
+      
+       
+    </main>
+
+    <div class="container" id="sixsectionstrike">
+      <b class="sevensectionhead" style="color: #3a0ca3; font-size: 35px;">Our Media</b>
+      <!--p class="sixsectioncontent">
+        
+      </p-->
+  </div>
+
+  <div class="container" id="cardWrappercontainer">
+  <div class="bg-gray-100 p-1 flex items-center justify-center">
+    <div id="cardWrapperartical" class="relative w-full flex items-center">
+      <button id="leftBtnartical" class="nav-btn"><img src="images/errow btn 8 section.png" width="50" alt=""></button>
+        <!-- Left Button --> 
+        
+        <div id="cardContainerartical">
+            <!-- 8 Cards -->
+            <a href="https://highlycapitalized.com/insights/gettangi-corporation-eyes-regulatory-opportunities-in-cryptocurrency-under-trump-administration/" target="_blank" style="text-decoration: none;">
+               <div class="card_artical" id="sevencardfirstbg">
+              <p>GetTangi Corporation Eyes Regulatory Opportunities in Cryptocurrency Under Trump Administration</p>
+            </div>
+          </a>
+            <a href="https://www.irishtimes.com/business/2024/11/17/cowen-factor-as-trump-win-cheers-cannabis-crypto-entrepreneur/" target="_blank" style="text-decoration: none;">
+              <div class="card_artical" id="sevencardfirstbg2">
+                <p>Cowen factor as Trump win cheers cannabis crypto entrepreneur</p>
+              </div>
+            </a>
+           <a href="https://www.bbc.com/news/world-us-canada-66320970" target="_blank" style="text-decoration: none;">
+             <div class="card_artical" id="sevencardfirstbg3">
+              <p>Mastercard demands US cannabis shops stop accepting debit cards</p>
+             </div>
+            </a>
+           <a href="https://investmentu.com/tangi-crypto/" target="_blank" style="text-decoration: none;">
+             <div class="card_artical" id="sevencardfirstbg4">
+              <p>Tangi Crypto: Where Crypto Meets Cannabis</p>
+            </div>
+            </a>
+           <a href="https://www.bloomberg.com/news/articles/2022-12-05/how-to-buy-weed-that-s-changing-as-cashless-atms-close?leadSource=uverify%20wall#xj4y7vzkg" target="_blank" style="text-decoration: none;"> 
+            <div class="card_artical" id="sevencardfirstbg5">
+              <p>Weed Shops Switch to Cash After Cashless ATM Crackdown</p>
+            </div>
+          </a>
+           <a href="https://www.businesspost.ie/news/cowen-linked-cannabis-and-cryptocurrency-firm-to-raise-4m/" target="_blank" style="text-decoration: none;">
+             <div class="card_artical" id="sevencardfirstbg6">
+             <p>Cowen-linked cannabis and cryptocurrency firm to raise $4m</p>
+            </div>
+          </a>
+           <a href="https://headtopics.com/ie/cowen-back-on-board-of-canadian-cannabis-and-cryptocurrency-firm-28988322" target="_blank" style="text-decoration: none;">
+             <div class="card_artical" id="sevencardfirstbg7">
+              <p>Cowen back on board of Canadian cannabis and cryptocurrency firm</p>
+            </div>
+          </a>
+            <a href="https://cryptodaily.co.uk/2022/02/cannabis-or-crypto-where-should-i-invest-in-2022" target="_blank" style="text-decoration: none;">
+              <div class="card_artical" id="sevencardfirstbg8">
+              <p>Cannabis or Crypto? Where should I Invest in 2022?</p>
+              </div>
+            </a>
+           <a href="https://hive.blog/tangi/@highsteam1900/tangi-token-poised-for-fractal-governance" target="_blank" style="text-decoration: none;">
+             <div class="card_artical" id="sevencardfirstbg9">
+             <p>Tangi Token Poised for Fractal Governance</p>
+            </div>
+          </a>
+          <a href="https://www.bitcoininsider.org/article/146970/cannabis-or-crypto-where-should-i-invest-2022" target="_blank" style="text-decoration: none;">
+             <div class="card_artical" id="sevencardfirstbg10">
+              <p>Cannabis or Crypto? Where should I Invest in 2022?</p>
+            </div>
+          </a>
+            <a href="https://blockchair.com/news/the-use-of-blockchain-in-the-cannabis-world--8d2f1afb1d" target="_blank" style="text-decoration: none;">
+              <div class="card_artical" id="sevencardfirstbg11">
+                <p>The Use of Blockchain in the Cannabis World</p>
+              </div>
+            </a>
+            <!--a href="" target="_blank" style="text-decoration: none;">
+              <div class="card_artical" id="sevencardfirstbg12">
+                <p></p>
+              </div>
+            </a-->
+        </div>
+        
+        <!-- Right Button -->
+        <button id="rightBtnartical" class="nav-btn"><img src="images/errow btn 8 section.png" style="transform: rotate(180deg);" width="50" alt=""></button>
+    </div>
+  </div>
+</div>
+
+  <!--div class="container" style="margin-top: 10px;">
+    <div class="row" id="eightsectionrow">
+      <div class="col">
+        <a href="https://highlycapitalized.com/insights/gettangi-corporation-eyes-regulatory-opportunities-in-cryptocurrency-under-trump-administration/" target="_blank" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg">
+            <b class="sevenfirstcardhead">GetTangi Corporation Eyes </b>
+            <p class="sevencardcontent">Regulatory Opportunities in Cryptocurrency Under Trump Administration</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.irishtimes.com/business/2024/11/17/cowen-factor-as-trump-win-cheers-cannabis-crypto-entrepreneur/" target="_blank" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg2">
+            <b class="sevenfirstcardhead">Cowen factor as Trump  </b>
+            <p class="sevencardcontent">win cheers cannabis crypto entrepreneur</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://investmentu.com/tangi-crypto/" target="_blank" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg3">
+            <b class="sevenfirstcardhead">Tangi Crypto: Where Crypto Meets Cannabis</b>
+            <p class="sevencardcontent"> </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="container" style="margin-top: 5px;">
+    <div class="row" id="eightsectionrow">
+      <div class="col">
+        <a href="https://www.bbc.com/news/world-us-canada-66320970" target="_blank" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg4">
+            <b class="sevenfirstcardhead">Mastercard demands US cannabis </b>
+            <p class="sevencardcontent"> shops stop accepting debit cards</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.bloomberg.com/news/articles/2022-12-05/how-to-buy-weed-that-s-changing-as-cashless-atms-close?leadSource=uverify%20wall#xj4y7vzkg" target="_blank" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg5">
+            <b class="sevenfirstcardhead">Weed Shops Switch to Cash </b>
+            <p class="sevencardcontent"> After Cashless ATM Crackdown</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.businesspost.ie/news/cowen-linked-cannabis-and-cryptocurrency-firm-to-raise-4m/" target="_blank" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg6">
+            <b class="sevenfirstcardhead">Cowen-linked cannabis </b>
+            <p class="sevencardcontent">and cryptocurrency firm to raise $4m </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div-->
+
+  <!--div class="container" id="sixsectionstrike">
+    <b class="sevensectionhead">More than just a payments company</b>
+    <p class="sixsectioncontent">
+        We provide a unique blend of reliability and innovation through traditional secure banking combined with cutting edge technology
+    </p>
+</div-->
+
+
+  <!--div class="container" style="margin-top: 5px;">
+    <div class="row" id="eightsectionrow">
+      <div class="col">
+        <a href="" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg7">
+            <b class="sevenfirstcardhead">Check out our latest content</b>
+            <p class="sevencardcontent"> Find out what's going on in the world of payments</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg8">
+            <b class="sevenfirstcardhead">Check out our latest content</b>
+            <p class="sevencardcontent"> Find out what's going on in the world of payments</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg9">
+            <b class="sevenfirstcardhead">Check out our latest content</b>
+            <p class="sevencardcontent"> Find out what's going on in the world of payments</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 5px;">
+    <div class="row" id="eightsectionrow">
+      <div class="col">
+        <a href="" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg10">
+            <b class="sevenfirstcardhead">Check out our latest content</b>
+            <p class="sevencardcontent"> Find out what's going on in the world of payments</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg11">
+            <b class="sevenfirstcardhead">Check out our latest content</b>
+            <p class="sevencardcontent"> Find out what's going on in the world of payments</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none;">
+          <div class="sevencard1"  id="sevencardfirstbg12">
+            <b class="sevenfirstcardhead">Check out our latest content</b>
+            <p class="sevencardcontent"> Find out what's going on in the world of payments</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div-->
+
+<br>
+<br>
+  <!--div class="container" style="font-family: 'Times New Roman', Times, serif;">
+    <h2 style="color: #cc2eb2;">Get started today</h2>
+    <p>Learn more about Gettangi Payments . Complete this form and we'll be in touch.</p>
+  </div-->
+  
+
+  <!-- Button trigger modal -->
+<!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button-->
+
+<!-- Button trigger modal -->
+<!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalprepage">
+  Launch demo modal
+</button-->
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+          <h3 style="color: #5737c4;">Contact Us </h3>
+        <br>
+          <h5 style="color: #5737c4;">Email: <a href="mailto:admin@gettangi.com"><b style="color: black; font-weight: 100; font-size: 16px;">admin@gettangi.com</b></a></h5>
+          
+          <h5 style="color: #5737c4;">Address: <b style="color: black; font-weight: 100; font-size: 16px;">33 Dupont Street East, Suite 300, Waterloo, Ontario, N2J 2G8</b></h5> 
+          
+          <div class="footer-social">
+            <h5 style="color: #5737c4;">Social:</h5>
+            <!--a href="https://www.facebook.com/TangiTokenfacebook" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a-->
+            <a href="https://t.me/GetTangiTokentelegram" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <!--a href="https://instagram.com/TangiTokeninsta" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a-->
+            <a href="https://twitter.com/gettangi?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <!--a href="https://www.reddit.com/r/Tangicoin/reddit" target="_blank" class="social-icon"><i class="fab fa-reddit"></i></a-->
+        </div>
+        <br>
+          <h5 style="color: #5737c4;">Useful Links</h5>
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="about us/advisors.html">Team</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">Tangi Promotional Video</a></li>
+                <li><a href="tangi token/Investment to Listing.html">Public Listing</a></li>
+                <li><a href="tangi token/Tangi Tokenomics.html">Tangi Tokenomics</a></li>
+            </ul>
+            <!--a href="https://member.gettangi.com/" target="_blank"><button  class="contact_bt_css">Buy Token</button></a-->
+            
+            
+            <!--a href="tel:1634685-5"><b style="color: #5737c4;">Call us</b>: 1634685-5</a-->
+            
+            <!--div><b style="color: #5737c4;">DISCLAIMER</b>: GETTANGINOW CORPORATION DOES NOT SELL CANNABIS PRODUCTS.</div-->
+          
+            <div style="margin-top: 30px;"> 
+               <b style="color: #5737c4;">©</b> 2021, GetTangiNow Corporation, Registered In Canada Company No. 1329275-4
+              
+               
+              </div>
+              
+             
+
+        </div>
+    
+        
+        <div class="footer-contact">
+         
+           
+           <div style="text-align: left;">
+            <h3 style="color: #5737c4;">Token Sale</h3>
+            <br>
+           </div>
+         
+            <table class="table custom-table" style="text-align: left;">
+              <thead>
+                <tr>
+                 
+                  <td colspan="2">Token Name</td>
+                  <td>Tangi Token</td>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td colspan="2">Ticker Symbol</td>
+                  <td>$TNG</td>
+                  
+                </tr>
+                <tr>
+                  
+                  <td colspan="2">Currency Symbol Image</td>
+                  <td>$TNG</td>
+                  
+                </tr>
+                <tr>
+                  
+                  <td colspan="2">Round 2 Price </td>
+                  <td>$1.00</td> 
+                </tr>
+                <tr>
+                  
+                  <td colspan="2">Contract Address</td>
+                  <td>0x0f2e5186 42ead9b3a4c <br>5a7af0f9a7013bb591dd9</td>
+                </tr>
+                <tr>
+                  
+                  <td colspan="2">Network</td>
+                  <td>Binance Smart Chain <br> (BEP20)</td>
+                </tr>
+                <tr>
+                  
+                  <td colspan="2">Maximum Supply</td>
+                  <td>250,000,000 Tangi Tokens</td>
+                </tr>
+              </tbody>
+            </table>
+            <!--form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form-->
+           <div id="footer-legal">
+            <a href="https://drive.google.com/file/d/1Ia4NkrHITbm6FGZwHvafcHtTyrr02DQk/view?usp=sharing" target="_blank" class="legal-link">Privacy Policy</a> &nbsp;&nbsp;
+            <a href="https://drive.google.com/file/d/1UFrIC7hiiEieWk2JZL3KjhO3s23Mm9TU/view?usp=sharing" target="_blank" class="legal-link">White Paper</a>&nbsp;&nbsp;
+            <a href="https://drive.google.com/file/d/1gGeR3U24EGP-dhV8ztlOr_G4NU2YONkJ/view?usp=sharing" target="_blank" class="legal-link">Risk Warning</a>&nbsp;&nbsp;
+  
+  
+            <a href="https://drive.google.com/file/d/17q3eMolUCUhAURCDWdT6PUG9PfiAShby/view?usp=sharing" target="_blank" class="legal-link">Terms of Service</a>
+            
+           </div>
+
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+      
+
+
+        <!--div class="footer-legal">
+          
+          <a href="https://drive.google.com/file/d/1Ia4NkrHITbm6FGZwHvafcHtTyrr02DQk/view?usp=sharing" target="_blank" class="legal-link">Privacy Policy</a>
+          <a href="https://drive.google.com/file/d/1UFrIC7hiiEieWk2JZL3KjhO3s23Mm9TU/view?usp=sharing" target="_blank" class="legal-link">White Paper</a>
+          <a href="https://drive.google.com/file/d/1gGeR3U24EGP-dhV8ztlOr_G4NU2YONkJ/view?usp=sharing" target="_blank" class="legal-link">Risk Warning</a>
+
+
+          <a href="https://drive.google.com/file/d/17q3eMolUCUhAURCDWdT6PUG9PfiAShby/view?usp=sharing" target="_blank" class="legal-link">Terms of Service</a>
+          
+      </div-->
+        
+    </div>
+</footer>
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67acb1c53a842732607dd99a/1ijt9cqvv';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="scripthomepage.js"></script>
+</body>
+</html>
