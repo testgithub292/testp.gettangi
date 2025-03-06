@@ -306,6 +306,30 @@ margin-top: 130px;
   color: white; /* Hover text color */
 }
 
+
+
+.btnfirstsectionprepage {
+  display: inline-block;
+  background: #f8f8f8; /* Default background color */
+  color: #cc2eb2; /* Default text color */
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid #cc2eb2; /* Border to match hover effect */
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+
+    position: relative;
+    z-index: 1;
+}
+
+.btnfirstsectionprepage:hover {
+  background: #cc2eb2 !important; /* Hover background color */
+  color: white; /* Hover text color */
+}
+
+
 /* Gradient Overlay */
 .hero_firstsection::after {
   content: "";
