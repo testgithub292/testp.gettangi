@@ -38,10 +38,10 @@
 
   //========================================================================
 
-  const toggleBtnCard1 = document.getElementById("toggleBtn-investor-gain-1");
+ /* const toggleBtnCard1 = document.getElementById("toggleBtn-investor-gain-1");
 const hiddenContentCard1 = document.getElementById("hiddenContent-investor-gain-1");
 const card1 = document.getElementById("card-investor-gain-1");
-
+*/
 // Card 2 Elements
 const toggleBtnCard2 = document.getElementById("toggleBtn-investor-gain-2");
 const hiddenContentCard2 = document.getElementById("hiddenContent-investor-gain-2");
@@ -61,7 +61,7 @@ const card4 = document.getElementById("card-investor-gain-4");
 const toggleBtnCard5 = document.getElementById("toggleBtn-investor-gain-5");
 const hiddenContentCard5 = document.getElementById("hiddenContent-investor-gain-5");
 const card5 = document.getElementById("card-investor-gain-5");*/
-
+/*
 // Card 1 Toggle Functionality
 toggleBtnCard1.addEventListener("click", () => {
   hiddenContentCard1.classList.toggle("visible-investor-gain");
@@ -71,7 +71,7 @@ toggleBtnCard1.addEventListener("click", () => {
 
     setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
-
+*/
 // Card 2 Toggle Functionality
 toggleBtnCard2.addEventListener("click", () => {
   hiddenContentCard2.classList.toggle("visible-investor-gain");
@@ -112,14 +112,14 @@ toggleBtnCard5.addEventListener("click", () => {
     setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });*/
 
-// Hide Content When Clicking Outside Card 1
+/*// Hide Content When Clicking Outside Card 1
 document.addEventListener("click", (event) => {
   if (!card1.contains(event.target)) {
     hiddenContentCard1.classList.remove("visible-investor-gain");
     toggleBtnCard1.textContent = "Show More";
   }
 });
-
+*/
 // Hide Content When Clicking Outside Card 2
 document.addEventListener("click", (event) => {
   if (!card2.contains(event.target)) {
