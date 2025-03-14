@@ -1303,7 +1303,7 @@ margin-top: 130px;
 .modern-link {
   text-decoration: none;
   color: #cc2eb2;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.1rem;
   margin-top: 0px;
   margin-bottom: 10px; /* Add bottom margin to separate the links */
