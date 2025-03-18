@@ -755,7 +755,20 @@ showMoreBtn.addEventListener("click", function() {
 /*--------------------------*/
 
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
-        document.getElementById("animatedText").classList.add("animate");
-    }, 500); // 0.5s delay for smooth animation
+    const elements = document.querySelectorAll(".left-col, .right-col");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate"); // Jab viewport me aaye, animation start ho
+          } else {
+            entry.target.classList.remove("animate"); // Jab viewport se bahar jaye, animation reset ho
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    elements.forEach(el => observer.observe(el));
 });
