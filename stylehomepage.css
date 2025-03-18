@@ -1760,3 +1760,17 @@ margin-top: 130px;
 
 
   /*---------------------------------------------------*/
+  .fade-text {
+    font-size: 2rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
