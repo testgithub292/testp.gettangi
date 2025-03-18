@@ -1764,7 +1764,7 @@ margin-top: 130px;
   .fade-text {
     font-size: 2rem;
     opacity: 0;
-    animation: fadeIn 3s ease-in forwards;
+    animation: fadeIn 5s ease-in forwards;
 }
 
 @keyframes fadeIn {
