@@ -753,9 +753,19 @@ showMoreBtn.addEventListener("click", function() {
 });
 
 /*--------------------------*/
-
+/*
 window.onload = function() {
     setTimeout(() => {
         document.querySelector('.fade-text').style.opacity = "1";
+    }, 1000); // 1 second delay
+};*/
+
+
+window.onload = function() {
+    setTimeout(() => {
+        let element = document.querySelector('.fade-text');
+        element.style.opacity = "1";
+        element.style.transform = "translateY(0)"; // Normal position pe aayega
+        element.style.transition = "opacity 2s ease-in, transform 2s ease-in"; // Smooth animation
     }, 1000); // 1 second delay
 };

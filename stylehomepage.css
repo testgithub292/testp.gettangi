@@ -1760,7 +1760,7 @@ margin-top: 130px;
 
 
   /*---------------------------------------------------*/
-
+/*
   .fade-text {
     font-size: 2rem;
     opacity: 0;
@@ -1774,4 +1774,22 @@ margin-top: 130px;
     to {
         opacity: 1;
     }
+}*/
+
+.fade-text {
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(20px); /* Niche se start hoga */
+  animation: fadeInBottom 2s ease-in forwards;
+}
+
+@keyframes fadeInBottom {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Neeche se aayega */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Normal position pe aayega */
+  }
 }
