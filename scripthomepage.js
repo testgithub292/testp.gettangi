@@ -757,5 +757,5 @@ showMoreBtn.addEventListener("click", function() {
 window.onload = function() {
     setTimeout(() => {
         document.querySelector('.fade-text').style.opacity = "1";
-    }, 100); // 1 second delay
+    }, 1000); // 1 second delay
 };
