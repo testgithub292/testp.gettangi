@@ -754,3 +754,8 @@ showMoreBtn.addEventListener("click", function() {
 
 /*--------------------------*/
 
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.getElementById("animatedText").classList.add("animate");
+    }, 500); // 0.5s delay for smooth animation
+});

@@ -1761,3 +1761,28 @@ margin-top: 130px;
 
   /*---------------------------------------------------*/
 
+    
+        /* Default State */
+        .left-text, .right-text {
+          position: relative;
+          opacity: 1; /* Text ab visible hoga */
+      }
+
+      .left-text {
+          left: -100%; /* Start off-screen (left side) */
+      }
+
+      .right-text {
+          right: -100%; /* Start off-screen (right side) */
+      }
+
+      /* Animation Class */
+      .animate .left-text {
+          left: 0;
+          transition: left 1s ease-out;
+      }
+
+      .animate .right-text {
+          right: 0;
+          transition: right 1s ease-out;
+      }
