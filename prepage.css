@@ -147,3 +147,15 @@
             transform: translateY(0);
             opacity: 1;
         }
+        /*---------------------*/
+
+        #ul {
+          list-style: none; /* Default bullets hata do */
+        }
+        
+        #li::before {
+          content: "✔";  /* Yahan koi bhi custom symbol daal sakte hain */
+          color: green;  /* Bullet color set karein */
+          
+          margin-right: 8px;
+        }
