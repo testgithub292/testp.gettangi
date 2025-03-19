@@ -1,9 +1,13 @@
+   /*     // Check karna ke user ne intro dekha hai ya nahi
+        if (!sessionStorage.getItem("visited")) {
+            window.location.href = "gettangi_prepage.html"; // Agar nahi dekha to intro page par le jao
+        }
+*/
 // Check karna ke user ne intro dekha hai ya nahi
 if (!sessionStorage.getItem("visited") || performance.navigation.type === 1) {
     sessionStorage.setItem("visited", "true"); // Set karna ke ab dekha gaya hai
     window.location.href = "gettangi_prepage.html"; // Redirect to intro page
 }
-/*------------------------------------------------*/
 
   // Get the navbar
   const navbar = document.querySelector('.navbar');

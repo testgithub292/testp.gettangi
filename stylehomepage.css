@@ -18,17 +18,17 @@
 
   #textstyle{
     font-size: 18px;
-    color: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
   }
   #accountDropdown{
     font-size: 18px;
-  color: black;
+  color: white;
   font-family: 'Times New Roman', Times, serif;
   }
   #servicesDropdown{
     font-size: 18px;
-  color: black;
+  color: white;
   font-family: 'Times New Roman', Times, serif;
   }
   #navbarDropdown{
@@ -61,7 +61,7 @@
  .navbar-brand{
   font-size: 25px !important;
   font-family:'Times New Roman', Times, serif !important;
-  color: black !important;
+  color: white !important;
  }
  .navbar.scrolled #navcontainer{
 background-color: whitesmoke;
@@ -114,7 +114,7 @@ background-color: whitesmoke;
     margin-right: 0px;
     margin-top: 20px;
    
-    --color: black;
+    --color: white;
   font-family: 'Times New Roman', Times, serif;
   display: inline-block;
   position: relative;
@@ -244,12 +244,12 @@ background-color: whitesmoke;
 .hero_firstsection {
   position: relative;
   width: 100%;
-  height: 130vh;
-  /*background: url('images/get8tech\ main\ pic2.png') no-repeat center center/cover;*/
+  height: 100vh;
+  background: url('images/get8tech\ main\ pic2.png') no-repeat center center/cover;
   display: flex;
   
   padding-left: 5%;
-  color: black;
+  color: white;
 }
 
 .content_firstsection {
@@ -860,7 +860,7 @@ margin-top: 130px;
 #sixsectionstrike2{
   text-align: left;
  font-family: 'Times New Roman', Times, serif;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 
@@ -1303,7 +1303,7 @@ margin-top: 130px;
 .modern-link {
   text-decoration: none;
   color: #cc2eb2;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 1.1rem;
   margin-top: 0px;
   margin-bottom: 10px; /* Add bottom margin to separate the links */
@@ -1760,19 +1760,4 @@ margin-top: 130px;
 
 
   /*---------------------------------------------------*/
-/*
-  .fade-text {
-    font-size: 2rem;
-    opacity: 0;
-    animation: fadeIn 5s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}*/
 
