@@ -1,3 +1,8 @@
+        // Check karna ke user ne intro dekha hai ya nahi
+        if (!sessionStorage.getItem("visited")) {
+            window.location.href = "gettangi_prepage.html"; // Agar nahi dekha to intro page par le jao
+        }
+
   // Get the navbar
   const navbar = document.querySelector('.navbar');
 
@@ -753,19 +758,4 @@ showMoreBtn.addEventListener("click", function() {
 });
 
 /*--------------------------*/
-/*
-window.onload = function() {
-    setTimeout(() => {
-        document.querySelector('.fade-text').style.opacity = "1";
-    }, 1000); // 1 second delay
-};*/
 
-
-window.onload = function() {
-    setTimeout(() => {
-        let element = document.querySelector('.fade-text');
-        element.style.opacity = "1";
-        element.style.transform = "translateY(0)"; // Normal position pe aayega
-        element.style.transition = "opacity 2s ease-in, transform 2s ease-in"; // Smooth animation
-    }, 1000); // 1 second delay
-};

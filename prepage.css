@@ -1,0 +1,149 @@
+.btnfirstsectionprepage {
+    display: inline-block;
+    background: #f8f8f8; /* Default background color */
+    color: #cc2eb2; /* Default text color */
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    border: 2px solid #cc2eb2; /* Border to match hover effect */
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  
+      position: relative;
+      z-index: 1;
+  }
+  
+  .btnfirstsectionprepage:hover {
+    background: #cc2eb2 !important; /* Hover background color */
+    color: white; /* Hover text color */
+  }
+
+  
+
+  #prepagemodalbg{
+    background-image: url(images/bg\ image\ \ modal\ prepage\ .png);
+    background-size: cover; /* Image ko full cover karein */
+    background-position: center; /* Image ko center karein*/ 
+    background-repeat: no-repeat; /* Repeat na karein */
+  }
+
+  #prepagemodalbg p {
+    font-size: 25px;
+  }
+
+  #prepagemodalbg li {
+    font-size: 25px;
+  }
+
+
+
+  
+  .vertical-hr {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 450px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: white; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+
+  .vertical-hrpre_page {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 500px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: white; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+
+  
+  .vertical-hrpre_page2 {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 500px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: white; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+    
+  .vertical-hrpre_page3 {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 350px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: white; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+
+  .vertical-hrpre_page4 {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 190px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: black; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+/*--------------------------------*/
+
+
+        /* Animation classes */
+    /*    .animate-left {
+            transform: translateX(-100%);
+            transition: transform 1s ease-in-out;
+        }
+
+        .animate-right {
+            transform: translateX(100%);
+            transition: transform 1s ease-in-out;
+        }
+
+        /* Show class will bring them to original position /
+        .show {
+            transform: translateX(0);
+        }*/
+        /* Column animations */
+           /* Left Column & P Tags Animation */
+           .animate-left {
+            opacity: 0;
+            transform: translateX(-120px);
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+        }
+
+        /* Right Column Animation */
+        .animate-right {
+            opacity: 0;
+            transform: translateX(120px);
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+        }
+
+        /* All P Tags - Same Animation as Left Column */
+        .animate-p {
+            opacity: 0;
+            transform: translateX(-120px);
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+        }
+
+        /* Show Class for Smooth Entry */
+        .show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        body {
+            overflow-x: hidden; /* Hide Horizontal Scroll */
+        }
+
+
+        /*------------------------------*/
+        .animate-bottom {
+            opacity: 0.3;
+            transform: translateY(100px); /* Niche se upar aayega */
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+        }
+        
+        /* Jab Element View Me Aaye */
+        .show-bottom {
+            transform: translateY(0);
+            opacity: 1;
+        }
