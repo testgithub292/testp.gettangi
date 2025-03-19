@@ -945,36 +945,7 @@ h1 {
 
 /*---------------------------------------------------*/
 
-#prepageShowMoreBtn {
-  background: linear-gradient(45deg, #ff7eb3, #ff758c);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(255, 117, 140, 0.4);
-}
 
-/* Hover Effect */
-#prepageShowMoreBtn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(255, 117, 140, 0.6);
-}
-
-/* Hidden Content Styling */
-.prepageExtraContent {
-  display: none;
-  margin-top: 15px;
-
-
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-  transform: translateY(-10px);
-}
 
 /*-----------------------------------------------------------*/
 
@@ -982,4 +953,55 @@ h1 {
   font-size: 35px;
   color:#5737c4;
   font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*----------------------------------------------*/
+
+#hiddenContentRoi {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+#hiddenContentRoi.visibleRoi {
+  max-height: 500px; /* Adjust as per your content size */
+  opacity: 1;
+}
+
+
+.modern-link {
+  text-decoration: none;
+  color: #cc2eb2;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  margin-bottom: 10px; /* Add bottom margin to separate the links */
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.modern-link:hover {
+  color: #cc2eb2;
+  transform: scale(1.1);
+}
+
+.modern-link:active {
+  color: #cc2eb2;
+}
+
+
+/*----------------------------------*/
+#ul {
+  list-style: none; /* Default bullets hata do */
+}
+
+#li::before {
+  content: "✔";  /* Yahan koi bhi custom symbol daal sakte hain */
+  color: green;  /* Bullet color set karein */
+  font-size: 18px;
+  margin-right: 8px;
 }
