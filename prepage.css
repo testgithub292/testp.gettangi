@@ -73,7 +73,7 @@
     height: 350px; /* Apni zaroorat ke mutabiq adjust karein */
     background-color: white; /* Color */
     border: none; /* Default border remove */
-    transform: rotate(0deg); /* 90 degrees rotate */
+    transform: rotate(0deg); /* 90 degrees  rotate */
     display: inline-block;
   }
 
@@ -160,3 +160,259 @@
           
           margin-right: 8px;
         }
+        
+        .prepagelastsection_hr{
+          display: none;
+        }
+
+        /*--------------------*/
+
+        @media (max-width: 1300px) {
+          #prepagefirstvideo{
+            height: 90%;
+          }
+
+          #sectioncol2{
+           display: flex;
+           align-items: center;
+            
+          }
+        }
+
+      
+
+        @media (max-width: 1000px) {
+         
+
+          .btnfirstsectionprepage {
+            display: inline-block;
+            background: #f8f8f8; /* Default background color */
+            color: #cc2eb2; /* Default text color */
+            padding: 5px 5px;
+            font-size: 0.9rem;
+          
+           
+          }
+         
+        }
+        @media (max-width: 992px) {
+          #sectionrow{
+            display: block;
+          }
+          #sectioncol1{
+            width: 100%;
+          }
+
+          #sectioncol2{
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          #sectioncolPotentialTokenValue{
+            margin-top: 40px;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          #prepagefirstvideo{
+            height: 100%;
+          }
+          .vertical-hrpre_page3{
+           display: none;
+          }
+
+         .prepagelastsection_hr{
+          display: block;
+          width: 700px;
+          border: 1.5px solid;
+          margin-top: 40px;
+         }
+
+        }
+
+       
+       
+
+        #prepagefirstsection{
+          margin-top: 100px;
+        }
+
+        @media (max-width: 800px) {
+  
+          .prepagelastsection_hr{
+            width: 600px;
+            border: 1.5px solid;
+            margin-top: 40px;
+           }
+          }
+
+          
+        @media (max-width: 750px) {
+  
+          .prepagelastsection_hr{
+            width: 500px;
+            border: 1.5px solid;
+            margin-top: 40px;
+           }
+          }
+
+          @media (max-width: 550px) {
+  
+            .prepagelastsection_hr{
+              width: 400px;
+              border: 1.5px solid;
+              margin-top: 40px;
+             }
+            }
+
+            
+          @media (max-width: 450px) {
+  
+            .prepagelastsection_hr{
+              width: 350px;
+              border: 1.5px solid;
+              margin-top: 40px;
+             }
+            }
+
+            @media (max-width: 400px) {
+  
+              .prepagelastsection_hr{
+                width: 300px;
+                border: 1.5px solid;
+                margin-top: 40px;
+               }
+              }
+
+              @media (max-width: 380px) {
+  
+                .prepagelastsection_hr{
+                  width: 250px;
+                  border: 1.5px solid;
+                  margin-top: 40px;
+                 }
+                }
+
+                /* Button Styling */
+.btnfirstsectionprepage {
+  display: inline-block;
+  background: #f8f8f8; 
+  color: #cc2eb2; 
+  padding: 8px 15px; 
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  margin: 5px;
+  border: 2px solid #cc2eb2; 
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btnfirstsectionprepage:hover {
+  background: #cc2eb2 !important; 
+  color: white; 
+}
+
+/* Navbar Styling */
+
+
+.imagenavfirstlogo {
+  max-width: 170px;
+  height: auto;
+}
+
+/* Responsive Design for Screens Below 1200px */
+@media (max-width: 1200px) {
+  .col.d-flex {
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 10px; 
+      padding: 10px;
+  }
+
+  .imagenavfirstlogo {
+      max-width: 150px; 
+      display: block;
+      margin: 0 auto 15px auto; /* Centering logo */
+  }
+
+  /* Buttons in two rows */
+  .btn-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .btn-container a {
+      width: 45%; /* Two buttons per row */
+      text-align: center;
+  }
+  #prepagefirstsection{
+    margin-top: 200px;
+  }
+}
+
+/* More Adjustments for Screens Below 1000px */
+@media (max-width: 1000px) {
+  .col.d-flex {
+      flex-direction: row; /* Stack everything vertically */
+      align-items: center;
+  }
+
+  .btn-container {
+      flex-direction: row;
+      width: 100%;
+  }
+
+  
+
+  .imagenavfirstlogo {
+      max-width: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .btnfirstsectionprepage {
+   
+    padding: 5px 10px; 
+    font-size: 1.1rem;
+    
+  }
+}
+
+@media (max-width: 430px) {
+  .btnfirstsectionprepage {
+   
+    padding: 5px 10px; 
+    font-size: 1rem;
+    
+  }
+}
+
+@media (max-width: 400px) {
+  .btnfirstsectionprepage {
+   
+    padding: 5px 8px; 
+    font-size: 1rem;
+    
+  }
+}
+
+
+@media (max-width: 380px) {
+  .btnfirstsectionprepage {
+   
+    padding: 5px 8px; 
+    font-size: 0.9rem;
+    
+  }
+}
+
+@media (max-width: 350px) {
+  .btnfirstsectionprepage {
+   
+    padding: 4px 6px; 
+    font-size: 0.9rem;
+    
+  }
+}
