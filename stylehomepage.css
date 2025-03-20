@@ -1747,3 +1747,50 @@ margin-top: 130px;
 
   /*---------------------------------------------------*/
 
+  .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Yeh ensure karega ke content bahar na jaye */
+}
+
+.animate-left, .animate-right, .animate-p {
+    opacity: 0;
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+.animate-left {
+    transform: translateX(-100px); /* -120px se thoda kam rakha */
+}
+
+.animate-right {
+    transform: translateX(100px);
+}
+
+.animate-p {
+    transform: translateX(-100px);
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/*  body {
+      overflow-x: hidden; /* Hide Horizontal Scroll 
+  }*/
+
+
+  /*------------------------------*/
+  .animate-bottom {
+      opacity: 0.3;
+      transform: translateY(100px); 
+      transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+  }
+  
+ 
+  .show-bottom {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  /*---------------------*/

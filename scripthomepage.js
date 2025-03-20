@@ -769,3 +769,48 @@ showMoreBtn.addEventListener("click", function() {
 
 /*--------------------------*/
 
+    /*-----------------------------------------*/
+    
+ // Function to detect when elements come into view
+ function animateOnScroll(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); // Reset animation when out of view
+        }
+    });
+}
+
+// Create observer
+const observer = new IntersectionObserver(animateOnScroll, {
+    root: null,
+    threshold: 0.2 // Trigger when 20% of the element is visible
+});
+
+// Observe all elements that need animation
+document.querySelectorAll(".animate-left, .animate-right, .animate-p").forEach(element => {
+    observer.observe(element);
+});
+/*---------------------------------------------*/
+// Function to detect when elements come into view
+function animateBottomOnScroll(entries, observer) {
+entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add("show-bottom");
+    } else {
+        entry.target.classList.remove("show-bottom"); // Reset animation when out of view
+    }
+});
+}
+
+// Create observer
+const bottomObserver = new IntersectionObserver(animateBottomOnScroll, {
+root: null,
+threshold: 0.2
+});
+
+// Observe all elements with .animate-bottom class
+document.querySelectorAll(".animate-bottom").forEach(element => {
+bottomObserver.observe(element);
+});
