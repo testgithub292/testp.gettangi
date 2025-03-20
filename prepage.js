@@ -1,11 +1,11 @@
-   /* function goToMain() {
+    function goToMain() {
         sessionStorage.setItem("visited", "true"); // Mark karein ke user ne page dekha hai
         window.location.href = "index.html"; // Main page per redirect kar do
     }
-*/
+
  
     /*-----------------------------------------*/
-    /*
+    
  // Function to detect when elements come into view
  function animateOnScroll(entries, observer) {
         entries.forEach(entry => {
@@ -26,7 +26,7 @@
     // Observe all elements that need animation
     document.querySelectorAll(".animate-left, .animate-right, .animate-p").forEach(element => {
         observer.observe(element);
-    });*/
+    });
     /*---------------------------------------------*/
 // Function to detect when elements come into view
 function animateBottomOnScroll(entries, observer) {
@@ -51,7 +51,7 @@ document.querySelectorAll(".animate-bottom").forEach(element => {
 });
 
 //------------------------------------
-/*
+
 function updateButtons() {
     // Buttons ko select karo
     var btn1 = document.getElementById("btn1");
@@ -60,9 +60,9 @@ function updateButtons() {
     var btn4 = document.getElementById("btn4");
 
     // Agar viewport width 700px se kam ho
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 790) {
       btn1.textContent = "General PreSale";
-      btn2.textContent = "Exclusive investment";
+      btn2.textContent = "Elite Investment";
       btn3.textContent = "Go To Website";
       btn4.textContent = "Meet Investors";
     } else {
@@ -79,4 +79,3 @@ function updateButtons() {
 
   // Page load hone par bhi check kare
   updateButtons();
-*/

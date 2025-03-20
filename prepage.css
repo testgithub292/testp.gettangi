@@ -1,23 +1,3 @@
-.btnfirstsectionprepage {
-    display: inline-block;
-    background: #f8f8f8; /* Default background color */
-    color: #cc2eb2; /* Default text color */
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 50px;
-    margin-top: 10px;
-    border: 2px solid #cc2eb2; /* Border to match hover effect */
-    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
-  
-      position: relative;
-      z-index: 1;
-  }
-  
-  .btnfirstsectionprepage:hover {
-    background: #cc2eb2 !important; /* Hover background color */
-    color: white; /* Hover text color */
-  }
 
   
 
@@ -103,6 +83,8 @@
         .show {
             transform: translateX(0);
         }*/
+
+        /*-----real*/
         /*
            .animate-left {
             opacity: 0;
@@ -128,6 +110,37 @@
             transform: translateX(0);
             opacity: 1;
         }*/
+
+     
+      
+      .container {
+          position: relative;
+          width: 100%;
+          overflow: hidden; /* Yeh ensure karega ke content bahar na jaye */
+      }
+      
+      .animate-left, .animate-right, .animate-p {
+          opacity: 0;
+          transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+      }
+      
+      .animate-left {
+          transform: translateX(-100px); /* -120px se thoda kam rakha */
+      }
+      
+      .animate-right {
+          transform: translateX(100px);
+      }
+      
+      .animate-p {
+          transform: translateX(-100px);
+      }
+      
+      .show {
+          transform: translateX(0);
+          opacity: 1;
+      }
+      
 
       /*  body {
             overflow-x: hidden; /* Hide Horizontal Scroll 
@@ -174,6 +187,9 @@
            display: flex;
            align-items: center;
             
+          }
+          #prepagefirstsection{
+            margin-top: 200px !important;
           }
         }
 
@@ -260,6 +276,9 @@
               border: 1.5px solid;
               margin-top: 40px;
              }
+             #prepagefirstsection{
+              margin-top: 150px !important;
+            }
             }
 
             
@@ -288,23 +307,23 @@
                   border: 1.5px solid;
                   margin-top: 40px;
                  }
+                 
                 }
 
 
 
-                /* Button Styling */
+              
 .btnfirstsectionprepage {
   display: inline-block;
   background: #f8f8f8; 
   color: #cc2eb2; 
-  padding: 8px 15px; 
+  padding: 5px 10px; 
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 50px;
-  margin: 5px;
   border: 2px solid #cc2eb2; 
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
-  text-align: center;
+  text-align: center !important;
   white-space: nowrap;
 }
 
@@ -313,63 +332,70 @@
   color: white; 
 }
 
-/* Navbar Styling */
 
-
+.col.d-flex {
+  
+  gap: 15px;
+  
+}
 .imagenavfirstlogo {
   max-width: 170px;
   height: auto;
 }
 
-/* ✅ 1200px سے نیچے لوگو اوپر اور بٹن دو دو کی لائن میں */
+
 @media (max-width: 1200px) {
   .col.d-flex {
       flex-wrap: wrap; 
       justify-content: center;
-      gap: 10px;
-      padding: 10px;
+      gap: 5px;
+      
   }
 
   .imagenavfirstlogo {
       max-width: 150px; 
       display: block;
-      margin: 0 auto 15px auto; /* لوگو کو سینٹر کریں */
+      margin: 0 auto 0px auto;
   }
 
-  /* Buttons in two columns */
+  
   .btn-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 5px;
   }
 
   .btn-container a {
-      width: 48%; /* دو بٹن ایک لائن میں */
+      width: 40%; 
       text-align: center;
   }
 }
 
-/* ✅ 1000px سے نیچے ہر بٹن فل ویڈتھ */
-@media (max-width: 1000px) {
-  .col.d-flex {
-      flex-direction: column;
-      align-items: center;
+@media (max-width: 500px) {
+  
+  .btnfirstsectionprepage {
+    display: inline-block;
+    background: #f8f8f8; 
+    color: #cc2eb2; 
+    padding: 5px 5px !important; 
+    font-size: 1rem !important;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #cc2eb2; 
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    text-align: center !important;
+    white-space: nowrap;
+    width: 100%;
   }
-
-  .btn-container {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .btn-container a {
-      width: 100%; /* فل ویڈتھ بٹن */
-  }
-
-  .imagenavfirstlogo {
-      max-width: 130px;
+  #prepagebtncontainer{
+    display:flexbox;
   }
 }
+
+
+
+
 .modern-link {
   text-decoration: none;
   color: #cc2eb2;
@@ -393,3 +419,55 @@
 }
 
 
+/*-----------------heading size------------------*/
+#sectionheading{
+  font-size: 45px;
+  font-weight: bold;
+  color: #5737c4;
+}
+
+@media (max-width: 550px) {
+  #sectionheading{
+    font-size: 35px !important;
+    font-weight: bold;
+    color: #5737c4;
+  }
+  #prepagemodalbg p {
+    font-size: 25px !important;
+  }
+
+  #prepagemodalbg li {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #sectionheading{
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #5737c4;
+  }
+  #prepagemodalbg p {
+    font-size: 20px !important;
+  }
+
+  #prepagemodalbg li {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  #sectionheading{
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #5737c4;
+  }
+  
+  #prepagemodalbg p {
+    font-size: 18px !important;
+  }
+
+  #prepagemodalbg li {
+    font-size: 18px !important;
+  }
+}
