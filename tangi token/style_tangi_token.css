@@ -470,9 +470,19 @@ background-color: whitesmoke;
 }
 
 #fistsectioncolimage{
+  display: flex;
+  align-items: center;
   width: 100%;
  }
 
+}
+
+@media (max-width: 1300px) {
+  #fistsectioncolimage{
+    display: flex;
+    align-items: center;
+    
+   }
 }
 
 
@@ -1413,7 +1423,7 @@ h1 {
     }
 
     #firstsectionbg{
-      padding-top: 100px;
+      padding-top: 120px;
     }
 }
 
@@ -1521,5 +1531,40 @@ h1 {
   .container-ourpeople {
       flex-direction: column;
       align-items: center;
+  }
+}
+
+/*-------solution page video css ------------------------------*/
+.thesolution_sectionvideo{
+  height: 320px;
+}
+
+@media (max-width: 1300px) {
+  .thesolution_sectionvideo{
+    height: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .thesolution_sectionvideo{
+    height: 310px;
+  }
+}
+@media (max-width: 992px) {
+  .thesolution_sectionvideo{
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .thesolution_sectionvideo{
+    height: 290px;
+  }
+}
+
+@media (max-width: 450px) {
+  .thesolution_sectionvideo{
+    height: 200px;
   }
 }
