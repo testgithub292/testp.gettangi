@@ -1156,6 +1156,9 @@ h2 {
       font-size: 40px;
       font-weight: bold;
     }
+    #firstsectionbg{
+      padding-top: 100px !important;
+    }
 }
 
 
@@ -1241,7 +1244,7 @@ h2 {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
  #firstsectionrow{
   display: block;
   padding: 10px;

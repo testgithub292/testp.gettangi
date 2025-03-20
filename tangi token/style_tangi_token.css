@@ -459,7 +459,7 @@ background-color: whitesmoke;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
  #firstsectionrow{
   display: block;
   padding: 10px;
@@ -1410,6 +1410,10 @@ h1 {
       font-family: 'Times New Roman', Times, serif;
       font-size: 40px;
       font-weight: bold;
+    }
+
+    #firstsectionbg{
+      padding-top: 100px;
     }
 }
 

@@ -103,47 +103,45 @@
         .show {
             transform: translateX(0);
         }*/
-        /* Column animations */
-           /* Left Column & P Tags Animation */
+        /*
            .animate-left {
             opacity: 0;
             transform: translateX(-120px);
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
 
-        /* Right Column Animation */
+        
         .animate-right {
             opacity: 0;
             transform: translateX(120px);
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
 
-        /* All P Tags - Same Animation as Left Column */
+       
         .animate-p {
             opacity: 0;
             transform: translateX(-120px);
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
 
-        /* Show Class for Smooth Entry */
         .show {
             transform: translateX(0);
             opacity: 1;
-        }
+        }*/
 
-        body {
-            overflow-x: hidden; /* Hide Horizontal Scroll */
-        }
+      /*  body {
+            overflow-x: hidden; /* Hide Horizontal Scroll 
+        }*/
 
 
         /*------------------------------*/
         .animate-bottom {
             opacity: 0.3;
-            transform: translateY(100px); /* Niche se upar aayega */
+            transform: translateY(100px); 
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
         
-        /* Jab Element View Me Aaye */
+       
         .show-bottom {
             transform: translateY(0);
             opacity: 1;
@@ -169,7 +167,7 @@
 
         @media (max-width: 1300px) {
           #prepagefirstvideo{
-            height: 90%;
+            height: 100%;
           }
 
           #sectioncol2{
@@ -213,6 +211,7 @@
             margin-bottom: 20px;
           }
           #prepagefirstvideo{
+            width: 100%;
             height: 100%;
           }
           .vertical-hrpre_page3{
@@ -291,6 +290,8 @@
                  }
                 }
 
+
+
                 /* Button Styling */
 .btnfirstsectionprepage {
   display: inline-block;
@@ -313,106 +314,86 @@
 }
 
 /* Navbar Styling */
-
+.row.w-100 {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
 
 .imagenavfirstlogo {
   max-width: 170px;
   height: auto;
 }
 
-/* Responsive Design for Screens Below 1200px */
+/* ✅ 1200px سے نیچے لوگو اوپر اور بٹن دو دو کی لائن میں */
 @media (max-width: 1200px) {
   .col.d-flex {
       flex-wrap: wrap; 
       justify-content: center;
-      gap: 10px; 
+      gap: 10px;
       padding: 10px;
   }
 
   .imagenavfirstlogo {
       max-width: 150px; 
       display: block;
-      margin: 0 auto 15px auto; /* Centering logo */
+      margin: 0 auto 15px auto; /* لوگو کو سینٹر کریں */
   }
 
-  /* Buttons in two rows */
+  /* Buttons in two columns */
   .btn-container {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
   }
 
   .btn-container a {
-      width: 45%; /* Two buttons per row */
+      width: 48%; /* دو بٹن ایک لائن میں */
       text-align: center;
-  }
-  #prepagefirstsection{
-    margin-top: 200px;
   }
 }
 
-/* More Adjustments for Screens Below 1000px */
+/* ✅ 1000px سے نیچے ہر بٹن فل ویڈتھ */
 @media (max-width: 1000px) {
   .col.d-flex {
-      flex-direction: row; /* Stack everything vertically */
+      flex-direction: column;
       align-items: center;
   }
 
   .btn-container {
-      flex-direction: row;
+      flex-direction: column;
       width: 100%;
   }
 
-  
+  .btn-container a {
+      width: 100%; /* فل ویڈتھ بٹن */
+  }
 
   .imagenavfirstlogo {
-      max-width: 180px;
+      max-width: 130px;
   }
 }
-
-@media (max-width: 700px) {
-  .btnfirstsectionprepage {
-   
-    padding: 5px 10px; 
-    font-size: 1.1rem;
-    
-  }
+.modern-link {
+  text-decoration: none;
+  color: #cc2eb2;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  margin-bottom: 10px; /* Add bottom margin to separate the links */
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 5px;
+  cursor: pointer;
 }
 
-@media (max-width: 430px) {
-  .btnfirstsectionprepage {
-   
-    padding: 5px 10px; 
-    font-size: 1rem;
-    
-  }
+.modern-link:hover {
+  color: #cc2eb2;
+  transform: scale(1.1);
 }
 
-@media (max-width: 400px) {
-  .btnfirstsectionprepage {
-   
-    padding: 5px 8px; 
-    font-size: 1rem;
-    
-  }
+.modern-link:active {
+  color: #cc2eb2;
 }
 
 
-@media (max-width: 380px) {
-  .btnfirstsectionprepage {
-   
-    padding: 5px 8px; 
-    font-size: 0.9rem;
-    
-  }
-}
-
-@media (max-width: 350px) {
-  .btnfirstsectionprepage {
-   
-    padding: 4px 6px; 
-    font-size: 0.9rem;
-    
-  }
-}
