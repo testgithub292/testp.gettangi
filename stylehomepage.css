@@ -1295,7 +1295,7 @@ margin-top: 130px;
   margin-bottom: 10px; /* Add bottom margin to separate the links */
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
-  padding-left: 5px;
+ 
   cursor: pointer;
 }
 

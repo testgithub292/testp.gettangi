@@ -195,20 +195,7 @@
 
       
 
-        @media (max-width: 1000px) {
-         
-
-          .btnfirstsectionprepage {
-            display: inline-block;
-            background: #f8f8f8; /* Default background color */
-            color: #cc2eb2; /* Default text color */
-            padding: 5px 5px;
-            font-size: 0.9rem;
-          
-           
-          }
-         
-        }
+      
         @media (max-width: 992px) {
           #sectionrow{
             display: block;
@@ -332,11 +319,33 @@
   color: white; 
 }
 
+.btnfirstsectionprepage2 {
+  display: inline-block;
+  background: #f8f8f8; 
+  color: #cc2eb2; 
+  padding: 5px 10px; 
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #cc2eb2; 
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.btnfirstsectionprepage2:hover {
+  background: #cc2eb2 !important; 
+  color: white; 
+}
+
 
 .col.d-flex {
   
   gap: 15px;
   
+}
+#coldflex{
+  gap: 15px !important;
 }
 .imagenavfirstlogo {
   max-width: 170px;
@@ -350,6 +359,12 @@
       justify-content: center;
       gap: 5px;
       
+  }
+
+  #coldflex{
+    flex-wrap: wrap !important; 
+    justify-content: center !important;
+    gap: 5px !important;
   }
 
   .imagenavfirstlogo {
@@ -370,6 +385,18 @@
       width: 40%; 
       text-align: center;
   }
+
+  .btn-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-container2 a {
+    width: 40%; 
+    text-align: center;
+}
 }
 
 @media (max-width: 500px) {
@@ -388,8 +415,19 @@
     white-space: nowrap;
     width: 100%;
   }
-  #prepagebtncontainer{
-    display:flexbox;
+  .btnfirstsectionprepage2 {
+    display: inline-block;
+    background: #f8f8f8; 
+    color: #cc2eb2; 
+    padding: 5px 5px !important; 
+    font-size: 1rem !important;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #cc2eb2; 
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    text-align: center !important;
+    white-space: nowrap;
+    width: 100%;
   }
 }
 
@@ -405,7 +443,7 @@
   margin-bottom: 10px; /* Add bottom margin to separate the links */
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
-  padding-left: 5px;
+  
   cursor: pointer;
 }
 

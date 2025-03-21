@@ -79,3 +79,34 @@ function updateButtons() {
 
   // Page load hone par bhi check kare
   updateButtons();
+
+
+  //------------------------------------------------------
+
+  function updateButtons2() {
+    // Buttons ko select karo
+    var btn5 = document.getElementById("btn5");
+    var btn6 = document.getElementById("btn6");
+    var btn7 = document.getElementById("btn7");
+    var btn8 = document.getElementById("btn8");
+
+    // Agar viewport width 700px se kam ho
+    if (window.innerWidth < 992) {
+      btn5.textContent = "General PreSale";
+      btn6.textContent = "Elite Investment";
+      btn7.textContent = "Go To Website";
+      btn8.textContent = "Meet Investors";
+    } else {
+      // Wapas original text restore karein
+      btn5.textContent = "Join Our PreSale Now";
+      btn6.textContent = "Join Our Exclusive Investor Club";
+      btn7.textContent = "Go To Website";
+      btn8.textContent = "Connect With Existing Investors";
+    }
+  }
+
+  // Jab window resize ho, function chale
+  window.addEventListener("resize", updateButtons2);
+
+  // Page load hone par bhi check kare
+  updateButtons2();
