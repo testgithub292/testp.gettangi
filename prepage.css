@@ -113,7 +113,7 @@
 
      
       
-      .container {
+    #container {
           position: relative;
           width: 100%;
           overflow: hidden; /* Yeh ensure karega ke content bahar na jaye */
