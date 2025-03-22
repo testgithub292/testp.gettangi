@@ -239,7 +239,16 @@ background-color: whitesmoke;
 
 /*-------------------------------------------*/
 
+body p{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
+body li{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
 
 .hero_firstsection {
   position: relative;
@@ -247,7 +256,7 @@ background-color: whitesmoke;
   height: 100vh;
   background: url('images/get8tech\ main\ pic2.png') no-repeat center center/cover;
   display: flex;
-  
+  font-family: 'Times New Roman', Times, serif;
   padding-left: 5%;
   color: white;
 }
@@ -1784,7 +1793,7 @@ margin-top: 130px;
   /*------------------------------*/
   .animate-bottom {
       opacity: 0.3;
-      transform: translateY(100px); 
+      transform: translateY(50px); 
       transition: transform 1.2s ease-out, opacity 1.2s ease-out;
   }
   
