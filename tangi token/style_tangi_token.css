@@ -420,7 +420,7 @@ background-color: whitesmoke;
 
 #fistsectioncoltext{
   font-family: 'Times New Roman', Times, serif;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .btnfirstsection {
@@ -1392,10 +1392,7 @@ h1 {
   font-weight: bold;
 }
 
-#fistsectioncoltext{
-  font-family: 'Times New Roman', Times, serif;
-  margin-top: 50px;
-}
+
 
 .btnfirstsection {
   display: inline-block;
