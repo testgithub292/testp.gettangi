@@ -971,6 +971,10 @@ body li{
   font-size: 18px;
 }
 
+body h1{
+  font-family: 'Times New Roman', Times, serif;
+
+}
 /*----------------------------------------------*/
 
 #hiddenContentRoi {
@@ -1039,7 +1043,7 @@ body li{
 
  
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 
 .priofirstheadin{
   font-size: 25px;
