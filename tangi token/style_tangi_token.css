@@ -99,9 +99,20 @@ background-color: whitesmoke;
     color: black !important; /* Change button color when scrolled */
    }
 
+   .navbar.scrolled #bytokenbtnnav{
+    color: black !important; /* Change button color when scrolled */
+   }
+
+   .navbar.scrolled #bytokenbtnnav:hover{
+    color: white !important; /* Change button color when scrolled */
+   }
+
+
   .nav-link.dropdown-toggle::after {
       display: none;
   }
+
+
   .bytokenbtnnav2{
       display: none !important;
   }
