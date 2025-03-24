@@ -198,7 +198,7 @@ background-color: whitesmoke;
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 370px) {
     #contact_bt_css{
       font-size: 15px;
     }
