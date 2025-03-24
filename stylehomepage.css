@@ -212,7 +212,7 @@ background-color: whitesmoke;
       font-size: 12px;
     }
   }
-  @media (max-width: 345px) {
+  @media (max-width: 345px) { 
     .imagenavfirstlogo{
       width: 130px;
      }

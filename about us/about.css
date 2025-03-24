@@ -165,7 +165,7 @@ background-color: whitesmoke;
   
  
   
-  @media (max-width: 1150px) {
+  @media (max-width: 1400px) {
   
       .navbar-toggler {
          color: black !important;
@@ -197,11 +197,11 @@ background-color: whitesmoke;
         color: black !important;
     }
     .bytokenbtnnav2:hover{
-      color: black !important;
+      color: white !important;
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 370px) {
     #contact_bt_css{
       font-size: 15px;
     }
@@ -210,12 +210,13 @@ background-color: whitesmoke;
    }
   }
 
+
   @media (max-width: 345px) {
     #contact_bt_css{
       font-size: 12px;
     }
   }
-  @media (max-width: 345px) {
+  @media (max-width: 345px) { 
     .imagenavfirstlogo{
       width: 130px;
      }
