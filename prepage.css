@@ -178,6 +178,10 @@
 
         /*--------------------*/
 
+        .section_ml{
+          padding-right: 50px;
+        }
+
         @media (max-width: 1300px) {
           #prepagefirstvideo{
             height: 100%;
@@ -227,6 +231,11 @@
           border: 1.5px solid;
           margin-top: 40px;
          }
+
+         .section_ml{
+          padding-right: 10px;
+        }
+
 
         }
 
