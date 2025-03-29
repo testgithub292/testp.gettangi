@@ -450,7 +450,7 @@ document.getElementById("rightBtnartical").addEventListener("click", function() 
   cardContainerartical.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
 
-
+/*
 const cardContaineryoutubevideo = document.getElementById("cardContaineryoutubevideo");
 const cardWidthyoutubevideo = 310; // Card width + gap
 
@@ -462,7 +462,7 @@ document.getElementById("rightBtnyoutubevideo").addEventListener("click", functi
     cardContaineryoutubevideo.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
 
-
+*/
 //-----------------------------------------------------------------------
 // pre page js
 /*
