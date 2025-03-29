@@ -451,6 +451,18 @@ document.getElementById("rightBtnartical").addEventListener("click", function() 
 });
 
 
+const cardContaineryoutubevideo = document.getElementById("cardContaineryoutubevideo");
+const cardWidthyoutubevideo = 310; // Card width + gap
+
+document.getElementById("leftBtnyoutubevideo").addEventListener("click", function() {
+    cardContaineryoutubevideo.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
+
+document.getElementById("rightBtnyoutubevideo").addEventListener("click", function() {
+    cardContaineryoutubevideo.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});
+
+
 //-----------------------------------------------------------------------
 // pre page js
 /*
