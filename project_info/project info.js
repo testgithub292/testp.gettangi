@@ -1,4 +1,7 @@
-    // Get the navbar
+  
+   
+   
+   // Get the navbar
     const navbar = document.querySelector('.navbar');
 
     // Listen for scroll event
