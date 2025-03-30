@@ -4,6 +4,26 @@
         }
 */
 
+document.addEventListener("DOMContentLoaded", function () {
+    let videos = document.querySelectorAll(".lazy-video");
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let video = entry.target;
+                let source = video.querySelector("source");
+                source.src = source.getAttribute("data-src");
+                video.load();
+                observer.unobserve(video); // Ek dafa load hone ke baad dobara observe na ho
+            }
+        });
+    }, { threshold: 0.5 });
+
+    videos.forEach(video => observer.observe(video));
+});
+
+/*---------------------------------------------------------*/
+
 // Check karna ke user ne intro dekha hai ya nahi
 if (!sessionStorage.getItem("visited") || performance.navigation.type === 1) {
     sessionStorage.setItem("visited", "true"); // Set karna ke ab dekha gaya hai
@@ -826,3 +846,5 @@ threshold: 0.2
 document.querySelectorAll(".animate-bottom").forEach(element => {
 bottomObserver.observe(element);
 });
+
+
