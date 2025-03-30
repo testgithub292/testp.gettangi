@@ -110,3 +110,24 @@ function updateButtons() {
 
   // Page load hone par bhi check kare
   updateButtons2();
+
+
+  /*------------------------------------------*/
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let video = document.getElementById("lazyVideo");
+    let source = video.querySelector("source");
+
+    function loadVideo() {
+        source.src = source.getAttribute("data-src");
+        video.load(); // Video ko load karna
+        window.removeEventListener("scroll", loadVideo);
+    }
+
+    window.addEventListener("scroll", function () {
+        let rect = video.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            loadVideo();
+        }
+    });
+});
