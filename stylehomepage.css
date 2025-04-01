@@ -9,8 +9,13 @@
  
   } 
   */
- 
+  #tawk_64f7a2f9e31c911f63bca4b0 {
+    display: none !important;
+}
 
+.tawk-min-container {
+  display: none !important;
+}
   #navcontainer{
     margin-top: 30px;
   }
