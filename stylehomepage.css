@@ -10,6 +10,9 @@
   } 
   */
 
+.tawk-min-container {
+  display: none !important;
+}
   #navcontainer{
     margin-top: 30px;
   }
