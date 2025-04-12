@@ -261,15 +261,13 @@
 
 
     #privacy_policybgimage{
-        background-color: black;
-        height: 140px;
-        clip-path: ellipse(75% 100% at 50% 0%);
-        color: white;
+
+      
         padding: 20px;
          font-family: 'Times New Roman', Times, serif; 
          
          font-weight: bold;
-         text-align: center;
+        
     }
 /*---Footer css--------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
