@@ -1,1 +1,1 @@
-GetTangi Now 
+GetTangi Now Website Coming Soon
