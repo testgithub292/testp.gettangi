@@ -3,7 +3,109 @@
         window.location.href = "index.html"; // Main page per redirect kar do
     }
 
- 
+ /*--------------------------*/
+ // Show modal with static options
+ let myModal;
+ window.onload = function () {
+   myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+     backdrop: 'static',
+     keyboard: false
+   });
+   myModal.show();
+ };
+
+ // Show toast with animation
+ function showToast(id) {
+   const toast = document.getElementById(id);
+   toast.classList.add('show');
+   setTimeout(() => {
+     toast.classList.remove('show');
+   }, 3000);
+ }
+
+ function showErrorToast() {
+   showToast('errorToast');
+ }
+
+ function showSuccessToast() {
+   showToast('successToast');
+ }
+
+ // Modal close logic
+ function tryCloseModal() {
+   const checkbox = document.getElementById('agreeCheckbox');
+   if (checkbox.checked) {
+     myModal.hide();
+     setTimeout(() => {
+       showSuccessToast();
+     }, 500); // Delay after modal is hidden
+   } else {
+     showErrorToast();
+   }
+ }
+
+ document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
+ document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
+
+
+/*
+// Show modal with static options
+let myModal;
+window.onload = function () {
+  myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+    backdrop: 'static',
+    keyboard: false
+  });
+  myModal.show();
+};
+
+// Show toast with animation
+function showToast(id) {
+  const toast = document.getElementById(id);
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3000);
+}
+
+function showErrorToast() {
+  showToast('errorToast');
+}
+
+function showSuccessToast() {
+  showToast('successToast');
+}
+
+// Modal close logic
+function tryCloseModal() {
+  const checkbox = document.getElementById('agreeCheckbox');
+  if (checkbox.checked) {
+    // Send email to server
+    fetch("save_user_accept.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        accepted: true,
+        date: new Date().toLocaleString(),
+        browser: navigator.userAgent
+      })
+    }).then(() => {
+      // Close the modal after email has been sent
+      myModal.hide();
+      setTimeout(() => {
+        showSuccessToast();
+      }, 500); // Delay after modal is hidden
+    });
+  } else {
+    showErrorToast();
+  }
+}
+
+document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
+document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
+*/
     /*-----------------------------------------*/
     
  // Function to detect when elements come into view

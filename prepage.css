@@ -1,5 +1,44 @@
-
-  
+.modal-dialog {
+  top: 10%;
+  margin: auto;
+}
+    /* Toast styles */
+    .custom-toast {
+      position: fixed;
+      top: 20px;
+      right: -300px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 0.95rem;
+      z-index: 9999;
+      transition: right 0.6s ease;
+    }
+    .custom-toast.show {
+      right: 20px;
+    }
+    .error-toast {
+      background-color: #ff4d4d;
+      color: white;
+    }
+    .success-toast {
+      background-color: #28a745;
+      color: white;
+    }
+.modal-body {
+  max-height: 300px;
+  overflow-y: auto;
+  color: black;
+}
+.modal-body p{ 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px !important;
+}
+.modal-body li{ 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px !important;
+}
+ /*--------------------------------**/ 
 
   #prepagemodalbg{
     background-image: url(images/bg\ image\ \ modal\ prepage\ .png);

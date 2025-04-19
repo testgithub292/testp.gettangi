@@ -24,6 +24,67 @@
       <link rel="stylesheet" href="prepage.css">
 </head>
 <body id="prepagemodalbg" style="font-family: 'Times New Roman', Times, serif; background-color: #150d17; color: white;">
+
+
+<!-- Error Toast -->
+<div id="errorToast" class="custom-toast error-toast">
+  ⚠️ Please check the box to accept!
+</div>
+
+<!-- Success Toast -->
+<div id="successToast" class="custom-toast success-toast">
+  ✅ You have successfully accepted!
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: black; font-weight: bold;">Disclaimer</h5>
+        <button type="button" class="btn-close" id="modalCloseBtn"></button>
+      </div>
+      <div class="modal-body">
+       <p>A Straight Talking Statement to Prospective Investors
+        Before you consider investing in Tangi, please read this carefully.
+        We want to be perfectly clear from the outset: this project carries risk. There are no guarantees of success, no promises of returns, and no illusions of safety. This website, by its very nature, is a promotional tool—it’s designed to highlight our vision, our product, and the immense potential of what we’re building. But potential is not a guarantee, and enthusiasm should never be mistaken for certainty. If you’re not prepared to possibly lose your investment, do not invest. It’s that simple.</p>
+        <p>No Hype. No Hand-Holding.
+          You can join us, but you must join us on our terms, not yours. You are investing in our team’s vision, strategy, and potential. You are not employing us. You do not direct operations. You will not receive monthly financial statements. We are a privately held company, and that does not change when the token becomes tradable on public exchanges.</p>
+          <p>Use of Funds & Full Discretion
+            Once invested, your funds will fuel the project. This includes—but is not limited to—marketing, infrastructure, software development, hardware, operations, staff salaries, compliance, expansion, and everything else that a legitimate business requires to succeed. We reserve full discretion on how funds are spent. We are not crowdsourcing opinions. We are building a business.
+            We’d rather be brutally honest and lose 100 potential investors than sugar-coat reality and disappoint one. We're not here to convince you. We’re here to inform you. We’ve already attracted over 2,500 long-standing supporters who’ve stayed with us for years, turned down buybacks, and doubled down on their original investments after four years of waiting. If you're the type of investor who needs guarantees, control, or hand-holding—this is not the right opportunity for you. </p>
+            <p>Compliance & Transparency
+              From a compliance standpoint, you must know this:</p>
+              <ul>
+                <li>This is not a regulated security.</li>
+                <li>You are not purchasing equity or debt.</li>
+                <li>You are purchasing a utility token with functional use inside the Tangi ecosystem.</li>
+                <li>The Tangi Token is not guaranteed to appreciate in value.</li>
+                <li>Your investment may become illiquid.</li>
+                <li>We are not offering financial advice, and you should conduct your own due diligence and consult with a qualified advisor.</li>
+                <li>We will always operate within the legal and regulatory frameworks required of us—and you are expected to do the same.</li>
+              </ul>
+              <p><b>Final Word</b>
+                We are here to build something meaningful. We welcome everyone—but we don’t need anyone. If you choose to come on this journey with us, we’ll treat your investment with respect and run this project with integrity. But we will not waste our time dealing with tyre-kickers, conspiracy theorists, or keyboard warriors. </p>
+                
+                <p>If you share our vision, understand the risks, and believe in what we’re building—we welcome you. And if you do decide to invest, do it with eyes wide open and remember to join our Telegram channel to connect with like-minded investors.
+                  Everything we've said here is on record. By ticking the box and entering our website, you agree we gave you every reason to walk away.</p>
+                  <p><b>Vesting Notice:</b></p>
+                  <p>All Round 2 token purchases will be subject to a 6-month linear vesting period post-listing, with tokens released monthly. This structure is designed to align investor incentives and protect the long-term value of the token.</p>
+                  <p><b>Optional Staking :</b></p>
+                  <p>A staking option may be offered closer to the time of listing, giving investors the opportunity to grow their holdings further. Details will be shared in due course.</p>
+              </div>
+      <div class="modal-footer d-flex justify-content-between align-items-center">
+        <div class="form-check" style="color: black;">
+          <input type="checkbox" class="form-check-input" style="background-color: #150d1752;" id="agreeCheckbox">
+          <label class="form-check-label" for="agreeCheckbox">I agree to the terms</label>
+        </div>
+        <button class="btn btn-success" id="acceptBtn">Accept</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <br>
    
             <!-- Close Button -->
