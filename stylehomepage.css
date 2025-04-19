@@ -1401,7 +1401,15 @@ margin-top: 130px;
   .vertical-hr {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
     height: 450px; /* Apni zaroorat ke mutabiq adjust karein */
-    background-color: white; /* Color */
+    background-color: black; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+  .vertical-hr2 {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 100px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: black; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
     display: inline-block;
