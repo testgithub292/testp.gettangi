@@ -561,7 +561,8 @@ if (!hasVisited) {
         modalInstance.hide();
     }
 }*/
-
+/*-----------------------real code waring --------*/
+/*
 let visitCount = localStorage.getItem("visitCount") || 0;
 visitCount++;
 localStorage.setItem("visitCount", visitCount);
@@ -624,7 +625,7 @@ if (!hasVisited) {
 } else {
     hidePreloader(); // If visited before, hide preloader
 }
-
+*/
 
 
 
