@@ -44,13 +44,13 @@
 
 <!-- Error Toast -->
 <div id="errorToast" class="custom-toast error-toast">
-  ⚠️ Please check the box to accept!
+  ⚠️ Please enter a valid email and check the box to accept!
 </div>
 
 <!-- Success Toast -->
 <div id="successToast" class="custom-toast success-toast">
-  ✅ You have successfully accepted!
-</div>
+  ✅ You have successfully entered your email and accepted the terms!
+</div> 
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
@@ -137,7 +137,12 @@
                           <p><b>Final Warning</b></p>
                           <p>If you are unsure about any aspect of this project, if you require the protection of regulated investment schemes, or if you are not capable of absorbing risk which may or may not lead to the partial or total loss of your funds, you should not participate.</p>
                           <p>By continuing, you waive all legal claims against GetTangiNow Corporation, its directors, partners, team members, and service providers.</p>
+                          <div class="">
+                            
+                            <input type="email" id="userEmail" class="form-control rounded-pill shadow-sm px-4 py-2" placeholder="Enter your email" required>
+                          </div>
                 </div>
+                
       <div class="modal-footer d-flex justify-content-between align-items-center">
         <div class="form-check" style="color: black;">
           <input type="checkbox" class="form-check-input" style="background-color: #150d1752;" id="agreeCheckbox">
@@ -542,18 +547,302 @@
 
     
  <br>
-<!--Start of Tawk.to Script-->
+ 
+ <!-- Tawk API script -->
 <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
   })();
-  </script>
+
+
+   // Show toast with animation
+ function showToast(id) {
+   const toast = document.getElementById(id);
+   toast.classList.add('show');
+   setTimeout(() => {
+     toast.classList.remove('show');
+   }, 3000);
+ }
+
+ function showErrorToast() {
+   showToast('errorToast');
+ }
+
+ function showSuccessToast() {
+   showToast('successToast');
+ }
+
+  // Function to send email and accepted terms event to Tawk
+  function notifyTawkAfterModalClose() {
+    const userEmail = document.getElementById('userEmail').value; // Get the email entered by the user
+    const checkbox = document.getElementById('agreeCheckbox');
+
+    // Check if the email is provided and checkbox is checked
+    if (!userEmail) {
+      showErrorToast("Email is required."); // Show error toast if email is empty
+      return; // Stop execution if email is not provided
+    }
+
+    if (!checkbox.checked) {
+      showErrorToast("You must accept the terms and conditions."); // Show error toast if checkbox is not checked
+      return;
+    }
+
+    setTimeout(() => {
+      if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+        // Send email along with the terms acceptance event
+        Tawk_API.addEvent("AcceptedTerms", {
+          message: "User accepted terms and provided email: " + userEmail
+        });
+        console.log("✅ Tawk.to AcceptedTerms event with email sent");
+      } else {
+        console.warn("❌ Tawk_API not ready at event send time.");
+      }
+    }, 1000); // Small delay to ensure modal close action is processed
+  }
+  
+  function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+  // Modal close logic (modified to handle validation and enable buttons)
+  function tryCloseModal() {
+    const checkbox = document.getElementById('agreeCheckbox');
+    const userEmail = document.getElementById('userEmail').value;
+
+    if (!isValidEmail(userEmail) || !checkbox.checked) {
+    showErrorToast();  // आपकी existing error-toast दिखाएगा
+    return;            // modal बंद नहीं होगा
+  }
+
+    // Proceed to hide the modal and send Tawk event
+    myModal.hide();
+    setTimeout(() => {
+      showSuccessToast(); // Delay before showing success toast
+      enableButtonsAfterModal(); // Enable buttons after modal is hidden
+    }, 500); // Small delay before showing success toast
+
+    // Send the Tawk event after modal is closed
+    notifyTawkAfterModalClose();
+  }
+
+  // Modal open logic (static options)
+  let myModal;
+  window.onload = function () {
+    myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+      backdrop: 'static',
+      keyboard: false
+    });
+    myModal.show();
+  };
+
+  // Disable all target buttons initially
+  const btnIds = ['btn1', 'btn2', 'btn3', 'btn4'];
+  btnIds.forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.classList.add('disabled');
+      btn.style.pointerEvents = 'none';
+      btn.style.opacity = '0.5';
+    }
+  });
+
+  // Enable buttons when modal is successfully closed
+  function enableButtonsAfterModal() {
+    btnIds.forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.classList.remove('disabled');
+        btn.style.pointerEvents = 'auto';
+        btn.style.opacity = '1';
+      }
+    });
+  }
+
+  // Event listeners for modal buttons
+  document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
+  document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
+
+</script>
+
+<!-- Tawk.to Script (Include in your HTML body) >
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+
+  // Function to show toast with animation
+  function showToast(message, type) {
+    const toast = document.createElement("div");
+    toast.classList.add("toast", type === 'success' ? 'success-toast' : 'error-toast');
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    setTimeout(() => {
+      toast.remove();
+    }, 3000); // 3 seconds for toast to disappear
+  }
+
+  // Function to show error toast
+  function showErrorToast(message) {
+    showToast(message, 'error');
+  }
+
+  // Function to show success toast
+  function showSuccessToast() {
+    showToast("Terms accepted successfully!", 'success');
+  }
+
+  // Function to send email and accepted terms event to Tawk
+  function notifyTawkAfterModalClose() {
+    const userEmail = document.getElementById('userEmail').value; // Get the email entered by the user
+    const checkbox = document.getElementById('agreeCheckbox');
+
+    // Check if the email is provided and checkbox is checked
+    if (!userEmail) {
+      showErrorToast("Email is required."); // Show error toast if email is empty
+      return; // Stop execution if email is not provided
+    }
+
+    if (!checkbox.checked) {
+      showErrorToast("You must accept the terms and conditions."); // Show error toast if checkbox is not checked
+      return;
+    }
+
+    setTimeout(() => {
+      if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+        // Send email along with the terms acceptance event
+        Tawk_API.addEvent("AcceptedTerms", {
+          message: "User accepted terms and provided email: " + userEmail
+        });
+        console.log("✅ Tawk.to AcceptedTerms event with email sent");
+      } else {
+        console.warn("❌ Tawk_API not ready at event send time.");
+      }
+    }, 1000); // Small delay to ensure modal close action is processed
+  }
+
+  // Modal close logic (modified to handle validation and enable buttons)
+  function tryCloseModal() {
+    const checkbox = document.getElementById('agreeCheckbox');
+    const userEmail = document.getElementById('userEmail').value;
+
+    // Validate checkbox and email
+    if (!checkbox.checked || !userEmail) {
+      showErrorToast("Please provide a valid email and accept the terms.");
+      return; // Prevent modal close if validation fails
+    }
+
+    // Proceed to hide the modal and send Tawk event
+    myModal.hide();
+    setTimeout(() => {
+      showSuccessToast(); // Delay before showing success toast
+      enableButtonsAfterModal(); // Enable buttons after modal is hidden
+    }, 500); // Small delay before showing success toast
+
+    // Send the Tawk event after modal is closed
+    notifyTawkAfterModalClose();
+  }
+
+  // Modal open logic (static options)
+  let myModal;
+  window.onload = function () {
+    myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+      backdrop: 'static',
+      keyboard: false
+    });
+    myModal.show();
+  };
+
+  // Disable all target buttons initially
+  const btnIds = ['btn1', 'btn2', 'btn3', 'btn4'];
+  btnIds.forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.classList.add('disabled');
+      btn.style.pointerEvents = 'none';
+      btn.style.opacity = '0.5';
+    }
+  });
+
+  // Enable buttons when modal is successfully closed
+  function enableButtonsAfterModal() {
+    btnIds.forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.classList.remove('disabled');
+        btn.style.pointerEvents = 'auto';
+        btn.style.opacity = '1';
+      }
+    });
+  }
+
+  // Event listeners for modal buttons
+  document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
+  document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
+
+  /*
+// Tawk API script should already be loaded in your HTML as before
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function () {
+  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = 'https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
+  s1.charset = 'UTF-8';
+  s1.setAttribute('crossorigin', '*');
+  s0.parentNode.insertBefore(s1, s0);
+})();
+
+// Function to send a message to Tawk when the modal is closed and the checkbox is checked
+function notifyTawkAfterModalClose() {
+  setTimeout(() => {
+    if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+      // Sending the event to Tawk API when terms are accepted
+      Tawk_API.addEvent("AcceptedTerms", {
+        message: "User accepted terms from modal"
+      });
+      console.log("✅ Tawk.to AcceptedTerms event sent");
+    } else {
+      console.warn("❌ Tawk_API not ready at event send time.");
+    }
+  }, 1000); // Delay to ensure modal close is processed
+}
+
+// Handle the modal close event after checkbox acceptance
+function tryCloseModal() {
+  const checkbox = document.getElementById('agreeCheckbox');
+  if (checkbox.checked) {
+    myModal.hide();  // Hide the modal when terms are accepted
+
+    // Notify Tawk after modal closes
+    notifyTawkAfterModalClose();
+
+    // Show success message if needed
+    setTimeout(() => {
+      showSuccessToast();
+    }, 500); // Small delay before showing success toast
+  } else {
+    showErrorToast(); // Show error toast if terms are not accepted
+  }
+}
+
+// Add event listeners for modal buttons
+document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
+document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
+
+
+</script-->
+
   <!--End of Tawk.to Script-->
 <script src="prepage.js">
 

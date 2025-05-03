@@ -6,7 +6,7 @@
     .custom-toast {
       position: fixed;
       top: 20px;
-      right: -300px;
+      right: -500px;
       padding: 12px 20px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -25,6 +25,7 @@
       background-color: #28a745;
       color: white;
     }
+
 .modal-body {
   max-height: 300px;
   overflow-y: auto;
@@ -557,3 +558,5 @@
     font-size: 18px !important;
   }
 }
+
+/*----------------------------------*/

@@ -1775,13 +1775,16 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
   <!-- Button trigger modal -->
 <!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
-</button-->
-
-<!-- Button trigger modal -->
-<!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalprepage">
+  </button-->
+  
+  <!-- Button trigger modal -->
+  <!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalprepage">
   Launch demo modal
-</button-->
-
+  </button-->
+  <div style="text-align: center;">
+    <br>
+    <a href="#" onclick="trackAndRedirect()" class="btn btn-primary">Go to Staking</a>
+  </div>
 </main>
 <br>
 <br>
@@ -1868,7 +1871,7 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
                 <tr>
                   
                   <td colspan="2">Contract Address</td>
-                  <td>0x0f2e5186 42ead9b3a4c <br>5a7af0f9a7013bb591dd9</td>
+                  <td>0x0f2e5186 42ead9b3a4c<br>5a7af0f9a7013bb591dd9</td>
                 </tr>
                 <tr>
                   
@@ -1890,7 +1893,7 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
             </form-->
            <div id="footer-legal">
             <a href="Privacy Policy.html" class="legal-link">Privacy Policy</a> &nbsp;&nbsp;
-            <a href="#" target="_blank" class="legal-link">White Paper</a>&nbsp;&nbsp;
+            <a href="white paper.html"  class="legal-link">White Paper</a>&nbsp;&nbsp;
             <a href="Risk Warning.html" class="legal-link">Risk Warning</a>&nbsp;&nbsp;
             <a href="Terms of Service.html" class="legal-link">Terms of Service</a>
             
@@ -1917,7 +1920,7 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
     </div>
 </footer>
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!--script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -1927,8 +1930,32 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
   s1.setAttribute('crossorigin','*');
   s0.parentNode.insertBefore(s1,s0);
   })();
+  </script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  
+    function trackAndRedirect() {
+      // Pehle event send karein
+      if (typeof Tawk_API !== 'undefined') {
+        Tawk_API.addEvent("StakingLinkClicked", {
+          message: "User clicked staking link from Coming Soon page"
+        });
+      }
+  
+      // Phir link ko naye tab mein open karein
+      setTimeout(function () {
+        window.open("https://tng-members-new.vercel.app/", "_blank");
+      }, 500);
+    }
   </script>
-
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>

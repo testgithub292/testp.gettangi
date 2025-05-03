@@ -4,6 +4,8 @@
     }
 
  /*--------------------------*/
+ /*2-5-25
+
  // Show modal with static options
  let myModal;
  window.onload = function () {
@@ -38,6 +40,7 @@
      myModal.hide();
      setTimeout(() => {
        showSuccessToast();
+      
      }, 500); // Delay after modal is hidden
    } else {
      showErrorToast();
@@ -47,6 +50,46 @@
  document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
  document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
 
+
+ // Disable all target buttons initially
+const btnIds = ['btn1', 'btn2', 'btn3', 'btn4'];
+btnIds.forEach(id => {
+  const btn = document.getElementById(id);
+  if (btn) {
+    btn.classList.add('disabled');
+    btn.style.pointerEvents = 'none';
+    btn.style.opacity = '0.5';
+  }
+});
+
+// Enable buttons when modal is successfully closed
+function enableButtonsAfterModal() {
+  btnIds.forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.classList.remove('disabled');
+      btn.style.pointerEvents = 'auto';
+      btn.style.opacity = '1';
+    }
+  });
+}
+
+// Wrap original modal close logic to also enable buttons
+function tryCloseModal() {
+  const checkbox = document.getElementById('agreeCheckbox');
+  if (checkbox.checked) {
+    myModal.hide();
+    enableButtonsAfterModal(); // 👈 Add this line to enable buttons
+    setTimeout(() => {
+      showSuccessToast();
+    }, 500);
+  } else {
+    showErrorToast();
+  }
+}
+
+*/
+/*---------------------------------------------------------------------------*/
 
 /*
 // Show modal with static options
