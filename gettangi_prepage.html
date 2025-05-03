@@ -549,7 +549,7 @@
     
  <br>
 
- <!-- Tawk API script -->
+<!-- Tawk API script -->
 <script type="text/javascript">
   var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
   (function () {
@@ -570,12 +570,21 @@
     }, 3000);
   }
 
-  function showErrorToast() {
-    showToast('errorToast');
+  function showErrorToast(message) {
+    const toast = document.getElementById('errorToast');
+    if (toast) {
+      toast.innerText = message || "An error occurred";
+      showToast('errorToast');
+    }
   }
 
   function showSuccessToast() {
     showToast('successToast');
+  }
+
+  // ✅ Email format validator
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
   // Function to send email and accepted terms event to Tawk
@@ -590,7 +599,6 @@
 
     setTimeout(() => {
       if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
-        // Send email (optional) along with the terms acceptance event
         Tawk_API.addEvent("AcceptedTerms", {
           message: userEmail
             ? "User accepted terms and provided email: " + userEmail
@@ -603,17 +611,22 @@
     }, 1000);
   }
 
-  // Modal close logic (email is now optional)
+  // Modal close logic (email optional but must be valid if provided)
   function tryCloseModal() {
     const checkbox = document.getElementById('agreeCheckbox');
     const userEmail = document.getElementById('userEmail').value;
 
     if (!checkbox.checked) {
-      showErrorToast();
+      showErrorToast("⚠️ You must accept the terms and conditions.");
       return;
     }
 
-    // Proceed to hide the modal and send Tawk event
+    // ✅ Only check email if not empty
+    if (userEmail && !isValidEmail(userEmail)) {
+      showErrorToast("⚠️ Invalid email format.");
+      return;
+    }
+
     myModal.hide();
     setTimeout(() => {
       showSuccessToast();
@@ -644,7 +657,6 @@
     }
   });
 
-  // Enable buttons when modal is successfully closed
   function enableButtonsAfterModal() {
     btnIds.forEach(id => {
       const btn = document.getElementById(id);
@@ -656,10 +668,10 @@
     });
   }
 
-  // Event listeners for modal buttons
   document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
   document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
 </script>
+
 
  
  <!-- Tawk API script -->
