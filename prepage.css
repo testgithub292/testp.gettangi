@@ -40,13 +40,13 @@
   font-size: 16px !important;
 }
  /*--------------------------------**/ 
-
+/*
   #prepagemodalbg{
     background-image: url(images/prepage\ image\ bg\ modal\ 2.webp);
-    background-size: cover; /* Image ko full cover karein */
-    background-position: center; /* Image ko center karein*/ 
-    background-repeat: no-repeat; /* Repeat na karein */
-  }
+    background-size: cover; /* Image ko full cover karein 
+    background-position: center; /* Image ko center karein*
+    background-repeat: no-repeat; /* Repeat na karein 
+  }*/
 
   #prepagemodalbg p {
     font-size: 25px;

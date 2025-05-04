@@ -493,13 +493,10 @@
        right: 15px;
   }
   .section-number {
-    font-size: 40px;
-    font-weight: bold;
-    color: #3a0ca3;
-    opacity: 0.2;
+    font-size: 15px;
+    color: black;
     min-width: 60px;
-    top: 10%;
-    right: 20%;
+  text-align: right;
   }
 
   .content {
