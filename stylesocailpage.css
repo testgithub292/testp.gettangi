@@ -577,14 +577,17 @@
     margin-top: 0;
   }
 
-  .dropdown-menu {
+  .dropdown-menu2 {
 display: none;
 flex-direction: column;
 margin-left: 1rem;
 transition: all 0.3s ease;
+font-size: 16px;
+border: 1px solid rgba(0, 0, 0, 0.508);
+border-radius: 10px;
 }
 
-.dropdown.open .dropdown-menu {
+.dropdown.open .dropdown-menu2 {
 display: flex;
 }
 
