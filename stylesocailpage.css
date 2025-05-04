@@ -431,6 +431,13 @@
   .social-icon.fa-tiktok {
     font-size: 22px;
   }
-  
+  /*--------------------*/
+  /* white paer bg color----------------*/
+  #bgcolorpage{
+  /*  background-color: aliceblue;*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
   
   
