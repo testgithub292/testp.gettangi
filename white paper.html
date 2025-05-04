@@ -200,8 +200,35 @@
 <br>
 <br>
 <br>
+<div class="container">
+  <button class="hamburger" onclick="openSidebar()">☰</button>
 
-    <div class="container" style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+  
+  <nav class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">×</div>
+    <a href="#page1">Tangi - Intro</a>
+    <a href="#page2">Page 2 - Vision</a>
+    <a href="#page3">Page 3 - Mission</a>
+    <a href="#page4">Page 4 - Strategy</a>
+    <!-- Page 5 with dropdown toggle -->
+    <div class="dropdown">
+    <a href="#page5" class="dropdown-toggle" onclick="toggleDropdown(event)">Page 5 - Platform </a>
+    <div class="dropdown-menu">
+      <a href="#page5-1" class="sub-link">Page 5.1 - Architecture</a>
+      <a href="#page5-2" class="sub-link">Page 5.2 - Components</a>
+    </div>
+  </div>
+  
+  </nav>
+</div>
+
+<div class="" style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
+
+      
+
+  <div class="content">
+    <section id="page1">
       <div id="bgcolorpage">
         <h1>Tangi</h1>
        
@@ -231,8 +258,10 @@
         <li>	Conclusion and Call to Action</li>
        </ul>
       </div>
+    </section>
+     
       <br>
-   
+      <section id="page2">
       <div id="bgcolorpage">
         <h3>Disclaimer and Confidentiality Notice</h3>
         <br>
@@ -248,7 +277,9 @@
         <p>Tangi products and services are not financial securities. They are not investments, and Tangi is not a regulated financial entity or broker. Our tokens, programs, or platform services do not constitute shares, equities, debt instruments, or any form of ownership in the company, nor do they carry voting rights, profit entitlements, or guarantees of return. The value of any tokens, rewards, or services provided is speculative, may fluctuate, and may become entirely worthless.</p>
         <p>Key Disclosures & Risks</p>
         </div>
+      </section>
         <br>
+      <section id="page3">
         <div id="bgcolorpage">
         <p>Not Regulated / No Investor Protection</p>
         <p>Tangi does not operate under the oversight of any securities or financial regulatory body, including but not limited to the SEC (USA), FCA (UK), ASIC (Australia), or ESMA (EU). As such:</p>
@@ -279,7 +310,9 @@
         </p>
         <p>By reading this whitepaper, you acknowledge and accept these terms.</p>
       </div>
+    </section>
         <br>
+      <section id="page4">
         <div id="bgcolorpage">
         <h3>Executive Summary </h3>
         <br>
@@ -309,6 +342,7 @@
                 <p>Targeting over 8,000 U.S. dispensaries and 60 million consumers, Tangi addresses critical industry challenges: lack of banking access, high fees, and operational inefficiencies. The platform drives merchant revenue through lower transaction costs and loyalty incentives, while offering consumers modern payment options and rewards. Tangi’s phased deployment begins in high-volume U.S. markets, with plans for global expansion into legal cannabis regions.</p>
                 <p>The <b>Tangi Token</b> will list publicly in Q3 2025 on major exchanges, with a $1.50 starting price and a $1.5 million liquidity pool locked for 12 months. With a total supply of 250 million tokens and an initial circulating supply of 50 million, early investors are positioned to benefit from real-world demand driven by a $33 billion market need. Tangi is not a speculative cryptocurrency but a compliant, scalable solution, poised to redefine cannabis commerce.</p>
               </div>
+        </section>
             <br>
             <div id="bgcolorpage">
             <h3>Market Opportunity</h3>
@@ -1478,13 +1512,14 @@
               <p>For investment opportunities or to learn more about Tangi’s ecosystem, contact <a href="#" style="color: black;">info@gettangi.com</a> or visit <a href="https://gettangi.com/" style="color: black;" target="_blank">gettangi.com</a>. Join Tangi today to be part of a transformative solution delivering value to investors, merchants, and consumers in the rapidly growing cannabis industry.</p>
             </div>
 
-
+          </div>
     </div>  
  <br>
 
 <br>
 
-<footer class="site-footer">
+
+<footer class="site-footer" id="footer">
     <div class="footer-content">
       <div class="footer-links">
           <h3 style="color: #5737c4;">Contact Us </h3>
