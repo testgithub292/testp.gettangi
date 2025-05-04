@@ -65,7 +65,7 @@
     const footerTop = footer.getBoundingClientRect().top;
     const sidebarHeight = sidebar2.offsetHeight;
     const marginTop = 160; // aapka sidebar ka margin-top
-    const offsetBeforeFooter = 220; // 50px before footer
+    const offsetBeforeFooter = 223; // 50px before footer
 
     if (footerTop < sidebarHeight + marginTop + offsetBeforeFooter) {
       // Unfix the sidebar before touching footer
