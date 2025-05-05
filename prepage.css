@@ -90,7 +90,7 @@
   .vertical-hrpre_page3 {
     margin-left: 70px;
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
-    height: 350px; /* Apni zaroorat ke mutabiq adjust karein */
+    height: 200px; /* Apni zaroorat ke mutabiq adjust karein */
     background-color: white; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees  rotate */
