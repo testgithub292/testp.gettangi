@@ -470,7 +470,7 @@ margin-top: 130px;
 
 
 .thesolution_sectionvideo{
-  height: 400px;
+  height: 350px;
 }
 
 @media (max-width: 1300px) {
@@ -1338,6 +1338,14 @@ margin-top: 130px;
 }
 
 
+
+#Retailerslinespace li{
+  line-height: 10px !important;
+}
+/*
+#Retailerslinespace li span{
+  line-height: 20px;
+}*/
 /*---------------------------------*/
 
 .modern-link {
