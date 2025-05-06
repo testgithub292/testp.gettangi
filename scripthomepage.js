@@ -69,7 +69,7 @@ if (!sessionStorage.getItem("visited") || performance.navigation.type === 1) {
   
 
   //========================================================================
-
+/*
   const toggleBtnCard1 = document.getElementById("toggleBtn-investor-gain-1");
 const hiddenContentCard1 = document.getElementById("hiddenContent-investor-gain-1");
 const card1 = document.getElementById("card-investor-gain-1");
@@ -279,9 +279,10 @@ document.addEventListener("click", (event) => {
       hiddenContentCard9.classList.remove("visible-investor-gain");
       toggleBtnCard9.textContent = "Show More";
     }
-  });
+  });*/
 
 //*********************************************************************** 
+/*
 function toggleText() {
   var text = document.getElementById("toggleText");
   var button = document.querySelector(".toggleButton");
@@ -402,6 +403,7 @@ function toggleText6() {
         button.innerHTML = "Show";
     }
   }
+  */
 //********************************************************************************************** 
 
 /*setTimeout(() => {
@@ -992,3 +994,38 @@ bottomObserver.observe(element);
 });
 
 
+/*----------------------------*/
+/*
+function toggleText() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("toggleBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = " Show more";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = " Show less";
+    }
+  }
+
+  */
+
+  function toggleText(id) {
+    var dots = document.getElementById("dots" + id);
+    var moreText = document.getElementById("more" + id);
+    var btnText = document.getElementById("toggleBtn" + id);
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = " Show more";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = " Show less";
+    }
+  }
