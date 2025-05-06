@@ -70,11 +70,11 @@ if (!sessionStorage.getItem("visited") || performance.navigation.type === 1) {
 
   //========================================================================
 
- /* const toggleBtnCard1 = document.getElementById("toggleBtn-investor-gain-1");
+  const toggleBtnCard1 = document.getElementById("toggleBtn-investor-gain-1");
 const hiddenContentCard1 = document.getElementById("hiddenContent-investor-gain-1");
 const card1 = document.getElementById("card-investor-gain-1");
-*/
-/*
+
+
 // Card 2 Elements
 const toggleBtnCard2 = document.getElementById("toggleBtn-investor-gain-2");
 const hiddenContentCard2 = document.getElementById("hiddenContent-investor-gain-2");
@@ -84,17 +84,37 @@ const card2 = document.getElementById("card-investor-gain-2");
 const toggleBtnCard3 = document.getElementById("toggleBtn-investor-gain-3");
 const hiddenContentCard3 = document.getElementById("hiddenContent-investor-gain-3");
 const card3 = document.getElementById("card-investor-gain-3");
-*/
+
 // Card 4 Elements
 const toggleBtnCard4 = document.getElementById("toggleBtn-investor-gain-4");
 const hiddenContentCard4 = document.getElementById("hiddenContent-investor-gain-4");
 const card4 = document.getElementById("card-investor-gain-4");
-/*
+
 // Card 5 Elements
 const toggleBtnCard5 = document.getElementById("toggleBtn-investor-gain-5");
 const hiddenContentCard5 = document.getElementById("hiddenContent-investor-gain-5");
-const card5 = document.getElementById("card-investor-gain-5");*/
-/*
+const card5 = document.getElementById("card-investor-gain-5");
+
+// Card 6 Elements
+const toggleBtnCard6 = document.getElementById("toggleBtn-investor-gain-6");
+const hiddenContentCard6 = document.getElementById("hiddenContent-investor-gain-6");
+const card6 = document.getElementById("card-investor-gain-6");
+
+// Card 7 Elements
+const toggleBtnCard7 = document.getElementById("toggleBtn-investor-gain-7");
+const hiddenContentCard7 = document.getElementById("hiddenContent-investor-gain-7");
+const card7 = document.getElementById("card-investor-gain-7");
+
+// Card 5 Elements
+const toggleBtnCard8 = document.getElementById("toggleBtn-investor-gain-8");
+const hiddenContentCard8 = document.getElementById("hiddenContent-investor-gain-8");
+const card8 = document.getElementById("card-investor-gain-8");
+
+// Card 5 Elements
+const toggleBtnCard9 = document.getElementById("toggleBtn-investor-gain-9");
+const hiddenContentCard9 = document.getElementById("hiddenContent-investor-gain-9");
+const card9 = document.getElementById("card-investor-gain-9");
+
 // Card 1 Toggle Functionality
 toggleBtnCard1.addEventListener("click", () => {
   hiddenContentCard1.classList.toggle("visible-investor-gain");
@@ -104,8 +124,8 @@ toggleBtnCard1.addEventListener("click", () => {
 
     setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
-*/
-/*
+
+
 // Card 2 Toggle Functionality
 toggleBtnCard2.addEventListener("click", () => {
   hiddenContentCard2.classList.toggle("visible-investor-gain");
@@ -125,7 +145,7 @@ toggleBtnCard3.addEventListener("click", () => {
 
     setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
-*/
+
 // Card 4 Toggle Functionality
 toggleBtnCard4.addEventListener("click", () => {
   hiddenContentCard4.classList.toggle("visible-investor-gain");
@@ -135,7 +155,7 @@ toggleBtnCard4.addEventListener("click", () => {
 
     setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
-/*
+
 // Card 5 Toggle Functionality
 toggleBtnCard5.addEventListener("click", () => {
   hiddenContentCard5.classList.toggle("visible-investor-gain");
@@ -144,17 +164,57 @@ toggleBtnCard5.addEventListener("click", () => {
     : "Show More";
 
     setTimeout(() => { ScrollTrigger.refresh(); }, 900);
-});*/
+});
 
-/*// Hide Content When Clicking Outside Card 1
+// Card 6 Toggle Functionality
+toggleBtnCard6.addEventListener("click", () => {
+    hiddenContentCard6.classList.toggle("visible-investor-gain");
+    toggleBtnCard6.textContent = hiddenContentCard6.classList.contains("visible-investor-gain")
+      ? "Show Less"
+      : "Show More";
+  
+      setTimeout(() => { ScrollTrigger.refresh(); }, 900);
+  });
+
+  // Card 7 Toggle Functionality
+toggleBtnCard7.addEventListener("click", () => {
+    hiddenContentCard7.classList.toggle("visible-investor-gain");
+    toggleBtnCard7.textContent = hiddenContentCard7.classList.contains("visible-investor-gain")
+      ? "Show Less"
+      : "Show More";
+  
+      setTimeout(() => { ScrollTrigger.refresh(); }, 900);
+  });
+
+  // Card 8 Toggle Functionality
+toggleBtnCard8.addEventListener("click", () => {
+    hiddenContentCard8.classList.toggle("visible-investor-gain");
+    toggleBtnCard8.textContent = hiddenContentCard8.classList.contains("visible-investor-gain")
+      ? "Show Less"
+      : "Show More";
+  
+      setTimeout(() => { ScrollTrigger.refresh(); }, 900);
+  });
+
+  // Card 9 Toggle Functionality
+toggleBtnCard9.addEventListener("click", () => {
+    hiddenContentCard9.classList.toggle("visible-investor-gain");
+    toggleBtnCard9.textContent = hiddenContentCard9.classList.contains("visible-investor-gain")
+      ? "Show Less"
+      : "Show More";
+  
+      setTimeout(() => { ScrollTrigger.refresh(); }, 900);
+  });
+
+// Hide Content When Clicking Outside Card 1
 document.addEventListener("click", (event) => {
   if (!card1.contains(event.target)) {
     hiddenContentCard1.classList.remove("visible-investor-gain");
     toggleBtnCard1.textContent = "Show More";
   }
 });
-*/
-/*
+
+
 // Hide Content When Clicking Outside Card 2
 document.addEventListener("click", (event) => {
   if (!card2.contains(event.target)) {
@@ -171,7 +231,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
-*/
+
 // Hide Content When Clicking Outside Card 4
 document.addEventListener("click", (event) => {
   if (!card4.contains(event.target)) {
@@ -180,14 +240,46 @@ document.addEventListener("click", (event) => {
   }
 });
 
-/*
+
 // Hide Content When Clicking Outside Card 5
 document.addEventListener("click", (event) => {
   if (!card5.contains(event.target)) {
     hiddenContentCard5.classList.remove("visible-investor-gain");
     toggleBtnCard5.textContent = "Show More";
   }
-});*/
+});
+
+// Hide Content When Clicking Outside Card 6
+document.addEventListener("click", (event) => {
+    if (!card6.contains(event.target)) {
+      hiddenContentCard6.classList.remove("visible-investor-gain");
+      toggleBtnCard6.textContent = "Show More";
+    }
+  });
+
+  // Hide Content When Clicking Outside Card 7
+document.addEventListener("click", (event) => {
+    if (!card7.contains(event.target)) {
+      hiddenContentCard7.classList.remove("visible-investor-gain");
+      toggleBtnCard7.textContent = "Show More";
+    }
+  });
+
+  // Hide Content When Clicking Outside Card 8
+document.addEventListener("click", (event) => {
+    if (!card8.contains(event.target)) {
+      hiddenContentCard8.classList.remove("visible-investor-gain");
+      toggleBtnCard8.textContent = "Show More";
+    }
+  });
+
+  // Hide Content When Clicking Outside Card 9
+document.addEventListener("click", (event) => {
+    if (!card9.contains(event.target)) {
+      hiddenContentCard9.classList.remove("visible-investor-gain");
+      toggleBtnCard9.textContent = "Show More";
+    }
+  });
 
 //*********************************************************************** 
 function toggleText() {
@@ -259,6 +351,57 @@ function toggleText5() {
   }
 }
 
+function toggleText6() {
+    var text = document.getElementById("toggleText6");
+    var button = document.querySelector(".toggleButton6");
+  
+    if (text.style.display === "none") {
+        text.style.display = "inline";
+        button.innerHTML = "Hide";
+    } else {
+        text.style.display = "none";
+        button.innerHTML = "Show";
+    }
+  }
+
+  function toggleText7() {
+    var text = document.getElementById("toggleText7");
+    var button = document.querySelector(".toggleButton7");
+  
+    if (text.style.display === "none") {
+        text.style.display = "inline";
+        button.innerHTML = "Hide";
+    } else {
+        text.style.display = "none";
+        button.innerHTML = "Show";
+    }
+  }
+
+  function toggleText8() {
+    var text = document.getElementById("toggleText8");
+    var button = document.querySelector(".toggleButton8");
+  
+    if (text.style.display === "none") {
+        text.style.display = "inline";
+        button.innerHTML = "Hide";
+    } else {
+        text.style.display = "none";
+        button.innerHTML = "Show";
+    }
+  }
+
+  function toggleText9() {
+    var text = document.getElementById("toggleText9");
+    var button = document.querySelector(".toggleButton9");
+  
+    if (text.style.display === "none") {
+        text.style.display = "inline";
+        button.innerHTML = "Hide";
+    } else {
+        text.style.display = "none";
+        button.innerHTML = "Show";
+    }
+  }
 //********************************************************************************************** 
 
 /*setTimeout(() => {
