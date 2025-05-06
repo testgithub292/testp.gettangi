@@ -137,9 +137,7 @@
                           <p><b>Final Warning</b></p>
                           <p>If you are unsure about any aspect of this project, if you require the protection of regulated investment schemes, or if you are not capable of absorbing risk which may or may not lead to the partial or total loss of your funds, you should not participate.</p>
                           <p>By continuing, you waive all legal claims against GetTangiNow Corporation, its directors, partners, team members, and service providers.</p>
-                          <div class="">
-                            
-                          </div>
+                      
                         </div>
                         
                         <div class="modal-footer d-flex justify-content-center align-items-center">
@@ -228,8 +226,8 @@
                 </div>
               </div>
               <br>
-              <div class="row">
-                <div class="col-8">
+              <div class="row" id="sectionrow">
+                <div class="col-8" id="sectioncol1">
                   <p style="color: #5737c4; font-size: 30px; font-weight: bold;">What We’ve Built</p>
                   <br>
                   <p class="animate-bottom">Tangi provides compliant, bank-integrated payment processing for highly regulated industries where traditional providers refuse to operate.
@@ -241,7 +239,7 @@
                  
 
                 </div>
-                <div class="col-4">
+                <div class="col-4" id="sectioncolPotentialTokenValue">
                   <p style="color: #5737c4; font-size: 30px; font-weight: bold;">The Token with Real Utility</p>
                   <br>
                   <p class="animate-bottom">Tangi Token isn’t a speculative meme coin waiting to find its use. It’s already at the core of a functioning, real-world solution with mass utility potential.</p>
@@ -255,12 +253,12 @@
 
                 </div>
               </div>
-              <div style=" color: #5737c4; text-align: center;">
+              <div style=" color: #5737c4; text-align: center;" id="sectionheadind4">
                 <h1 id="sectionheading"  class="animate-bottom">Explore the Opportunity </h1>
               </div>
             <br>
-              <div class="row">
-                <div class="col-6">
+              <div class="row" id="sectionrow">
+                <div class="col-6" id="sectioncol1">
                   <p style="color: #cc2eb2; font-size: 25px;">Your Window: $0.80 Now vs $1.50 at Listing</p>
                   <p class="animate-bottom">So while this isn’t just another coin launch — it’s your opportunity to access a real-world, regulated, revenue-generating token ecosystem before it opens up to the public.</p>
                   <p class="animate-bottom">For a limited time, tokens are available at $0.80 as part of our final presale before going public.</p>
@@ -269,9 +267,9 @@
                   <!--p class="animate-bottom">Our projections show that with even 1% of the U.S. cannabis market captured, the token could reach $6.60 based on transactional volume and velocity. Of course, that figure is hypothetical and not guaranteed — future performance will depend on market factors and business execution.</p-->
 
                 </div>
-                <div class="col-6">
+                <div class="col-6" id="sectioncolPotentialTokenValue">
                   <p style="color: #cc2eb2; font-size: 25px;">Original Investors Staked</p>
-                  <p class="animate-bottom">Many of our original Round 1 investors — have now voluntarily staked their entire holdings — over 5 million in total — for a further 18 months. These holders have waited up to four years — and yet they’ve chosen to stake their tokens for another 18 months, locking them until well after our public listing. <a href="https://bscscan.com/token/0x0f2e518642ead9b3a4c5a7af0f9a7013bb591dd9?a=0xdf60865d6d6c337d1db7a5a92677c39d467d20ba" target="_blank" style="color: blue; text-decoration: none;">Click here to see proof of staking.</a></p>
+                  <p class="animate-bottom">Many of our original Round 1 investors — have now voluntarily staked their entire holdings — over 5 million in total — for a further 18 months. These holders have waited up to four years — and yet they’ve chosen to stake their tokens for another 18 months, locking them until well after our public listing. <a href="https://bscscan.com/token/0x0f2e518642ead9b3a4c5a7af0f9a7013bb591dd9?a=0xdf60865d6d6c337d1db7a5a92677c39d467d20ba" target="_blank" style="color: blue; text-decoration: none;" id="sendMessageBtn1">Click here to see proof of staking.</a></p>
                   <p class="animate-bottom">They won’t be selling when we list.That kind of conviction is rare. It’s a powerful sign of long-term belief in the team, the technology, and the opportunity ahead. With limited supply, high token lockup, and an end-user–driven model, price stability is built into our ecosystem by design. They’ve chosen to stay the course because they see what’s coming. This is the strongest signal of trust in the team that Round 1 holders could possibly demonstrate.</p>
                 
                 </div>
@@ -642,6 +640,10 @@
     s0.parentNode.insertBefore(s1, s0);
   })();
 
+
+
+  let modalStartTime;
+
   // Show toast with animation
   function showToast(id) {
     const toast = document.getElementById(id);
@@ -686,6 +688,15 @@
             : "User accepted terms without email."
         });
         console.log("✅ Tawk.to AcceptedTerms event sent");
+
+        // 🕒 Time Spent Calculation
+      const modalEndTime = new Date();
+      const timeSpent = Math.floor((modalEndTime - modalStartTime) / 1000); // in seconds
+
+     Tawk_API.addEvent("ModalTimeSpent", {
+     message: `User spent ${timeSpent} seconds in the modal.`
+      });
+
       } else {
         console.warn("❌ Tawk_API not ready at event send time.");
       }
@@ -725,7 +736,68 @@
       keyboard: false
     });
     myModal.show();
+    modalStartTime = new Date();
+
   };
+
+// Button click per Tawk me message bhejne ka function
+function sendMessageToTawk(message) {
+  if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+    Tawk_API.addEvent("CustomMessage", {
+      message: message
+    });
+    console.log(`✅ Tawk.to CustomMessage event sent: ${message}`);
+    showSuccessToast();  // Message bhejne ke baad success toast dikhaye
+  } else {
+    console.warn("❌ Tawk_API not ready at event send time.");
+  }
+}
+
+// 4 Buttons ke liye event listeners
+document.getElementById('sendMessageBtn1').addEventListener('click', function () {
+  const message = "User   click  proof stacking btn";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn1').addEventListener('click', function () {
+  const message = "user  click prepage jion our presale btn1";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn5').addEventListener('click', function () {
+  const message = "user  click prepage jion our presale btn1";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn2').addEventListener('click', function () {
+  const message = "user  click prepage jion our presale btn2";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn6').addEventListener('click', function () {
+  const message = "user  click prepage jion our presale btn2";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn3').addEventListener('click', function () {
+  const message = "user  click prepage go to website btn";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn7').addEventListener('click', function () {
+  const message = "user  click prepage go to website btn";
+  sendMessageToTawk(message);
+});
+
+document.getElementById('btn4').addEventListener('click', function () {
+  const message = "user click prepage telygram btn";
+  sendMessageToTawk(message);
+});
+document.getElementById('btn8').addEventListener('click', function () {
+  const message = "user click prepage telygram btn";
+  sendMessageToTawk(message);
+});
+/*---------------------*/
 
   // Disable all target buttons initially
   const btnIds = ['btn1', 'btn2', 'btn3', 'btn4'];

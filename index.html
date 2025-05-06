@@ -861,7 +861,7 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
           <li><b>Minimum Purchase</b>: 625 tokens, ensuring accessibility for all investors.</li>
         </ul>
         <p>Whether you’re looking to test the waters or establish a solid stake, this option provides a compelling entry point into a growing ecosystem.</p>
-        <a href="https://members.gettangi.com/" target="_blank" class="btnfirstsection">Join PreSale Now</a>
+        <a href="https://members.gettangi.com/" target="_blank" class="btnfirstsection" id="twakmessageJoinPreSaleNow">Join PreSale Now</a>
        
         
       </div>
@@ -908,7 +908,7 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
          <br>
           <li><b>Entry Requirement:</b> <b> As little as</b> 50,000+ Tokens ($30k) <b>secures this enviable position for you.</b></li>
         </ul>
-        <a href="https://members.gettangi.com/" target="_blank" class="btnfirstsection">Join Elite Membership</a>
+        <a href="https://members.gettangi.com/" target="_blank" class="btnfirstsection" id="twakJoinEliteMembership">Join Elite Membership</a>
         <br>
         <br>
      
@@ -1786,6 +1786,28 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
     <a href="#" onclick="trackAndRedirect()" class="btn btn-primary">Go to Staking</a>
   </div-->
 </main>
+
+
+<!-- Feedback Floating Button -->
+<!--button id="feedbackBtn" class="feedback-btn" title="Send Feedback">
+  📝
+</button-->
+
+<!-- Feedback Popup Box -->
+<!--div id="feedbackBox" class="feedback-box">
+  <div class="feedback-header">💬 Your Feedback</div>
+  <textarea id="feedbackText" placeholder="Write your feedback here..."></textarea>
+  <div class="feedback-actions">
+    <button onclick="sendFeedback()">Send</button>
+    <button onclick="closeFeedbackBox()">Close</button>
+  </div>
+</div-->
+
+<!-- Toast Message -->
+<!--div id="feedbackToast" class="toast">Thank you for your feedback!</div-->
+
+
+
 <br>
 <br>
   <footer class="site-footer">
@@ -1793,7 +1815,7 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
       <div class="footer-links">
           <h3 style="color: #5737c4;">Contact Us </h3>
         <br>
-          <h5 style="color: #5737c4;">Email: <a href="mailto:admin@gettangi.com"><b style="color: black; font-weight: 100; font-size: 16px;">admin@gettangi.com</b></a></h5>
+          <h5 style="color: #5737c4;" id="copyTarget">Email: <a href="mailto:admin@gettangi.com"><b style="color: black; font-weight: 100; font-size: 16px;">admin@gettangi.com</b></a></h5>
           
           <h5 style="color: #5737c4;">Address: <b style="color: black; font-weight: 100; font-size: 16px;">33 Dupont Street East, Suite 300, Waterloo, Ontario, N2J 2G8, Canada</b></h5> 
           
@@ -1933,15 +1955,144 @@ Tangi resolves an issue brought on by enormous quantities of cash moving about t
   </script-->
   <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+
+
+  // Button click per Tawk me message bhejne ka function
+function sendMessageToTawk(message) {
+  if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+    Tawk_API.addEvent("CustomMessage", {
+      message: message
+    });
+    console.log(`✅ Tawk.to CustomMessage event sent: ${message}`);
+    showSuccessToast();  // Message bhejne ke baad success toast dikhaye
+  } else {
+    console.warn("❌ Tawk_API not ready at event send time.");
+  }
+}
+
+// 4 Buttons ke liye event listeners
+document.getElementById('confetti-btn').addEventListener('click', function () {
+  const message = "Useer click Buy Token  Button";
+  sendMessageToTawk(message);
+});
+// 4 Buttons ke liye event listeners
+document.getElementById('twakmessageJoinPreSaleNow').addEventListener('click', function () {
+  const message = "User click  JoinPre Sale Now members link";
+  sendMessageToTawk(message);
+});
+// 4 Buttons ke liye event listeners
+document.getElementById('twakJoinEliteMembership').addEventListener('click', function () {
+  const message = "User click JoinElite Member ship members link";
+  sendMessageToTawk(message);
+});
+
+
+/*---------------------*/
+
+const target = document.getElementById('copyTarget');
+
+target.addEventListener('copy', function () {
+  if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+    Tawk_API.addEvent("TextCopiedFromPara", {
+      message: "User copied Email"
+    });
+    console.log("✅ Tawk.to TextCopiedFromPara event sent");
+    showSuccessToast();
+  }
+});
+
+/*-----------------*/
+
+
+/*-----------------------------------*/
+let idleTimer;
+let wasIdle = false;
+let idleLimit = 60000; // 1 minute
+
+function resetIdleTimer() {
+  clearTimeout(idleTimer);
+
+  if (wasIdle) {
+    wasIdle = false;
+    if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+      Tawk_API.addEvent("UserActiveAgain", {
+        message: "User became active again after being idle."
+      });
+      console.log("✅ User active again");
+    }
+  }
+
+  idleTimer = setTimeout(() => {
+    wasIdle = true;
+    if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+      Tawk_API.addEvent("UserIdle", {
+        message: "User inactive for 1 minute."
+      });
+      console.log("🛑 User is idle");
+    }
+  }, idleLimit);
+}
+
+['mousemove', 'keydown', 'scroll', 'click'].forEach(event =>
+  window.addEventListener(event, resetIdleTimer)
+);
+
+resetIdleTimer(); // start initially
+/*-------------------------*/
+/*----useer feed back btn code*/
+/*
+  // Show/hide feedback box
+  document.getElementById("feedbackBtn").addEventListener("click", function () {
+    const box = document.getElementById("feedbackBox");
+    box.style.display = box.style.display === "none" ? "block" : "none";
+  });
+
+  function closeFeedbackBox() {
+    document.getElementById("feedbackBox").style.display = "none";
+  }
+
+  function sendFeedback() {
+    const message = document.getElementById("feedbackText").value.trim();
+    if (!message) {
+      showToast("Please write your feedback first.");
+      return;
+    }
+
+    if (typeof Tawk_API !== "undefined" && typeof Tawk_API.addEvent === "function") {
+      Tawk_API.addEvent("UserFeedback", {
+        message: message
+      });
+    }
+
+    showToast("Thank you for your feedback!");
+    document.getElementById("feedbackText").value = "";
+    closeFeedbackBox();
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById("feedbackToast");
+    toast.innerText = msg;
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  }
+*/
+
+/*----------------*/
+
+
   </script>
 
   <!--script type="text/javascript">
