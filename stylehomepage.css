@@ -375,6 +375,12 @@ margin-top: 130px;
   
   }
 
+  body h3{
+    font-size: 25px !important;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+
   .fourthsectionheading{
     font-size: 25px !important;
     font-family: 'Times New Roman', Times, serif;
@@ -1341,6 +1347,12 @@ margin-top: 130px;
 
 #Retailerslinespace li{
   line-height: 10px !important;
+}
+
+@media (max-width: 768px) {
+  #Retailerslinespace li{
+    line-height: 20px !important;
+  }
 }
 /*
 #Retailerslinespace li span{
