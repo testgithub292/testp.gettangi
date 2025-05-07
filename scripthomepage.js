@@ -1013,7 +1013,7 @@ function toggleText() {
   }
 
   */
-
+/*--------------------------------------------------
   function toggleText(id) {
     var dots = document.getElementById("dots" + id);
     var moreText = document.getElementById("more" + id);
@@ -1029,3 +1029,102 @@ function toggleText() {
       btnText.innerHTML = " Show less";
     }
   }
+*/
+
+
+function toggleText(id) {
+  var dots = document.getElementById("dots" + id);
+  var moreText = document.getElementById("more" + id);
+  var btnText = document.getElementById("toggleBtn" + id);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btnText.innerHTML = " Show more";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btnText.innerHTML = " Show less";
+
+    // Add document click listener when text is expanded
+    setTimeout(() => {
+      document.addEventListener("click", handleOutsideClick);
+    }, 0);
+  }
+
+  // Function to hide the text when clicking outside
+  function handleOutsideClick(e) {
+    // Agar click kisi aise element pe hua jo related he, ignore
+    if (
+      e.target.id === "toggleBtn" + id ||
+      document.getElementById("more" + id).contains(e.target)
+    ) {
+      return;
+    }
+
+    // Collapse the text
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btnText.innerHTML = " Show more";
+
+    // Remove the listener after collapse
+    document.removeEventListener("click", handleOutsideClick);
+  }
+}
+
+/*--------custom notificaton ----------*/
+
+/*
+let toastTimeout; // for storing the timeout ID
+
+window.onload = function() {
+  if (!sessionStorage.getItem('toastShown')) {
+    setTimeout(function() {
+      const toast = document.getElementById("customToast");
+      toast.style.display = "block";
+
+      // Save session flag
+      sessionStorage.setItem('toastShown', 'true');
+
+      // Start auto-hide timer
+      toastTimeout = setTimeout(function() {
+        toast.style.display = "none";
+      }, 6000); // Hide after 6 seconds
+    }, 1000);
+  }
+};
+
+function closeToast() {
+  document.getElementById("customToast").style.display = "none";
+}
+
+// Stop auto-hide if mouse is over the toast or touch is on the toast
+document.addEventListener("DOMContentLoaded", function () {
+  const toast = document.getElementById("customToast");
+
+  // Mouse events
+  toast.addEventListener("mouseenter", function () {
+    clearTimeout(toastTimeout); // Cancel auto-hide on hover
+  });
+
+  toast.addEventListener("mouseleave", function () {
+    // Restart hide timer when mouse leaves
+    toastTimeout = setTimeout(function() {
+      toast.style.display = "none";
+    }, 3000); // 3 seconds after leaving
+  });
+
+  // Touch events for mobile users
+  toast.addEventListener("touchstart", function () {
+    clearTimeout(toastTimeout); // Cancel auto-hide on touch
+  });
+
+  toast.addEventListener("touchend", function () {
+    // Restart hide timer when touch ends
+    toastTimeout = setTimeout(function() {
+      toast.style.display = "none";
+    }, 3000); // 3 seconds after touch ends
+  });
+});*/
+/*---------------------------*/
+
