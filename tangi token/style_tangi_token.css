@@ -1582,3 +1582,44 @@ h1 {
     height: 200px;
   }
 }
+/*--------------geting in page css -------------------*/
+
+.second_section{
+  text-align:left;
+  margin-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: 700;
+ 
+}
+
+
+
+@media (max-width: 450px) {
+  .second_section{
+    font-size: 35px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .second_section{
+    font-size: 35px;
+  }
+  
+}
+
+
+.fourthsectionheading{
+  font-size: 35px;
+  color:#5737c4;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+
+  .fourthsectionheading{
+    font-size: 25px !important;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}

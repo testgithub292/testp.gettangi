@@ -106,6 +106,24 @@ background-color: whitesmoke;
   .bytokenbtnnav{
     margin-right: 15px !important;
   }
+
+  /*-----------------------*/
+  @media (min-width: 992px) {
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-submenu .dropdown-menu.show {
+    display: block;
+    position: static;
+    float: none;
+  }
+/*-------------------*/
  
   #contact_bt_css{
     height: fit-content;

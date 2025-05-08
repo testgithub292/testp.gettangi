@@ -1,4 +1,32 @@
-   /*     // Check karna ke user ne intro dekha hai ya nahi
+
+/*-----------navbar sub menu code*/
+document.addEventListener('DOMContentLoaded', function () {
+  const submenuToggles = document.querySelectorAll('.dropdown-submenu > .dropdown-toggle');
+
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // Prevent closing parent dropdown
+
+      const submenu = this.nextElementSibling;
+      if (submenu && submenu.classList.contains('dropdown-menu')) {
+        submenu.classList.toggle('show');
+      }
+    });
+  });
+
+  // Prevent submenu clicks from closing parent dropdown
+  const submenus = document.querySelectorAll('.dropdown-submenu .dropdown-menu');
+  submenus.forEach(menu => {
+    menu.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  });
+});
+
+/*------------------------*/
+
+  /*     // Check karna ke user ne intro dekha hai ya nahi
         if (!sessionStorage.getItem("visited")) {
             window.location.href = "gettangi_prepage.html"; // Agar nahi dekha to intro page par le jao
         }
@@ -23,12 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*---------------------------------------------------------*/
+/*-----------------open prepage code index-------------*/
 
 // Check karna ke user ne intro dekha hai ya nahi
 if (!sessionStorage.getItem("visited") || performance.navigation.type === 1) {
     sessionStorage.setItem("visited", "true"); // Set karna ke ab dekha gaya hai
     window.location.href = "gettangi_prepage.html"; // Redirect to intro page
 }
+//*--------------------*/
 
   // Get the navbar
   const navbar = document.querySelector('.navbar');
@@ -1127,6 +1157,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });*/
 /*---------------------------*/
+
+
 
 
 
