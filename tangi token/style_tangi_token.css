@@ -1622,4 +1622,8 @@ h1 {
     font-size: 25px !important;
     font-family: 'Times New Roman', Times, serif;
   }
+
+  #presalesection_row{
+    display: block;
+  }
 }
