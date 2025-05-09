@@ -2383,23 +2383,7 @@ function resetIdleTimer() {
 resetIdleTimer(); // start initially
 
 /*----------time spent page code ------------------*/
-/*  // ✅ Page Time Spent Tracker
-  let pageStartTime = new Date();
 
-  // Jab page close hone wala ho (tab close / refresh)
-  window.addEventListener('beforeunload', function () {
-    const pageEndTime = new Date();
-    const timeSpentOnPage = Math.floor((pageEndTime - pageStartTime) / 1000); // seconds
-
-    if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
-      Tawk_API.addEvent("PageTimeSpent", {
-        message: `User spent ${timeSpentOnPage} seconds on the page.`
-      });
-      console.log(`📊 PageTimeSpent event sent: ${timeSpentOnPage} seconds`);
-    } else {
-      console.warn("❌ Tawk_API not ready at page unload.");
-    }
-  });*/
 
   // ✅ Page Time Spent Tracker
 let pageStartTime = new Date();
