@@ -823,6 +823,40 @@ document.getElementById('btn8').addEventListener('click', function () {
 
   document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
   document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
+
+
+/*----------time spent page code ------------------*/
+
+
+  // ✅ Page Time Spent Tracker
+let pageStartTime = new Date();
+
+// Jab page close hone wala ho (tab close / refresh)
+window.addEventListener('beforeunload', function () {
+  const pageEndTime = new Date();
+  const timeSpentOnPage = Math.floor((pageEndTime - pageStartTime) / 1000); // seconds
+
+  // Convert time to hours, minutes, and seconds
+  const hours = Math.floor(timeSpentOnPage / 3600); // 1 hour = 3600 seconds
+  const minutes = Math.floor((timeSpentOnPage % 3600) / 60); // 1 minute = 60 seconds
+  const seconds = timeSpentOnPage % 60; // Remaining seconds
+
+  let timeSpentMessage = `${seconds} seconds`;
+  if (minutes > 0) timeSpentMessage = `${minutes} minutes ${seconds} seconds`;
+  if (hours > 0) timeSpentMessage = `${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+  // Send the time spent message to Tawk.to
+  if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+    Tawk_API.addEvent("PrePageTimeSpent", {
+      message: `User spent ${timeSpentMessage} on the page.`
+    });
+    console.log(`📊 PrePageTimeSpent event sent: ${timeSpentMessage}`);
+  } else {
+    console.warn("❌ Tawk_API not ready at page unload.");
+  }
+});
+
+
 </script>
 
 

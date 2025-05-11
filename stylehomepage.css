@@ -2041,35 +2041,52 @@ margin-top: 130px;
     color: white;
   }
 
-  /* Toast Styling */
+/*
   .toast {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    background-color: #333 !important;
-    color: #fff !important;
-    padding: 12px 20px;
-    border-radius: 8px;
+    text-align: center;
     opacity: 0;
-    z-index: 9999;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.5s;
+    background: #333 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
   }
 
   .toast.show {
     opacity: 1;
   }
+*/
 
-  /* Animation */
-  @keyframes slideIn {
-    from {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+.toast {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+  color: #fff !important;
+  padding: 14px 24px;
+  border-radius: 12px;
+  min-width: 250px;
+  max-width: 90%;
+  font-size: 16px;
+  font-family: t;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateX(120%); /* Slide from outside the screen */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+  pointer-events: none; /* prevent click when hidden */
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto; /* allow interaction when visible */
+}
 
 /*---------------custom notfication css------------------------*/
 /*
@@ -2121,4 +2138,81 @@ margin-top: 130px;
 }*/
 /*---------------------------*/
 
+/*
+  .card {
+    background: white;
+    transition: 0.3s ease;
+  }
 
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  input::placeholder {
+    font-style: italic;
+    color: #aaa;
+  }*/
+
+      .subscribe-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .subscribe-box:hover {
+      transform: scale(1.02);
+    }
+
+    .subscribe-box h4 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-control {
+      border-radius: 12px;
+    }
+
+    .btn-custom {
+      border: none;
+      border-radius: 12px;
+      padding: 10px 20px;
+      transition: 0.3s ease;
+    }
+
+    .btn-subscribe {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+    }
+
+    .btn-subscribe:hover {
+      box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-feedback {
+      background: #f1f1f1;
+      color: #333;
+    }
+
+    .btn-feedback:hover {
+      background: #e1e1e1;
+      transform: translateY(-2px);
+    }
+
+    .btn-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (min-width: 576px) {
+      .btn-row {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
