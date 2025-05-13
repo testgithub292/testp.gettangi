@@ -1627,3 +1627,138 @@ h1 {
     display: block;
   }
 }
+
+
+/*---------------------------------------------------*/
+
+#testnominalheading{
+  font-size: 45px !important;
+}
+@media (max-width: 768px) {
+  #testnominalheading{
+  font-size: 35px !important;
+}
+.testimonials h2 {
+  font-size: 35px !important;
+  margin-bottom: 40px;
+}
+}
+
+.testimonials {
+  padding: 60px 10px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+.testimonial-container {
+  column-count: 3; /* ya 2 ya 4, depending on screen size */
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/*
+.testimonial-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: fit-content;
+}*/
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-card img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  margin: 10px 0 5px;
+  font-size: 35px !important;
+}
+
+.designation {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.stars {
+  font-size: 1.2em;
+  color: #f5b301;
+  margin-bottom: 10px;
+}
+
+.feedback {
+  font-style: italic;
+  color: #444;
+}
+
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    column-count: 1;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .testimonial-container {
+    column-count: 2;
+  }
+}
+@media (min-width: 1025px) {
+  .testimonial-container {
+    column-count: 3;
+  }
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 20px;
+  border-radius: 50%;
+  color: white;
+}
+
+.social-icon.twitter {
+  background: #000000; /* X (Twitter) black */
+}
+
+.social-icon.telegram {
+  background: #0088cc; /* Telegram blue */
+}
+
+
+
