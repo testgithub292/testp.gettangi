@@ -948,7 +948,7 @@ showMoreBtn2.addEventListener("click", function() {
         showMoreBtn2.innerText = "Show More";
     }
 });*/
-
+/*
 let showMoreBtn = document.getElementById("prepageShowMoreBtn");
 let extraContents = document.querySelectorAll(".prepageExtraContent");
 
@@ -974,7 +974,7 @@ showMoreBtn.addEventListener("click", function() {
 
     showMoreBtn.innerText = isHidden ? "Show Less" : "Show More";
 });
-
+*/
 /*--------------------------*/
 
     /*-----------------------------------------*/

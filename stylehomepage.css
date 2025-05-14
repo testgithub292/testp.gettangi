@@ -1289,7 +1289,7 @@ margin-top: 130px;
 
 /*---------------------------------------*/
 
-/* Button Styling */
+/* Button Styling 
 .toggle-btn-investor-gain {
   background: greenyellow;
   color: black;
@@ -1308,8 +1308,8 @@ margin-top: 130px;
   transform: scale(1.05);
   color: white;
 }
-
-/* Responsive Design */
+*/
+/* Responsive Design 
 @media (max-width: 768px) {
   .card-header-investor-gain {
     font-size: 1.5rem;
@@ -1322,9 +1322,9 @@ margin-top: 130px;
     font-size: 1rem;
   }
 }
- 
-
-/* Hidden Content Styling */
+ */
+/*
+/* Hidden Content Styling 
 .hidden-content-investor-gain {
   max-height: 0;
   overflow: hidden;
@@ -1376,7 +1376,7 @@ margin-top: 130px;
   #Retailerslinespace li{
     line-height: 20px !important;
   }
-}
+}*/
 /*
 #Retailerslinespace li span{
   line-height: 20px;
@@ -1740,13 +1740,13 @@ margin-top: 130px;
 }
 
 /*-----------------------------------------------------*/
-
+/*
 #prepagemodalheader{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+*/
 /*------------------------------------*/
 /*
         /* Overlay - Sabse upar ho *
@@ -1835,12 +1835,12 @@ margin-top: 130px;
 
       */
 
-
+/*
       #prepagemodalbg{
         background-image: url(images/bg\ image\ \ modal\ prepage\ .png);
-        background-size: cover; /* Image ko full cover karein */
-        background-position: center; /* Image ko center karein*/ 
-        background-repeat: no-repeat; /* Repeat na karein */
+        background-size: cover; /* Image ko full cover karein 
+        background-position: center; /* Image ko center karein
+        background-repeat: no-repeat; /* Repeat na karein 
       }
 
       #prepagemodalbg p {
@@ -1864,13 +1864,13 @@ margin-top: 130px;
         box-shadow: 0 4px 10px rgba(255, 117, 140, 0.4);
     }
 
-    /* Hover Effect */
+    /* Hover Effect 
     #prepageShowMoreBtn:hover {
         transform: scale(1.05);
         box-shadow: 0 6px 15px rgba(255, 117, 140, 0.6);
     }
 
-    /* Hidden Content Styling */
+    /* Hidden Content Styling 
     .prepageExtraContent {
         display: none;
         margin-top: 15px;
@@ -1881,7 +1881,7 @@ margin-top: 130px;
         opacity: 0;
         transform: translateY(-10px);
     }
-
+*/
    /* #prepageShowMoreBtn2 {
       background: linear-gradient(45deg, #ff7eb3, #ff758c);
       color: white;
@@ -1965,7 +1965,7 @@ margin-top: 130px;
   /*---------------------*/
 
 
-
+/*
   .feedback-btn {
     position: fixed;
     bottom: 25px;
@@ -1985,7 +1985,7 @@ margin-top: 130px;
   .feedback-btn:hover {
     background-color: #0056b3;
   }
-
+*/
   .feedback-box {
     display: none;
     position: fixed;
