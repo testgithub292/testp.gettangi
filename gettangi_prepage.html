@@ -253,6 +253,7 @@
 
                 </div>
               </div>
+              <section id="Explore_the_Opportunity_prepage">
               <div style=" color: #5737c4; text-align: center;" id="sectionheadind4">
                 <h1 id="sectionheading"  class="animate-bottom">Explore the Opportunity </h1>
               </div>
@@ -277,7 +278,7 @@
 
         
 
-           <div class="">
+           <div>
             <!--div style=" color: #5737c4; text-align: center;">
               <h1 id="sectionheading"  class="animate-bottom">The Public Listing </h1>
             </div-->
@@ -345,11 +346,11 @@
                       </div>
                     </div>
                   </div>
-                    
+                    </section>
                  
                  <br>
           
-                    <div style="text-align: center; color: #5737c4; font-weight: bold;">
+                    <div style="text-align: center; color: #5737c4; font-weight: bold;" id="summery_prepage">
                       <h3 id="sectionheading">Summary</h3>
                     
           
@@ -855,6 +856,72 @@ window.addEventListener('beforeunload', function () {
     console.warn("❌ Tawk_API not ready at page unload.");
   }
 });
+
+
+/*-------------------------------------------*/
+
+
+    // Sections ko track karna - Aap sirf id ko yahan add kar sakte hain
+    const sectionsToTrack = [
+      "Explore_the_Opportunity_prepage",
+      "summery_prepage"
+    ];
+
+    // Function to check if the section is viewed and track time spent
+    function trackSectionView() {
+      sectionsToTrack.forEach(sectionId => {
+        const el = document.getElementById(sectionId);
+
+        if (el) {
+          const sectionTop = el.getBoundingClientRect().top;
+          const sectionBottom = el.getBoundingClientRect().bottom;
+
+          // Section ko track karna agar wo viewport me aaye
+          if (!el.viewed && sectionTop <= window.innerHeight && sectionBottom >= 0) {
+            el.viewed = true; // Mark section as viewed
+            el.startTime = new Date().getTime(); // Set start time
+            sendViewMessage(sectionId); // Message send on view (only first time)
+          }
+
+          // Agar section ka bottom viewport ke upar chala gaya ho to time spent calculate karo
+          if (el.viewed && sectionBottom <= 0 && !el.endViewed) {
+            const currentTime = new Date().getTime();
+            const timeSpent = Math.floor((currentTime - el.startTime) / 1000); // Time in seconds
+            sendTimeSpentMessage(sectionId, timeSpent);
+            el.endViewed = true; // Mark end as viewed
+          }
+        }
+      });
+    }
+
+    // Function to send the view message
+    function sendViewMessage(sectionId) {
+      if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+        Tawk_API.addEvent("ContentViewed", {
+          message: `User viewed the ${sectionId} content.`
+        });
+        console.log(`👁️ ${sectionId} content viewed.`);
+      }
+    }
+
+    // Function to send the time spent message
+    function sendTimeSpentMessage(sectionId, timeSpent) {
+      if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
+        Tawk_API.addEvent("TimeSpentOnSection", {
+          message: `User spent ${timeSpent} seconds on the ${sectionId} content.`
+        });
+        console.log(`⏱️ ${sectionId} content time spent: ${timeSpent} seconds.`);
+      }
+    }
+
+    
+
+    window.addEventListener('scroll', trackSectionView);
+    window.addEventListener('load', trackSectionView); // Check on load as well
+
+
+    
+
 
 
 </script>

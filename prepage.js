@@ -1,4 +1,5 @@
-    function goToMain() {
+  
+  function goToMain() {
         sessionStorage.setItem("visited", "true"); // Mark karein ke user ne page dekha hai
         window.location.href = "index.html"; // Main page per redirect kar do
     }
