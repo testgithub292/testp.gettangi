@@ -36,6 +36,32 @@
 
 
   /*-------------------------------------------*/
+/*-----------navbar sub menu code*/
+document.addEventListener('DOMContentLoaded', function () {
+  const submenuToggles = document.querySelectorAll('.dropdown-submenu > .dropdown-toggle');
+
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // Prevent closing parent dropdown
+
+      const submenu = this.nextElementSibling;
+      if (submenu && submenu.classList.contains('dropdown-menu')) {
+        submenu.classList.toggle('show');
+      }
+    });
+  });
+
+  // Prevent submenu clicks from closing parent dropdown
+  const submenus = document.querySelectorAll('.dropdown-submenu .dropdown-menu');
+  submenus.forEach(menu => {
+    menu.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  });
+});
+
+  /*-------------------------------------------*/
 /*
   function navigateAndOpenModal(event) {
     event.preventDefault(); // Default behavior rokna

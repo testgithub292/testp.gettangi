@@ -219,17 +219,24 @@ background-color: whitesmoke;
   }
 
 
-  @media (max-width: 345px) {
-    #contact_bt_css{
-      font-size: 12px;
+  @media (min-width: 992px) {
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
     }
   }
-  @media (max-width: 345px) { 
-    .imagenavfirstlogo{
-      width: 130px;
-     }
+
+  .dropdown-submenu .dropdown-menu {
+    display: none;
   }
-  /* Hide the submenu by default */
+
+  .dropdown-submenu .dropdown-menu.show {
+    display: block;
+    position: static;
+    float: none;
+  }
+
+
+    /* Hide the submenu by default */
   .dropdown-submenu .dropdown-menu {
     display: none;
     position: absolute;

@@ -227,13 +227,31 @@ background-color: whitesmoke;
     #contact_bt_css{
       font-size: 12px;
     }
-  }
+  } 
   @media (max-width: 345px) {
     .imagenavfirstlogo{
       width: 130px;
      }
   }
-  /* Hide the submenu by default */
+  /*-----------------------*/
+  @media (min-width: 992px) {
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-submenu .dropdown-menu.show {
+    display: block;
+    position: static;
+    float: none;
+  }
+
+
+    /* Hide the submenu by default */
   .dropdown-submenu .dropdown-menu {
     display: none;
     position: absolute;
@@ -251,6 +269,7 @@ background-color: whitesmoke;
   .dropdown-submenu {
     position: relative;
   }
+ 
  
   #navbar-brand{
     filter: invert(100%);

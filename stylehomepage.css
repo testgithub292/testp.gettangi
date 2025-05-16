@@ -123,6 +123,27 @@ background-color: whitesmoke;
     position: static;
     float: none;
   }
+
+
+    /* Hide the submenu by default */
+  .dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -5px;
+  }
+  
+  /* Show the submenu on hover */
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Optional styling */
+  .dropdown-submenu {
+    position: relative;
+  }
+ 
 /*-------------------*/
  
   #contact_bt_css{
@@ -237,25 +258,7 @@ background-color: whitesmoke;
       width: 130px;
      }
   }
-  /* Hide the submenu by default */
-  .dropdown-submenu .dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    margin-top: -5px;
-  }
-  
-  /* Show the submenu on hover */
-  .dropdown-submenu:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Optional styling */
-  .dropdown-submenu {
-    position: relative;
-  }
- 
+
 
 /*-------------------------------------------*/
 

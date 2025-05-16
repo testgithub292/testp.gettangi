@@ -1,4 +1,27 @@
-  
+    /*-----------navbar sub menu code*/
+document.addEventListener('DOMContentLoaded', function () {
+  const submenuToggles = document.querySelectorAll('.dropdown-submenu > .dropdown-toggle');
+
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // Prevent closing parent dropdown
+
+      const submenu = this.nextElementSibling;
+      if (submenu && submenu.classList.contains('dropdown-menu')) {
+        submenu.classList.toggle('show');
+      }
+    });
+  });
+
+  // Prevent submenu clicks from closing parent dropdown
+  const submenus = document.querySelectorAll('.dropdown-submenu .dropdown-menu');
+  submenus.forEach(menu => {
+    menu.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  });
+});
    
    
    // Get the navbar
@@ -67,7 +90,7 @@
 
 
    //========================================================================
-
+/*
  const toggleBtnCard1 = document.getElementById("toggleBtn-investor-gain-1");
  const hiddenContentCard1 = document.getElementById("hiddenContent-investor-gain-1");
  const card1 = document.getElementById("card-investor-gain-1");
@@ -90,7 +113,7 @@
  /*const toggleBtnCard5 = document.getElementById("toggleBtn-investor-gain-5");
  const hiddenContentCard5 = document.getElementById("hiddenContent-investor-gain-5");
  const card5 = document.getElementById("card-investor-gain-5");*/
- 
+ /*
  // Card 1 Toggle Functionality
  toggleBtnCard1.addEventListener("click", () => {
    hiddenContentCard1.classList.toggle("visible-investor-gain");
@@ -163,7 +186,7 @@
      toggleBtnCard4.textContent = "Show More";
    }
  });
- 
+ */
  /*
  // Hide Content When Clicking Outside Card 5
  document.addEventListener("click", (event) => {
@@ -175,7 +198,7 @@
  
  //-------------------------------------------
  
- 
+ /*
  function toggleText() {
      var text = document.getElementById("toggleText");
      var button = document.querySelector(".toggleButton");
@@ -230,8 +253,7 @@
     }
   }
   
-
+*/
   /*-------------------------------------*/
 
 
-  
