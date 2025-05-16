@@ -595,7 +595,7 @@ function openModalAndScroll(event) {
       }
   });
 }*/
-
+/*
 function navigateAndOpenModal(event) {
   event.preventDefault(); // Default behavior rokna
 
@@ -616,7 +616,7 @@ function navigateAndOpenModal(event) {
       }, 5000);
   }, 1000);
 }
-
+*/
 
 /*-----------------------------------------------------*/
 
