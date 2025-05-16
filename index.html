@@ -914,16 +914,17 @@
 
 
   <!-- Feedback Popup Box -->
-  <!--div id="feedbackBox" class="feedback-box">
-  <div class="feedback-header">💬 Your Feedback</div>
-  <textarea id="feedbackText" placeholder="Write your feedback here..." maxlength="300"></textarea>
+  <div id="feedbackBox" class="feedback-box">
+  <div class="feedback-header"> <h5><i class="fas fa-bell"></i> Get Updates</h5></div>
+    <input type="email"  id="feedbackText" placeholder="Enter your email">
+  <!-- <textarea id="feedbackText"  placeholder="Enter Your Email"></textarea> -->
   <div class="feedback-actions">
     <button onclick="sendFeedback()">Send</button>
     <button onclick="closeFeedbackBox()">Close</button>
   </div>
 </div>
 
-  <div id="feedbackToast" class="toast"></div--->
+  <div id="feedbackToast" class="toast"></div>
 
 <br>
   <!--div class="container" style="display: flex; justify-content: center;">
@@ -951,9 +952,9 @@
     <input type="email" placeholder="Enter Your Email" id="subscribeEmail" />
     <button type="submit"  onclick="sendSubscribe()">Subscribe</button>
   </div>
-  </div> -->
- 
-  
+  </div>
+   <div id="subscribeToast" class="toast"></div> -->
+
 
   <footer class="site-footer" id="footerview">
     <div class="footer-content">
@@ -971,8 +972,9 @@
           <!--a href="https://instagram.com/TangiTokeninsta" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a-->
           <a href="https://twitter.com/gettangi?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
           <!--a href="https://www.reddit.com/r/Tangicoin/reddit" target="_blank" class="social-icon"><i class="fab fa-reddit"></i></a-->
+      
         </div>
-        <br>
+    
         <br>
         <h5 style="color: #5737c4;">Useful Links</h5>
         <ul>
@@ -982,6 +984,7 @@
            <!-- <li><a href="#" target="_blank" id="footertangipromontalvideo">Tangi Promotional Video</a></li>  -->
           <li><a href="tangi token/Investment to Listing.html">Public Listing</a></li>
           <li><a href="tangi token/Tangi Tokenomics.html">Tangi Tokenomics</a></li>
+          <li><a style="cursor: pointer;"  id="feedbackBtn">Subscribe</a></li>
         </ul>
         <!--a href="https://member.gettangi.com/" target="_blank"><button  class="contact_bt_css">Buy Token</button></a-->
 
@@ -990,7 +993,7 @@
 
         <!--div><b style="color: #5737c4;">DISCLAIMER</b>: GETTANGINOW CORPORATION DOES NOT SELL CANNABIS PRODUCTS.</div-->
 
-        <div style="margin-top: 30px;">
+        <div style="margin-top: 20px;">
           <b style="color: #5737c4;">©</b> 2021, GetTangiNow Corporation, Registered In Canada Company No. 1329275-4
 
 
@@ -1070,17 +1073,9 @@
       </div>
 
     </div>
-
     <div class="footer-bottom">
 
 
-    <div class="subscribe-container">
-    <input type="email" placeholder="Enter Your Email" id="subscribeEmail" />
-    <button type="submit"  onclick="sendSubscribe()">Subscribe</button>
-
-    </div>
-
-  <div id="subscribeToast" class="toast"></div>
 
       <!--div class="footer-legal">
           
@@ -1302,7 +1297,7 @@
 
     /*-----------subscribe --------------*/
     
-      function sendSubscribe() {
+   /*   function sendSubscribe() {
         const email = document.getElementById("subscribeEmail").value.trim();
         if (!email || !validateEmail(email)) {
           showSubscribeToast("Please enter a valid email.");
@@ -1335,10 +1330,10 @@
           toast.classList.remove("show");
         }, 3000);
       }
-
+*/
     /*--------------------------------*/
     /*----useer feed back btn code*/
-   /* 
+   
     // Show/hide feedback box
       document.getElementById("feedbackBtn").addEventListener("click", function () {
       const box = document.getElementById("feedbackBox");
@@ -1355,23 +1350,25 @@
       const message = document.getElementById("feedbackText").value.trim();
     
       if (!message) {
-        showToast("Please write your feedback first.");
+        showToast("Please enter a valid email.");
         return;
       }
     
-      const wordCount = message.split(/\s+/).length; // count words by spaces
-      if (wordCount > 30) {
-        showToast("You can only submit up to 30 words.");
-        return;
-      }
+  // Email format check using regex
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(message)) {
+    showToast("Please enter a valid email.");
+    return;
+  }
     
       if (typeof Tawk_API !== "undefined" && typeof Tawk_API.addEvent === "function") {
-        Tawk_API.addEvent("UserFeedback", {
+        Tawk_API.addEvent("UserSubscribed", {
           message: message
         });
       }
     
-      showToast("Thank you for your feedback!");
+      showToast("Thanks for subscribing!");
       document.getElementById("feedbackText").value = "";
       closeFeedbackBox();
     }  
@@ -1384,7 +1381,7 @@
         toast.classList.remove("show");
       }, 3000);
     }
-*/
+
   </script>
 
 
