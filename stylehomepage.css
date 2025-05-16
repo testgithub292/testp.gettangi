@@ -1993,7 +1993,7 @@ margin-top: 130px;
     display: none;
     position: fixed;
     bottom: 100px;
-    left: 25px;
+    left: 350px;
     width: 300px;
     max-width: 90%;
     background: #ffffff;
@@ -2046,6 +2046,53 @@ margin-top: 130px;
     color: white;
   }
 
+   @media (max-width: 1300px) {
+     .feedback-box {
+      left: 250px;
+     }
+   }
+
+      @media (max-width: 1150px) {
+
+     .feedback-box {
+      left: 200px;
+     }
+   }
+
+    @media (max-width: 992px) {
+
+     .feedback-box {
+      left: 400px;
+     }
+   }
+
+   @media (max-width: 800px) {
+
+     .feedback-box {
+      left: 200px;
+     }
+   }
+
+     @media (max-width: 600px) {
+
+     .feedback-box {
+      left: 100px;
+     }
+   }
+
+        @media (max-width: 500px) {
+
+     .feedback-box {
+      left: 70px;
+     }
+   }
+
+ @media (max-width: 400px) {
+
+     .feedback-box {
+      left: 30px;
+     }
+   }
 /*
   .toast {
     text-align: center;

@@ -974,6 +974,7 @@
         </div>
     
         <br>
+        <br>
         <h5 style="color: #5737c4;">Useful Links</h5>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -982,7 +983,7 @@
            <!-- <li><a href="#" target="_blank" id="footertangipromontalvideo">Tangi Promotional Video</a></li>  -->
           <li><a href="tangi token/Investment to Listing.html">Public Listing</a></li>
           <li><a href="tangi token/Tangi Tokenomics.html">Tangi Tokenomics</a></li>
-          <li><a style="cursor: pointer;"  id="feedbackBtn">Subscribe</a></li>
+        
         </ul>
         <!--a href="https://member.gettangi.com/" target="_blank"><button  class="contact_bt_css">Buy Token</button></a-->
 
@@ -991,10 +992,8 @@
 
         <!--div><b style="color: #5737c4;">DISCLAIMER</b>: GETTANGINOW CORPORATION DOES NOT SELL CANNABIS PRODUCTS.</div-->
 
-        <div style="margin-top: 20px;">
+        <div style="margin-top: 30px;">
           <b style="color: #5737c4;">©</b> 2021, GetTangiNow Corporation, Registered In Canada Company No. 1329275-4
-
-
         </div>
 
 
@@ -1061,6 +1060,7 @@
                 <button type="submit">Send</button>
             </form-->
         <div id="footer-legal">
+          <a style="cursor: pointer;" class="legal-link" id="feedbackBtn">Subscribe</a>&nbsp;&nbsp;
           <a href="Privacy Policy.html" class="legal-link">Privacy Policy</a> &nbsp;&nbsp;
           <a href="white paper.html" class="legal-link">White Paper</a>&nbsp;&nbsp;
           <a href="Risk Warning.html" class="legal-link">Risk Warning</a>&nbsp;&nbsp;
@@ -1379,6 +1379,14 @@
         toast.classList.remove("show");
       }, 3000);
     }
+
+    // Close feedback box on scroll if it's open
+window.addEventListener("scroll", function () {
+  const box = document.getElementById("feedbackBox");
+  if (box && box.style.display === "block") {
+    closeFeedbackBox();
+  }
+});
 
   </script>
 
