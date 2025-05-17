@@ -1061,7 +1061,7 @@ function toggleText() {
   }
 */
 
-
+/*
 function toggleText(id) {
   var dots = document.getElementById("dots" + id);
   var moreText = document.getElementById("more" + id);
@@ -1099,7 +1099,34 @@ function toggleText(id) {
 
     // Remove the listener after collapse
     document.removeEventListener("click", handleOutsideClick);
-  }*/
+  }
+}
+*/
+
+
+document.querySelectorAll('.toggleBtn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const id = this.getAttribute('data-id');
+    toggleText(id);
+  });
+});
+
+function toggleText(id) {
+  const dots = document.querySelectorAll('.dots[data-id="' + id + '"]');
+  const moreText = document.querySelectorAll('.moreText[data-id="' + id + '"]');
+  const buttons = document.querySelectorAll('.toggleBtn[data-id="' + id + '"]');
+
+  const isExpanded = dots[0].style.display === "none"; // check from first one
+
+  if (isExpanded) {
+    dots.forEach(dot => dot.style.display = "inline");
+    moreText.forEach(text => text.style.display = "none");
+    buttons.forEach(btn => btn.innerHTML = " Show more");
+  } else {
+    dots.forEach(dot => dot.style.display = "none");
+    moreText.forEach(text => text.style.display = "inline");
+    buttons.forEach(btn => btn.innerHTML = " Show less");
+  }
 }
 
 /*--------custom notificaton ----------*/
