@@ -1081,7 +1081,7 @@ function toggleText(id) {
       document.addEventListener("click", handleOutsideClick);
     }, 0);
   }
-
+/*
   // Function to hide the text when clicking outside
   function handleOutsideClick(e) {
     // Agar click kisi aise element pe hua jo related he, ignore
@@ -1099,7 +1099,7 @@ function toggleText(id) {
 
     // Remove the listener after collapse
     document.removeEventListener("click", handleOutsideClick);
-  }
+  }*/
 }
 
 /*--------custom notificaton ----------*/
