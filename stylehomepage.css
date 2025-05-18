@@ -1743,6 +1743,22 @@ margin-top: 130px;
 #rightBtnartical { right: -10px; }
 #leftBtnyoutubevideo { left: -10px; }
 #rightBtnyoutubevideo { right: -10px; }
+
+
+
+.card_8:hover {
+  transform: none;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.card_8youtubevideo:hover {
+  transform: none;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.card_artical:hover {
+  transform: none;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
 }
 
 /*-----------------------------------------------------*/
