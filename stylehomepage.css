@@ -84,7 +84,7 @@ background-color: whitesmoke;
   .navbar.scrolled   #contact_bt_css{
     color: black; /* Change button color when scrolled */
    }
-
+ 
    .navbar.scrolled  #bytokenbtnnav{
     color: black; /* Change button color when scrolled */
    }
@@ -324,16 +324,16 @@ margin-top: 130px;
   margin: 10px 0;
 }
 
-.btnfirstsection {
+ .btnfirstsection {
   display: inline-block;
-  background: #f8f8f8; /* Default background color */
-  color: #cc2eb2; /* Default text color */
+  background: #f8f8f8; 
+  color: #228B22; 
   padding: 10px 20px;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 50px;
   margin-top: 10px;
-  border: 2px solid #cc2eb2; /* Border to match hover effect */
+  border: 2px solid #228B22; 
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
 
     position: relative;
@@ -341,9 +341,31 @@ margin-top: 130px;
 }
 
 .btnfirstsection:hover {
-  background: #cc2eb2 !important; /* Hover background color */
-  color: white; /* Hover text color */
+  background: #228B22 !important; 
+  color: white; 
+} 
+
+/* .btnfirstsection {
+  display: inline-block;
+  background: #f8f8f8; /* Default background color 
+  color: #cc2eb2; /* Default text color 
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid #cc2eb2; /* Border to match hover effect 
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+
+    position: relative;
+    z-index: 1;
 }
+
+.btnfirstsection:hover {
+  background: #cc2eb2 !important; /* Hover background color 
+  color: white; /* Hover text color 
+} */
+
 
 
 
